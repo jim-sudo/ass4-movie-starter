@@ -11,7 +11,6 @@ class Movie {
 
 public:
     virtual ~Movie() = default;
-    virtual ostream &print(ostream& out) const = 0;
 
 protected:
 
