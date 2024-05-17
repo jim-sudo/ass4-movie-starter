@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+using namespace std;
 class Customer {
 
     private:
@@ -10,6 +11,8 @@ class Customer {
 
     public:
         int ID();
-        
+        string LastName();
+        string FirstName();
+
 
 };
