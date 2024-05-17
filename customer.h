@@ -1,3 +1,5 @@
+#ifndef CUSTOMER_H_
+#define CUSTOMER_H_
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,7 +10,7 @@ class Customer {
         int id_;
         string last_name_;
         string first_name_;
-        std::vector<string> history;
+        std::vector<string> history_;
 
     public:
         int ID();
@@ -17,3 +19,4 @@ class Customer {
 
 
 };
+#endif
