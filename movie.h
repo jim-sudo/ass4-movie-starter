@@ -21,6 +21,10 @@ protected:
   char genre_;
   char media_;
 
+  virtual bool compare(const Movie &movie) const = 0;
+  bool operator>(const Movie &movie) const;
+  bool operator==(const Movie &movie) const;
+
 private:
 
 };

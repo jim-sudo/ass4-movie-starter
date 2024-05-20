@@ -4,16 +4,36 @@
 
 using namespace std;
 
-class CustomerHashTable {
-    private:
-        vector<Customer> customers;
+// class CustomerHashTable {
+//     private:
+//         vector<Customer> customers;
     
-        int hash(int customerID);
-        int probing(int numCollisions);
+//         int hash(int customerID);
+//         int probing(int numCollisions);
 
-    public:
-        bool insertCustomer(Customer customer);
-        Customer getCustomer(Customer customer);
+//     public:
+//         bool insertCustomer(Customer customer);
+//         Customer getCustomer(Customer customer);
+// };
+
+
+class CustomerHashTable {
+private:
+    static const int TABLE_SIZE = 101; // A prime number size for better distribution
+    int* table;                        // Array to store keys
+    bool* occupied;                    // Array to track occupied slots
+
+    int hashFunction(int key) const;   // Hash function to compute index
+    int probe(int key, int i) const;   // Quadratic probing function
+
+public:
+    CustomerHashTable();                       // Constructor
+    ~CustomerHashTable();                      // Destructor
+    bool insert(int key);              // Insert key into the hash table
+    bool search(int key) const;        // Search key in the hash table
+    bool remove(int key);              // Remove key from the hash table
 };
+
+
 
 #endif

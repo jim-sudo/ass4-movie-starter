@@ -5,14 +5,14 @@
 #include <vector>
 #include <fstream>
 #include "movie.h"
-#include "hashTable.h"
+#include "customerHashTable.h"
 #include "movieInventory.h"
 
 using namespace std;
-class Customer {
+class Store {
     private:
         MovieInventory movies_;
-        HashTable customer_table_;
+        CustomerHashTable customer_table_;
     public: 
         void ReadMovies(ifstream in);
         void ReadCustomers(ifstream in);

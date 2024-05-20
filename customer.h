@@ -13,9 +13,16 @@ class Customer {
         std::vector<string> history_;
 
     public:
-        int ID();
-        string LastName();
-        string FirstName();
+        Customer();
+        Customer(int id, string last_name, string first_name);
+        int ID() const;
+        string LastName() const;
+        string FirstName() const;
+        void SetID(int id);
+        void SetLastName(string last_name);
+        void SetFirstName(string first_name);
+        bool Add(string history);
+        vector<string> History();
 
 
 };

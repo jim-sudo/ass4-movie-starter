@@ -4,7 +4,7 @@
 
 #ifndef ASS4_MOVIE_STARTERG_MOVIEINVENTORY_H
 #define ASS4_MOVIE_STARTERG_MOVIEINVENTORY_H
-
+#include "movie.h"
 #include <vector>
 
 using std::vector;
