@@ -52,6 +52,16 @@ void testStore2() {
   cout << "End MovieRead" << endl;
 }
 
+void testStore3() {
+  Store store;
+  ifstream stream("data4customers.txt");
+  store.ReadCustomers(stream);
+  // store.customer_table_.print();
+  
+  
+
+}
+
 void testStoreFinal() {
   cout << "=====================================" << endl;
   cout << "Start testStoreFinal" << endl;
@@ -60,7 +70,8 @@ void testStoreFinal() {
 }
 
 void testAll() {
-  testStore1();
-  testStore2();
-  testStoreFinal();
+  // testStore1();
+  // testStore2();
+  testStore3();
+  // testStoreFinal();
 }

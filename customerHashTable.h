@@ -32,7 +32,7 @@ public:
     bool insert(Customer customer);              // Insert key into the hash table
     bool search(Customer customer) const;        // Search key in the hash table
     bool remove(Customer customer);              // Remove key from the hash table
-    void print(Customer customer);
+    void print();
 };
 
 

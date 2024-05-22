@@ -49,15 +49,15 @@ bool CustomerHashTable::search(Customer customer) const {
     return false; // full cycle and not found
 }
 
-void CustomerHashTable::print(Customer customer) {
+void CustomerHashTable::print() {
     for (int i = 0; i < TABLE_SIZE; i++) {
-        int idx = probe(customer.ID(), i);
-        if (occupied[idx] && table[idx] == customer) {
-            cout << table[idx].FirstName();
-        } else if (!occupied[idx]) {
-            cout << table[idx].FirstName();
+        // int idx = probe(customer.ID(), i);
+        if (!table[i].FirstName().empty()) {
+            cout << i << table[i].FirstName() << endl;;
         }
+        
     }
+    cout << endl;
 }
 
 bool CustomerHashTable::remove(Customer customer) {

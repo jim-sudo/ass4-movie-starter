@@ -2,25 +2,6 @@
 #include <sstream>
 #include <iostream>
 
-<<<<<<< HEAD
-
-// virtual bool Movie::compare(const Movie &movie) const {
-//     if (movie.genre_ != this->genre_) {
-//         return this->genre_ > movie.genre_;
-//     } else {
-//         return operator>(movie);
-//     }
-// }
-
-bool Movie::operator>(const Movie &movie) const {
-    if (movie.genre_ == this->genre_) {
-        // do the individual genre's sorting
-        // return *(this).compare(movie);
-
-    } else {
-        return this->genre_ > movie.genre_;
-    }
-=======
 map<char, MovieFactory*>& Movie::getFactories() {
     static map<char, MovieFactory*> factories;
     return factories;
@@ -67,5 +48,4 @@ bool Movie::ReturnItem() {
         return true;
     }
     return false;
->>>>>>> 81e3b0c82f54b050ebb0052181ae9ccc34f8cc4c
 }

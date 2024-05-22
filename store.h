@@ -14,11 +14,13 @@ class Store {
 private:
     Inventory inventory_;
     
-//    CustomerHashTable customer_table_;
+    CustomerHashTable customer_table_;
+    
+   
 public: 
     Store();    
     void ReadMovies();
-    void ReadCustomers(ifstream in);
+    void ReadCustomers(ifstream& in);
     void ReadAndExecuteActions(ifstream in);
     Inventory& inventory() { return inventory_; }
 };

@@ -3,7 +3,7 @@
 #include <sstream>
 using namespace std;
 
-void Store::ReadCustomers(ifstream file) {
+void Store::ReadCustomers(ifstream& file) {
     string line;
     int id;
     string lastName, firstName;
