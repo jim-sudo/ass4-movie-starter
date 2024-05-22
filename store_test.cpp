@@ -6,11 +6,17 @@
  */
 
 #include <iostream>
-#include <map>
-#include <sstream>
 #include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <ctime>
+#include <cstdlib>
 #include <cassert>
 #include "store.h"
+#include "movie.h"
+#include "inventory.h"
 
 using namespace std;
 
@@ -35,14 +41,15 @@ void testStore1() {
 }
 
 void testStore2() {
-  cout << "Start testStore2" << endl;
-  cout << "End testStore2" << endl;
-}
-
-void testStore3() {
+  cout << "Start MovieRead" << endl;
   Store store;
-  cout << "Start testStore2" << endl;
-  cout << "End testStore2" << endl;
+  store.ReadMovies();
+
+  cout << "Inventory: " << endl;
+  cout << endl;
+  store.inventory().PrintInventory();
+
+  cout << "End MovieRead" << endl;
 }
 
 void testStoreFinal() {

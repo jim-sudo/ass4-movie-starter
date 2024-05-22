@@ -4,18 +4,25 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <sstream>
 #include "movie.h"
 #include "customerHashTable.h"
-#include "movieInventory.h"
+#include "inventory.h"
 
 using namespace std;
 class Store {
-    private:
-        MovieInventory movies_;
-        CustomerHashTable customer_table_;
-    public: 
-        void ReadMovies(ifstream in);
-        void ReadCustomers(ifstream in);
-        void ReadAndExecuteActions(ifstream in);
+private:
+    Inventory inventory_;
+    
+//    CustomerHashTable customer_table_;
+public: 
+    Store();    
+    void ReadMovies();
+    void ReadCustomers(ifstream in);
+    void ReadAndExecuteActions(ifstream in);
+    Inventory& inventory() { return inventory_; }
 };
 #endif
+
+
+
