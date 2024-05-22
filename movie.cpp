@@ -15,7 +15,7 @@ using namespace std;
 bool Movie::operator>(const Movie &movie) const {
     if (movie.genre_ == this->genre_) {
         // do the individual genre's sorting
-        return (this)*.compare(movie);
+        // return *(this).compare(movie);
 
     } else {
         return this->genre_ > movie.genre_;

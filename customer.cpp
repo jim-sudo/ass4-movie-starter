@@ -44,3 +44,7 @@ bool Customer::Add(string history) {
 vector<string> Customer::History() {
     return history_;
 }
+
+bool Customer::operator==(const Customer &customer) const {
+    return id_ == customer.id_ && last_name_ == customer.last_name_ && first_name_ == customer.first_name_;
+}

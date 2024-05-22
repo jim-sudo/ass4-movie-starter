@@ -23,6 +23,7 @@ class Customer {
         void SetFirstName(string first_name);
         bool Add(string history);
         vector<string> History();
+        bool operator==(const Customer &customer) const;
 
 
 };

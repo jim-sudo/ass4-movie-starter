@@ -1,7 +1,11 @@
-#include "CustomerHashTable.h"
+#include "customer.h"
+#include "customerHashTable.h"
+
+using namespace std;
+
 
 CustomerHashTable::CustomerHashTable() {
-    table = new int[TABLE_SIZE];
+    table = new Customer[TABLE_SIZE];
     occupied = new bool[TABLE_SIZE];
     for (int i = 0; i < TABLE_SIZE; i++) {
         occupied[i] = false;
@@ -21,11 +25,11 @@ int CustomerHashTable::probe(int key, int i) const {
     return (hashFunction(key) + i * i) % TABLE_SIZE;
 }
 
-bool CustomerHashTable::insert(int key) {
+bool CustomerHashTable::insert(Customer customer) {
     for (int i = 0; i < TABLE_SIZE; i++) {
-        int idx = probe(key, i);
+        int idx = probe(customer.ID(), i);
         if (!occupied[idx]) {
-            table[idx] = key;
+            table[idx] = customer;
             occupied[idx] = true;
             return true;
         }
@@ -33,10 +37,10 @@ bool CustomerHashTable::insert(int key) {
     return false; // table is full
 }
 
-bool CustomerHashTable::search(int key) const {
+bool CustomerHashTable::search(Customer customer) const {
     for (int i = 0; i < TABLE_SIZE; i++) {
-        int idx = probe(key, i);
-        if (occupied[idx] && table[idx] == key) {
+        int idx = probe(customer.ID(), i);
+        if (occupied[idx] && table[idx] == customer) {
             return true;
         } else if (!occupied[idx]) {
             return false; // key not found
@@ -45,10 +49,21 @@ bool CustomerHashTable::search(int key) const {
     return false; // full cycle and not found
 }
 
-bool CustomerHashTable::remove(int key) {
+void CustomerHashTable::print(Customer customer) {
     for (int i = 0; i < TABLE_SIZE; i++) {
-        int idx = probe(key, i);
-        if (occupied[idx] && table[idx] == key) {
+        int idx = probe(customer.ID(), i);
+        if (occupied[idx] && table[idx] == customer) {
+            cout << table[idx].FirstName();
+        } else if (!occupied[idx]) {
+            cout << table[idx].FirstName();
+        }
+    }
+}
+
+bool CustomerHashTable::remove(Customer customer) {
+    for (int i = 0; i < TABLE_SIZE; i++) {
+        int idx = probe(customer.ID(), i);
+        if (occupied[idx] && table[idx] == customer) {
             occupied[idx] = false;
             return true; // key removed
         } else if (!occupied[idx]) {
@@ -57,3 +72,6 @@ bool CustomerHashTable::remove(int key) {
     }
     return false; // key not found after full probing
 }
+
+
+

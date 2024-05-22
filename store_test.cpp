@@ -10,6 +10,7 @@
 #include <sstream>
 #include <fstream>
 #include <cassert>
+#include "store.h"
 
 using namespace std;
 
@@ -34,6 +35,12 @@ void testStore1() {
 }
 
 void testStore2() {
+  cout << "Start testStore2" << endl;
+  cout << "End testStore2" << endl;
+}
+
+void testStore3() {
+  Store store;
   cout << "Start testStore2" << endl;
   cout << "End testStore2" << endl;
 }

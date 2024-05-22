@@ -1,6 +1,6 @@
 #ifndef CUSTOMERHASHTABLE_H
 #define CUSTOMERHASHTABLE_H
-#include <customer.h>
+#include "customer.h"
 
 using namespace std;
 
@@ -20,7 +20,7 @@ using namespace std;
 class CustomerHashTable {
 private:
     static const int TABLE_SIZE = 101; // A prime number size for better distribution
-    int* table;                        // Array to store keys
+    Customer* table;                        // Array to store keys
     bool* occupied;                    // Array to track occupied slots
 
     int hashFunction(int key) const;   // Hash function to compute index
@@ -29,9 +29,10 @@ private:
 public:
     CustomerHashTable();                       // Constructor
     ~CustomerHashTable();                      // Destructor
-    bool insert(int key);              // Insert key into the hash table
-    bool search(int key) const;        // Search key in the hash table
-    bool remove(int key);              // Remove key from the hash table
+    bool insert(Customer customer);              // Insert key into the hash table
+    bool search(Customer customer) const;        // Search key in the hash table
+    bool remove(Customer customer);              // Remove key from the hash table
+    void print(Customer customer);
 };
 
 
