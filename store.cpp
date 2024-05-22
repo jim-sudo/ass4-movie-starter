@@ -28,3 +28,40 @@ void Store::ReadCustomers(ifstream file) {
     file.close();
 
 }
+
+
+Store::Store() {
+    Movie::RegisterType('F', new ComedyFactory());
+    Movie::RegisterType('D', new DramaFactory());
+    Movie::RegisterType('C', new ClassicFactory());
+}
+
+void Store::ReadMovies() {
+  const string filename = "data4movies.txt";
+  ifstream file(filename);
+  if (!file) {
+    std::cerr << "Could not open the file!" << std::endl;
+    return;
+  }
+
+  std::string line;
+  while (getline(file, line)) {
+    if (line.empty()) continue; 
+
+    char type = line[0];
+    if (type != 'F' && type != 'D' && type != 'C') {
+      std::cerr << "Invalid movie type: " << type << std::endl;
+      continue; 
+    }
+
+    try {
+      auto movie = Movie::Create(type, line.substr(3)); 
+      if (movie != nullptr) {
+        inventory_.AddMovie(*movie, movie->getStock());
+      }
+    } catch (const exception& e) {
+        cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+    }
+  }
+  cout << endl;
+}
