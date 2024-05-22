@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include "customer.h"
+using namespace std;
+
+
+Customer::Customer() {
+
+}
+
+Customer::Customer(int id, string last_name, string first_name) 
+: id_(id), last_name_(last_name), first_name_(first_name) { }
+
+int Customer::ID() const {
+    return id_;
+}
+
+string Customer::LastName() const {
+    return last_name_;
+}
+
+string Customer::FirstName() const {
+    return first_name_;
+}
+
+void Customer::SetID(int id) {
+    id_ = id;
+}
+
+void Customer::SetLastName(string last_name) {
+    last_name_ = last_name;
+}
+
+void Customer::SetFirstName(string first_name) {
+    first_name_ = first_name;
+}
+
+bool Customer::Add(string history) {
+    // TODO We'll work more on this for a bad condition
+    history_.push_back(history);
+    return true;
+}
+
+vector<string> Customer::History() {
+    return history_;
+}
