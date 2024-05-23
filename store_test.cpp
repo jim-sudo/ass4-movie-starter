@@ -54,12 +54,9 @@ void testStore2() {
 
 void testStore3() {
   Store store;
-  ifstream stream("data4customers.txt");
+  ifstream stream("../data4customers.txt");
   store.ReadCustomers(stream);
-  // store.customer_table_.print();
-  
-  
-
+  store.PrintCustomers();
 }
 
 void testStoreFinal() {

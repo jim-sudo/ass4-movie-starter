@@ -24,6 +24,7 @@ class Customer {
         bool Add(string history);
         vector<string> History();
         bool operator==(const Customer &customer) const;
+        friend ostream& operator<<(ostream& os, const Customer& customer);
 
 
 };

@@ -49,11 +49,10 @@ bool CustomerHashTable::search(Customer customer) const {
     return false; // full cycle and not found
 }
 
-void CustomerHashTable::print() {
+void CustomerHashTable::print() const{
     for (int i = 0; i < TABLE_SIZE; i++) {
-        // int idx = probe(customer.ID(), i);
         if (!table[i].FirstName().empty()) {
-            cout << i << table[i].FirstName() << endl;;
+            cout << "at index " << i << ": " << table[i] << endl;;
         }
         
     }

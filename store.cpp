@@ -65,3 +65,7 @@ void Store::ReadMovies() {
   }
   cout << endl;
 }
+ 
+void Store::PrintCustomers() const{
+  customer_table_.print();
+}

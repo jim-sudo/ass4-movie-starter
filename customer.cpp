@@ -48,3 +48,9 @@ vector<string> Customer::History() {
 bool Customer::operator==(const Customer &customer) const {
     return id_ == customer.id_ && last_name_ == customer.last_name_ && first_name_ == customer.first_name_;
 }
+
+ostream& operator<<(ostream& os, const Customer& customer) {
+  os << "Customer ID: " << customer.ID()
+     << ", Name: " << customer.FirstName() << " " << customer.LastName();
+  return os;
+}

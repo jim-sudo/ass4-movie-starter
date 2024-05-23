@@ -9,6 +9,13 @@ add_executable(ass4_movie_starterG
         customer.h
         main.cpp
         movie.h
-        movieInventory.cpp
-        movieInventory.h
-        store_test.cpp)
+        inventory.cpp
+        inventory.h
+        store_test.cpp
+        classic.cpp
+        comedy.cpp
+        customer.cpp
+        customerHashTable.cpp
+        drama.cpp
+        movie.cpp
+        store.cpp)

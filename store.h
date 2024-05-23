@@ -23,6 +23,7 @@ public:
     void ReadCustomers(ifstream& in);
     void ReadAndExecuteActions(ifstream in);
     Inventory& inventory() { return inventory_; }
+    void PrintCustomers() const;
 };
 #endif
 
