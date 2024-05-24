@@ -22,9 +22,6 @@ void Store::ReadCustomers(ifstream& file) {
         Customer customer(id, lastName, firstName);
         customer_table_.insert(customer);
     }
-
-
-
     file.close();
 
 }
@@ -40,34 +37,32 @@ Store::Store() {
     Movie::RegisterType('C', new ClassicFactory());
 }
 
-void Store::ReadMovies() {
-  const string filename = "../data4movies.txt";
-  ifstream file(filename);
-  if (!file) {
-    std::cerr << "Could not open the file!" << std::endl;
-    return;
-  }
-
-  std::string line;
-  while (getline(file, line)) {
-    if (line.empty()) continue; 
-
-    char type = line[0];
-    if (type != 'F' && type != 'D' && type != 'C') {
-      std::cerr << "Invalid movie type: " << type << std::endl;
-      continue; 
+void Store::ReadMovies(ifstream& file) {
+    if (!file) {
+        std::cerr << "Could not open the file!" << std::endl;
+        return;
     }
 
-    try {
-      auto movie = Movie::Create(type, line.substr(3)); 
-      if (movie != nullptr) {
-        inventory_.AddMovie(*movie, movie->getStock());
-      }
-    } catch (const exception& e) {
-        cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+    std::string line;
+    while (getline(file, line)) {
+        if (line.empty()) continue;
+
+        char type = line[0];
+        if (type != 'F' && type != 'D' && type != 'C') {
+            std::cerr << "Invalid movie type: " << type << std::endl;
+            continue;
+        }
+
+        try {
+            auto movie = Movie::Create(type, line.substr(3));
+            if (movie != nullptr) {
+                inventory_.AddMovie(*movie, movie->getStock());
+            }
+        } catch (const exception& e) {
+            cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+        }
     }
-  }
-  cout << endl;
+    cout << endl;
 }
  
 void Store::PrintCustomers() const{
@@ -75,73 +70,62 @@ void Store::PrintCustomers() const{
 }
 
 void Store::ReadAndExecuteActions(std::ifstream& in) {
-  std::string line;
-  while (std::getline(in, line)) {
-    std::istringstream iss(line);
-    char command;
-    iss >> command;
+    std::string line;
+    while (std::getline(in, line)) {
+        std::istringstream iss(line);
+        char command;
+        iss >> command;
 
-    switch (command) {
-    case 'I':
-      inventory().PrintInventory();
-      break;
-
-    case 'H': {
-      int customerID;
-      iss >> customerID;
-      if (!customer_table_.search(customerID)) {
-        std::cerr << "Invalid customer ID: " << customerID << std::endl;
-      } else {
-        Customer* customer = customer_table_.getCustomer(customerID);
-        customer->History();
-      }
-      break;
-    }
-
-    case 'B': {
-        int customerID;
-        char mediaType, movieType;
-        iss >> customerID >> mediaType >> movieType;
-        std::string movieInfo;
-        std::getline(iss, movieInfo);
-        if (customer_table_.search(customerID)) {
-          if (inventory_.BorrowMovie(movieType + movieInfo)) {
-            Customer* customer = customer_table_.getCustomer(customerID);
-            if (customer) {
-              customer->Add("Borrowed: " + movieInfo);
+        switch (command) {
+            case 'I': {
+                inventory().PrintInventory();
+                break;
             }
-          } else {
-            std::cerr << "Error: Could not borrow movie: " << movieInfo << std::endl;
-          }
-        } else {
-          std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
-        }
-        break;
-      }
-    case 'R': {
-      int customerID;
-      char mediaType, movieType;
-      iss >> customerID >> mediaType >> movieType;
-      std::string movieInfo;
-      std::getline(iss, movieInfo);
-      if (customer_table_.search(customerID)) {
-        if (inventory_.ReturnMovie(movieType + movieInfo)) {
-          Customer* customer = customer_table_.getCustomer(customerID);
-          if (customer) {
-            customer->Add("Returned: " + movieInfo);
-          }
-        } else {
-          std::cerr << "Error: Could not return movie: " << movieInfo << std::endl;
-        }
-      } else {
-        std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
-      }
-      break;
-    }
+            case 'H': {
+                int customerID;
+                iss >> customerID;
+                if (customer_table_.search(customerID)) {
+                    Customer* customer = customer_table_.getCustomer(customerID);
+                    std::cout << "History for customer " << customerID << ":" << std::endl;
+                    customer->History();
+                } else {
+                    std::cerr << "Invalid customer ID: " << customerID << std::endl;
+                }
+                break;
+            }
+            case 'B':
+            case 'R': {
+                int customerID;
+                char mediaType;
+                iss >> customerID >> mediaType;
 
-    default:
-      std::cerr << "Invalid command: " << command << std::endl;
-      break;
+                std::string movieType;
+                std::string movieInfo;
+                std::getline(iss >> std::ws, movieInfo);
+
+                if (customer_table_.search(customerID)) {
+                    Customer* customer = customer_table_.getCustomer(customerID);
+                    bool success;
+                    if (command == 'B') {
+                        success = inventory_.BorrowMovie(movieInfo);
+                    } else {
+                        success = inventory_.ReturnMovie(movieInfo);
+                    }
+
+                    if (success) {
+                        std::string action = (command == 'B') ? "Borrowed" : "Returned";
+                        customer->Add(action + ": " + movieInfo);
+                    } else {
+                        std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movieInfo << std::endl;
+                    }
+                } else {
+                    std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+                }
+                break;
+            }
+            default:
+                std::cerr << "Invalid command: " << command << std::endl;
+                break;
+        }
     }
-  }
 }

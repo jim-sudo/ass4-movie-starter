@@ -41,33 +41,34 @@ void testStore1() {
 }
 
 void testStore2() {
-  cout << "Start MovieRead" << endl;
-  Store store;
-  store.ReadMovies();
-
-  cout << "Inventory: " << endl;
-  cout << endl;
-  store.inventory().PrintInventory();
-
-  cout << "End MovieRead" << endl;
+    // this test function tests movie being
+    // inserted into inventory and sorted per the requirement.
+    Store store;
+    ifstream movieFile("data4movies.txt");
+    store.ReadMovies(movieFile);
+    cout << "Inventory: " << endl;
+    cout << endl;
+    store.inventory().PrintInventory();
 }
 
 void testStore3() {
+  // this test function tests customer being
+  // inserted into customer Hashtable.
   Store store;
-  ifstream stream("../data4customers.txt");
+  ifstream stream("data4customers.txt");
   store.ReadCustomers(stream);
   store.PrintCustomers();
 
-  store.ReadMovies();
-
-
-  ifstream cstream("../data4commands.txt");
-  store.ReadAndExecuteActions(cstream);
 }
 void testStore4() {
+  // this test function tests command are read and executesd. 
   Store store;
-  ifstream stream("../data4commands.txt");
-  store.ReadAndExecuteActions(stream);
+  ifstream moviefile("data4movies.txt");
+  store.ReadMovies(moviefile);
+  ifstream customerfile("data4customers.txt");
+  store.ReadCustomers(customerfile);
+  ifstream commandfile("testCommandtext.txt");
+  store.ReadAndExecuteActions(commandfile);
 }
 
 void testStoreFinal() {
@@ -79,8 +80,8 @@ void testStoreFinal() {
 
 void testAll() {
   // testStore1();
-  // testStore2();
-  testStore3();
-  //testStore4();
+  //testStore2();
+  //testStore3();
+  testStore4();
   // testStoreFinal();
 }

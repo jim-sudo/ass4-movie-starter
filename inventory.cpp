@@ -68,14 +68,11 @@ void Inventory::PrintInventory() const {
     if (a->getType() == 'C' && b->getType() == 'C') {
         const Classic* ca = static_cast<const Classic*>(a);
         const Classic* cb = static_cast<const Classic*>(b);
-        
-        // Split the releaseDate into month and year for comparison
         istringstream ssa(ca->getReleaseDate());
         istringstream ssb(cb->getReleaseDate());
         int month_a, year_a, month_b, year_b;
         ssa >> month_a >> year_a;
-        ssb >> month_a >> year_b;
-        
+        ssb >> month_b >> year_b;
         if (year_a != year_b) {
             return year_a < year_b;
         }

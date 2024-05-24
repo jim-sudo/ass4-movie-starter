@@ -19,7 +19,7 @@ private:
    
 public: 
     Store();    
-    void ReadMovies();
+    void ReadMovies(ifstream& in);
     void ReadCustomers(ifstream& in);
     void ReadAndExecuteActions(ifstream& in);
     Inventory& inventory();

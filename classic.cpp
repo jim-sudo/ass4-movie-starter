@@ -13,7 +13,17 @@ Classic::Classic(const string& release_date, const string& major_actor, const st
 bool Classic::operator<(const Movie& other) const {
     const Classic& classic = static_cast<const Classic&>(other);
     if (release_date_ != classic.release_date_) {
-        return release_date_ < classic.release_date_;
+        istringstream ssa(release_date_);
+        istringstream ssb(classic.release_date_);
+        int month_a, year_a, month_b, year_b;
+        ssa >> month_a >> year_a;
+        ssb >> month_b >> year_b;
+        if (year_a != year_b) {
+            return year_a < year_b;
+        }
+        if (month_a != month_b) {
+            return month_a < month_b;
+        }
     }
     return major_actor_ < classic.major_actor_;
 }
