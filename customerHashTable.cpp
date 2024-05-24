@@ -37,10 +37,10 @@ bool CustomerHashTable::insert(Customer customer) {
     return false; // table is full
 }
 
-bool CustomerHashTable::search(Customer customer) const {
+bool CustomerHashTable::search(int id) const {
     for (int i = 0; i < TABLE_SIZE; i++) {
-        int idx = probe(customer.ID(), i);
-        if (occupied[idx] && table[idx] == customer) {
+        int idx = probe(id, i);
+        if (occupied[idx] && table[idx].ID() == id) {
             return true;
         } else if (!occupied[idx]) {
             return false; // key not found
@@ -72,5 +72,14 @@ bool CustomerHashTable::remove(Customer customer) {
     return false; // key not found after full probing
 }
 
-
-
+Customer* CustomerHashTable::getCustomer(int id) {
+  for (int i = 0; i < TABLE_SIZE; i++) {
+    int idx = probe(id, i);
+    if (occupied[idx] && table[idx].ID() == id) {
+      return &table[idx];  // Return a pointer to the found customer
+    } else if (!occupied[idx]) {
+      return nullptr;  // Customer not found
+    }
+  }
+  return nullptr;  // Full cycle and not found
+}

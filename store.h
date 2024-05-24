@@ -21,8 +21,8 @@ public:
     Store();    
     void ReadMovies();
     void ReadCustomers(ifstream& in);
-    void ReadAndExecuteActions(ifstream in);
-    Inventory& inventory() { return inventory_; }
+    void ReadAndExecuteActions(ifstream& in);
+    Inventory& inventory();
     void PrintCustomers() const;
 };
 #endif

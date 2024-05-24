@@ -29,6 +29,10 @@ void Store::ReadCustomers(ifstream& file) {
 
 }
 
+Inventory& Store::inventory(){
+  return inventory_;
+}
+
 
 Store::Store() {
     Movie::RegisterType('F', new ComedyFactory());
@@ -37,7 +41,7 @@ Store::Store() {
 }
 
 void Store::ReadMovies() {
-  const string filename = "data4movies.txt";
+  const string filename = "../data4movies.txt";
   ifstream file(filename);
   if (!file) {
     std::cerr << "Could not open the file!" << std::endl;
@@ -68,4 +72,76 @@ void Store::ReadMovies() {
  
 void Store::PrintCustomers() const{
   customer_table_.print();
+}
+
+void Store::ReadAndExecuteActions(std::ifstream& in) {
+  std::string line;
+  while (std::getline(in, line)) {
+    std::istringstream iss(line);
+    char command;
+    iss >> command;
+
+    switch (command) {
+    case 'I':
+      inventory().PrintInventory();
+      break;
+
+    case 'H': {
+      int customerID;
+      iss >> customerID;
+      if (!customer_table_.search(customerID)) {
+        std::cerr << "Invalid customer ID: " << customerID << std::endl;
+      } else {
+        Customer* customer = customer_table_.getCustomer(customerID);
+        customer->History();
+      }
+      break;
+    }
+
+    case 'B': {
+        int customerID;
+        char mediaType, movieType;
+        iss >> customerID >> mediaType >> movieType;
+        std::string movieInfo;
+        std::getline(iss, movieInfo);
+        if (customer_table_.search(customerID)) {
+          if (inventory_.BorrowMovie(movieType + movieInfo)) {
+            Customer* customer = customer_table_.getCustomer(customerID);
+            if (customer) {
+              customer->Add("Borrowed: " + movieInfo);
+            }
+          } else {
+            std::cerr << "Error: Could not borrow movie: " << movieInfo << std::endl;
+          }
+        } else {
+          std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+        }
+        break;
+      }
+    case 'R': {
+      int customerID;
+      char mediaType, movieType;
+      iss >> customerID >> mediaType >> movieType;
+      std::string movieInfo;
+      std::getline(iss, movieInfo);
+      if (customer_table_.search(customerID)) {
+        if (inventory_.ReturnMovie(movieType + movieInfo)) {
+          Customer* customer = customer_table_.getCustomer(customerID);
+          if (customer) {
+            customer->Add("Returned: " + movieInfo);
+          }
+        } else {
+          std::cerr << "Error: Could not return movie: " << movieInfo << std::endl;
+        }
+      } else {
+        std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+      }
+      break;
+    }
+
+    default:
+      std::cerr << "Invalid command: " << command << std::endl;
+      break;
+    }
+  }
 }

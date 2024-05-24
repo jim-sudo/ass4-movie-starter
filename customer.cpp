@@ -41,8 +41,10 @@ bool Customer::Add(string history) {
     return true;
 }
 
-vector<string> Customer::History() {
-    return history_;
+void Customer::History() { //
+  for (const auto & i : history_) {
+    cout << i << endl;
+  }
 }
 
 bool Customer::operator==(const Customer &customer) const {

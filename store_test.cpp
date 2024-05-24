@@ -57,6 +57,17 @@ void testStore3() {
   ifstream stream("../data4customers.txt");
   store.ReadCustomers(stream);
   store.PrintCustomers();
+
+  store.ReadMovies();
+
+
+  ifstream cstream("../data4commands.txt");
+  store.ReadAndExecuteActions(cstream);
+}
+void testStore4() {
+  Store store;
+  ifstream stream("../data4commands.txt");
+  store.ReadAndExecuteActions(stream);
 }
 
 void testStoreFinal() {
@@ -70,5 +81,6 @@ void testAll() {
   // testStore1();
   // testStore2();
   testStore3();
+  //testStore4();
   // testStoreFinal();
 }

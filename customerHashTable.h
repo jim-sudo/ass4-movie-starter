@@ -30,7 +30,8 @@ public:
     CustomerHashTable();                       // Constructor
     ~CustomerHashTable();                      // Destructor
     bool insert(Customer customer);              // Insert key into the hash table
-    bool search(Customer customer) const;        // Search key in the hash table
+    bool search(int id) const;        // Search key in the hash table
+    Customer* getCustomer(int id);
     bool remove(Customer customer);              // Remove key from the hash table
     void print() const;
 };

@@ -95,3 +95,149 @@ void Inventory::PrintInventory() const {
         }
     }
 }
+
+bool Inventory::BorrowMovie(const std::string& movieInfo) {
+  std::istringstream iss(movieInfo);
+  char movieType;
+  iss >> movieType;
+
+  switch (movieType) {
+  case 'F': {
+    std::string title;
+    int year;
+    iss.ignore(1, ' '); // Skip the space after type
+    std::getline(iss, title, ',');
+    iss >> year;
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'F') {
+        Comedy* comedy = static_cast<Comedy*>(movie);
+        if (comedy->getTitle() == title && comedy->getReleaseYear() == year) {
+          if (comedy->getStock() > 0) {
+            comedy->setStock(comedy->getStock() - 1);
+            return true; // Successfully borrowed
+          } else {
+            return false; // No stock available
+          }
+        }
+      }
+    }
+    break;
+  }
+  case 'D': {
+    std::string director, title;
+    iss.ignore(1, ' '); // Skip the space after type
+    std::getline(iss, director, ',');
+    std::getline(iss, title);
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'D') {
+        Drama* drama = static_cast<Drama*>(movie);
+        if (drama->getDirector() == director && drama->getTitle() == title) {
+          if (drama->getStock() > 0) {
+            drama->setStock(drama->getStock() - 1);
+            return true; // Successfully borrowed
+          } else {
+            return false; // No stock available
+          }
+        }
+      }
+    }
+    break;
+  }
+  case 'C': {
+    int month, year;
+    std::string actorFirstName, actorLastName;
+    iss >> month >> year >> actorFirstName >> actorLastName;
+    std::string actor = actorFirstName + " " + actorLastName;
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'C') {
+        Classic* classic = static_cast<Classic*>(movie);
+        if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
+          if (classic->getStock() > 0) {
+            classic->setStock(classic->getStock() - 1);
+            return true; // Successfully borrowed
+          } else {
+            return false; // No stock available
+          }
+        }
+      }
+    }
+    break;
+  }
+  default:
+    std::cerr << "Invalid movie type: " << movieType << std::endl;
+    return false;
+  }
+
+  std::cerr << "Movie not found: " << movieInfo << std::endl;
+  return false;
+}
+
+bool Inventory::ReturnMovie(const std::string& movieInfo) {
+  std::istringstream iss(movieInfo);
+  char movieType;
+  iss >> movieType;
+
+  switch (movieType) {
+  case 'F': {
+    std::string title;
+    int year;
+    iss.ignore(1, ' '); // Skip the space after type
+    std::getline(iss, title, ',');
+    iss >> year;
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'F') {
+        Comedy* comedy = static_cast<Comedy*>(movie);
+        if (comedy->getTitle() == title && comedy->getReleaseYear() == year) {
+          comedy->setStock(comedy->getStock() + 1);
+          return true; // Successfully returned
+        }
+      }
+    }
+    break;
+  }
+  case 'D': {
+    std::string director, title;
+    iss.ignore(1, ' '); // Skip the space after type
+    std::getline(iss, director, ',');
+    std::getline(iss, title);
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'D') {
+        Drama* drama = static_cast<Drama*>(movie);
+        if (drama->getDirector() == director && drama->getTitle() == title) {
+          drama->setStock(drama->getStock() + 1);
+          return true; // Successfully returned
+        }
+      }
+    }
+    break;
+  }
+  case 'C': {
+    int month, year;
+    std::string actorFirstName, actorLastName;
+    iss >> month >> year >> actorFirstName >> actorLastName;
+    std::string actor = actorFirstName + " " + actorLastName;
+
+    for (auto& movie : movies_) {
+      if (movie->getType() == 'C') {
+        Classic* classic = static_cast<Classic*>(movie);
+        if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
+          classic->setStock(classic->getStock() + 1);
+          return true; // Successfully returned
+        }
+      }
+    }
+    break;
+  }
+  default:
+    std::cerr << "Invalid movie type: " << movieType << std::endl;
+    return false;
+  }
+
+  std::cerr << "Movie not found: " << movieInfo << std::endl;
+  return false;
+}
