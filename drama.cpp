@@ -24,7 +24,11 @@ bool Drama::operator==(const Movie& other) const {
 }
 
 ostream& Drama::Print(ostream& out) const {
-    out << "Drama: " << director_ << ", " << title_ << ", " << release_year_ << ", " << current_stock_ << "/" << stock_;
+    out << "Title: " << title_ << '\n';
+    out << "Director: " <<director_ << '\n';
+    out << "Release Year: " << release_year_<< '\n';
+    out << "Borrowed: " << current_stock_ - stock_<< '\n';
+    out << "Available in Stock: " << stock_<< '\n';
     return out;
 }
 

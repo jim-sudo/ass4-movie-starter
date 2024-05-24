@@ -36,15 +36,18 @@ void Customer::SetFirstName(string first_name) {
 }
 
 bool Customer::Add(string history) {
-    // TODO We'll work more on this for a bad condition
     history_.push_back(history);
     return true;
 }
 
-void Customer::History() { //
-  for (const auto & i : history_) {
-    cout << i << endl;
-  }
+void Customer::History() const {
+    if (history_.empty()) {
+        std::cout << "** No transactions found **" << std::endl;
+    } else {
+        for (const auto& transaction : history_) {
+            std::cout << transaction << std::endl;
+        }
+    }
 }
 
 bool Customer::operator==(const Customer &customer) const {

@@ -86,13 +86,15 @@ void Store::ReadAndExecuteActions(std::ifstream& in) {
                 iss >> customerID;
                 if (customer_table_.search(customerID)) {
                     Customer* customer = customer_table_.getCustomer(customerID);
+                    cout << endl;
                     std::cout << "History for customer " << customerID << ":" << std::endl;
+                    cout << endl;
                     customer->History();
                 } else {
                     std::cerr << "Invalid customer ID: " << customerID << std::endl;
                 }
                 break;
-            }
+                }
             case 'B':
             case 'R': {
                 int customerID;

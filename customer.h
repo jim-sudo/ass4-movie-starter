@@ -22,7 +22,7 @@ class Customer {
         void SetLastName(string last_name);
         void SetFirstName(string first_name);
         bool Add(string history);
-        void History();
+        void History() const;
         bool operator==(const Customer &customer) const;
         friend ostream& operator<<(ostream& os, const Customer& customer);
 

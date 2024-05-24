@@ -46,8 +46,6 @@ void testStore2() {
     Store store;
     ifstream movieFile("data4movies.txt");
     store.ReadMovies(movieFile);
-    cout << "Inventory: " << endl;
-    cout << endl;
     store.inventory().PrintInventory();
 }
 
@@ -74,6 +72,13 @@ void testStore4() {
 void testStoreFinal() {
   cout << "=====================================" << endl;
   cout << "Start testStoreFinal" << endl;
+  Store store;
+  ifstream moviefile("data4movies.txt");
+  store.ReadMovies(moviefile);
+  ifstream customerfile("data4customers.txt");
+  store.ReadCustomers(customerfile);
+  ifstream commandfile("data4commands.txt");
+  store.ReadAndExecuteActions(commandfile);
   cout << "End testStoreFinal" << endl;
   cout << "=====================================" << endl;
 }
@@ -82,6 +87,6 @@ void testAll() {
   // testStore1();
   //testStore2();
   //testStore3();
-  testStore4();
-  // testStoreFinal();
+  //testStore4();
+  testStoreFinal();
 }

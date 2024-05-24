@@ -31,9 +31,12 @@ void Inventory::PrintInventory() const {
         }
         return a->getType() < b->getType();
     });
-
+    cout << endl;
+    cout << "=================Prinitng inventory=================="<< endl;
+    cout << endl;
     // Print Comedy movies
-    std::cout << "Comedy Movies:" << std::endl;
+    std::cout << "===== Comedy Movies =====" << std::endl;
+    cout << endl;
     for (const auto& movie : sorted_movies) {
         if (movie->getType() == 'F') {
             cout << *movie << std::endl;
@@ -55,7 +58,8 @@ void Inventory::PrintInventory() const {
     });
 
     // Print Drama movies
-    cout << "Drama Movies:" << endl;
+    cout << "===== Drama Movies =====" << endl;
+    cout << endl;
     for (const auto& movie : sorted_movies) {
         if (movie->getType() == 'D') {
             std::cout << *movie << endl;
@@ -85,7 +89,8 @@ void Inventory::PrintInventory() const {
 });
 
     // Print Classic movies
-    std::cout << "Classic Movies:" << std::endl;
+    std::cout << "===== Classic Movies =====" << std::endl;
+    cout << endl;
     for (const auto& movie : sorted_movies) {
         if (movie->getType() == 'C') {
             std::cout << *movie << std::endl;

@@ -25,7 +25,12 @@ bool Comedy::operator==(const Movie& other) const {
 }
 
 ostream& Comedy::Print(ostream& out) const {
-    out << "Comedy: " << title_ << ", " << release_year_ << ", " << director_ << ", " << current_stock_ << "/" << stock_;
+    out << "Title: " << title_ << '\n';
+    out << "Director: " <<director_ << '\n';
+    out << "Release Year: " << release_year_<< '\n';
+    out << "Borrowed: " << current_stock_ - stock_<< '\n';
+    out << "Available in Stock: " << stock_<< '\n';
+    //out << "Comedy: " << title_ << ", " << release_year_ << ", " << director_ <<  "\n" << "[Overall stock: ]" << current_stock_  << " , avaliable:  "<< stock_ << " ] \n";
     return out;
 }
 
