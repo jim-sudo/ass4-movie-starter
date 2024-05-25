@@ -1,0 +1,2499 @@
+Sat May 25 07:23:42 UTC 2024
+Linux LocalLinuxMachine 5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. Runs and produces correct output
+=====================================================
+=====================================
+Start testStoreFinal
+Invalid movie type: Z
+Invalid movie type: Z
+
+
+=================Prinitng inventory==================
+
+===== Comedy Movies =====
+
+Title: Annie Hall
+Director: Woody Allen
+Release Year: 1977
+Borrowed: 0
+Available in Stock: 10
+
+Title: Fargo
+Director: Joel Coen
+Release Year: 1996
+Borrowed: 0
+Available in Stock: 10
+
+Title: National Lampoon's Animal House
+Director: John Landis
+Release Year: 1978
+Borrowed: 0
+Available in Stock: 10
+
+Title: Pirates of the Caribbean
+Director: Different Years
+Release Year: 2000
+Borrowed: 0
+Available in Stock: 10
+
+Title: Pirates of the Caribbean
+Director: Gore Verbinski
+Release Year: 2003
+Borrowed: 0
+Available in Stock: 10
+
+Title: Sleepless in Seattle
+Director: Nora Ephron
+Release Year: 1993
+Borrowed: 0
+Available in Stock: 10
+
+Title: When Harry Met Sally
+Director: Rob Reiner
+Release Year: 1989
+Borrowed: 0
+Available in Stock: 10
+
+Title: You've Got Mail
+Director: Nora Ephron
+Release Year: 1998
+Borrowed: 0
+Available in Stock: 10
+
+
+===== Drama Movies =====
+
+Title: Good Morning Vietnam
+Director: Barry Levinson
+Release Year: 1988
+Borrowed: 0
+Available in Stock: 10
+
+Title: Same Director Good Morning Vietnam
+Director: Barry Levinson
+Release Year: 1988
+Borrowed: 0
+Available in Stock: 10
+
+Title: Unforgiven
+Director: Clint Eastwood
+Release Year: 1992
+Borrowed: 0
+Available in Stock: 10
+
+Title: Good Will Hunting
+Director: Gus Van Sant
+Release Year: 2000
+Borrowed: 0
+Available in Stock: 10
+
+Title: Silence of the Lambs
+Director: Jonathan Demme
+Release Year: 1991
+Borrowed: 0
+Available in Stock: 10
+
+Title: Dogfight
+Director: Nancy Savoca
+Release Year: 1991
+Borrowed: 0
+Available in Stock: 10
+
+Title: King of Hearts
+Director: Phillippe De Broca
+Release Year: 1967
+Borrowed: 0
+Available in Stock: 10
+
+Title: Schindler's List
+Director: Steven Spielberg
+Release Year: 1993
+Borrowed: 0
+Available in Stock: 10
+
+
+===== Classic Movies =====
+
+Title: Holiday
+Director: George Cukor
+Major Actor: Cary Grant
+Release Date: 9 1938
+Borrowed: 0
+Available in Stock: 10
+
+Title: Holiday
+Director: George Cukor
+Major Actor: Katherine Hepburn
+Release Date: 9 1938
+Borrowed: 0
+Available in Stock: 10
+
+Title: Gone With the Wind
+Director: Victor Fleming
+Major Actor: Clark Gable
+Release Date: 2 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: Gone With the Wind
+Director: Victor Fleming
+Major Actor: Vivien Leigh
+Release Date: 2 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Wizard of Oz
+Director: Victor Fleming
+Major Actor: Judy Garland
+Release Date: 7 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Philadelphia Story
+Director: George Cukor
+Major Actor: Cary Grant
+Release Date: 5 1940
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Philadelphia Story
+Director: George Cukor
+Major Actor: Katherine Hepburn
+Release Date: 5 1940
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Maltese Falcon
+Director: John Huston
+Major Actor: Humphrey Bogart
+Release Date: 10 1941
+Borrowed: 0
+Available in Stock: 10
+
+Title: Casablanca
+Director: Michael Curtiz
+Major Actor: Humphrey Bogart
+Release Date: 8 1942
+Borrowed: 0
+Available in Stock: 10
+
+Title: Casablanca
+Director: Michael Curtiz
+Major Actor: Ingrid Bergman
+Release Date: 8 1942
+Borrowed: 0
+Available in Stock: 10
+
+Title: It's a Wonderful Life
+Director: Frank Capra
+Major Actor: Donna Reed
+Release Date: 11 1946
+Borrowed: 0
+Available in Stock: 10
+
+Title: It's a Wonderful Life
+Director: Frank Capra
+Major Actor: James Steward
+Release Date: 11 1946
+Borrowed: 0
+Available in Stock: 10
+
+Title: A Clockwork Orange
+Director: Stanley Kubrick
+Major Actor: Malcolm McDowell
+Release Date: 2 1971
+Borrowed: 0
+Available in Stock: 10
+
+Title: Harold and Maude
+Director: Hal Ashby
+Major Actor: Ruth Gordon
+Release Date: 3 1971
+Borrowed: 0
+Available in Stock: 10
+
+
+History for customer 1000:
+
+** No transactions found **
+
+History for customer 5000:
+
+** No transactions found **
+
+History for customer 8000:
+
+** No transactions found **
+Movie not found: D Barry Levinson, Good Morning Vietnam,
+Error: Could not borrow movie: D Barry Levinson, Good Morning Vietnam,
+Invalid movie type: Z
+Error: Could not borrow movie: Z 2 1971 Malcolm McDowell
+Movie not found: D Gus Van Sant, Good Will Hunting,
+Error: Could not borrow movie: D Gus Van Sant, Good Will Hunting,
+Movie not found: D Phillippe De Broca, King of Hearts,
+Error: Could not borrow movie: D Phillippe De Broca, King of Hearts,
+Movie not found: D Jonathan Demme, Silence of the Lambs,
+Error: Could not borrow movie: D Jonathan Demme, Silence of the Lambs,
+Invalid command: X
+Movie not found: D Nancy Savoca, Dogfight,
+Error: Could not borrow movie: D Nancy Savoca, Dogfight,
+Movie not found: D Steven Spielberg, Schindler's List,
+Error: Could not borrow movie: D Steven Spielberg, Schindler's List,
+Invalid command: Z
+Movie not found: D Nancy Savoca, Dogfight,
+Error: Could not borrow movie: D Nancy Savoca, Dogfight,
+Movie not found: D Clint Eastwood, Unforgiven,
+Error: Could not borrow movie: D Clint Eastwood, Unforgiven,
+Error: Customer ID 1234 not found.
+Movie not found: F Bogus Title, 2001
+Error: Could not borrow movie: F Bogus Title, 2001
+Error: Could not borrow movie: C 3 1971 Ruth Gordon
+Error: Could not borrow movie: C 3 1971 Ruth Gordon
+Error: Could not borrow movie: C 3 1971 Ruth Gordon
+Movie not found: D Steven Spielberg, Bogus Title,
+Error: Could not borrow movie: D Steven Spielberg, Bogus Title,
+
+=================Prinitng inventory==================
+
+===== Comedy Movies =====
+
+Title: Annie Hall
+Director: Woody Allen
+Release Year: 1977
+Borrowed: 1
+Available in Stock: 9
+
+Title: Fargo
+Director: Joel Coen
+Release Year: 1996
+Borrowed: 2
+Available in Stock: 8
+
+Title: National Lampoon's Animal House
+Director: John Landis
+Release Year: 1978
+Borrowed: 1
+Available in Stock: 9
+
+Title: Pirates of the Caribbean
+Director: Different Years
+Release Year: 2000
+Borrowed: 0
+Available in Stock: 10
+
+Title: Pirates of the Caribbean
+Director: Gore Verbinski
+Release Year: 2003
+Borrowed: 0
+Available in Stock: 10
+
+Title: Sleepless in Seattle
+Director: Nora Ephron
+Release Year: 1993
+Borrowed: 1
+Available in Stock: 9
+
+Title: When Harry Met Sally
+Director: Rob Reiner
+Release Year: 1989
+Borrowed: 1
+Available in Stock: 9
+
+Title: You've Got Mail
+Director: Nora Ephron
+Release Year: 1998
+Borrowed: 1
+Available in Stock: 9
+
+
+===== Drama Movies =====
+
+Title: Good Morning Vietnam
+Director: Barry Levinson
+Release Year: 1988
+Borrowed: 0
+Available in Stock: 10
+
+Title: Same Director Good Morning Vietnam
+Director: Barry Levinson
+Release Year: 1988
+Borrowed: 0
+Available in Stock: 10
+
+Title: Unforgiven
+Director: Clint Eastwood
+Release Year: 1992
+Borrowed: 0
+Available in Stock: 10
+
+Title: Good Will Hunting
+Director: Gus Van Sant
+Release Year: 2000
+Borrowed: 0
+Available in Stock: 10
+
+Title: Silence of the Lambs
+Director: Jonathan Demme
+Release Year: 1991
+Borrowed: 0
+Available in Stock: 10
+
+Title: Dogfight
+Director: Nancy Savoca
+Release Year: 1991
+Borrowed: 0
+Available in Stock: 10
+
+Title: King of Hearts
+Director: Phillippe De Broca
+Release Year: 1967
+Borrowed: 0
+Available in Stock: 10
+
+Title: Schindler's List
+Director: Steven Spielberg
+Release Year: 1993
+Borrowed: 0
+Available in Stock: 10
+
+
+===== Classic Movies =====
+
+Title: Holiday
+Director: George Cukor
+Major Actor: Cary Grant
+Release Date: 9 1938
+Borrowed: 1
+Available in Stock: 9
+
+Title: Holiday
+Director: George Cukor
+Major Actor: Katherine Hepburn
+Release Date: 9 1938
+Borrowed: 0
+Available in Stock: 10
+
+Title: Gone With the Wind
+Director: Victor Fleming
+Major Actor: Clark Gable
+Release Date: 2 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: Gone With the Wind
+Director: Victor Fleming
+Major Actor: Vivien Leigh
+Release Date: 2 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Wizard of Oz
+Director: Victor Fleming
+Major Actor: Judy Garland
+Release Date: 7 1939
+Borrowed: 0
+Available in Stock: 10
+
+Title: The Philadelphia Story
+Director: George Cukor
+Major Actor: Cary Grant
+Release Date: 5 1940
+Borrowed: 1
+Available in Stock: 9
+
+Title: The Philadelphia Story
+Director: George Cukor
+Major Actor: Katherine Hepburn
+Release Date: 5 1940
+Borrowed: 1
+Available in Stock: 9
+
+Title: The Maltese Falcon
+Director: John Huston
+Major Actor: Humphrey Bogart
+Release Date: 10 1941
+Borrowed: 1
+Available in Stock: 9
+
+Title: Casablanca
+Director: Michael Curtiz
+Major Actor: Humphrey Bogart
+Release Date: 8 1942
+Borrowed: 0
+Available in Stock: 10
+
+Title: Casablanca
+Director: Michael Curtiz
+Major Actor: Ingrid Bergman
+Release Date: 8 1942
+Borrowed: 0
+Available in Stock: 10
+
+Title: It's a Wonderful Life
+Director: Frank Capra
+Major Actor: Donna Reed
+Release Date: 11 1946
+Borrowed: 0
+Available in Stock: 10
+
+Title: It's a Wonderful Life
+Director: Frank Capra
+Major Actor: James Steward
+Release Date: 11 1946
+Borrowed: 0
+Available in Stock: 10
+
+Title: A Clockwork Orange
+Director: Stanley Kubrick
+Major Actor: Malcolm McDowell
+Release Date: 2 1971
+Borrowed: 1
+Available in Stock: 9
+
+Title: Harold and Maude
+Director: Hal Ashby
+Major Actor: Ruth Gordon
+Release Date: 3 1971
+Borrowed: 10
+Available in Stock: 0
+
+
+History for customer 1000:
+
+Borrowed: C 5 1940 Katherine Hepburn
+Borrowed: C 5 1940 Cary Grant
+Borrowed: C 3 1971 Ruth Gordon
+Borrowed: F Fargo, 1996
+
+History for customer 1111:
+
+Borrowed: C 2 1971 Malcolm McDowell
+Borrowed: C 3 1971 Ruth Gordon
+Borrowed: C 10 1941 Humphrey Bogart
+Borrowed: C 9 1938 Cary Grant
+
+History for customer 5000:
+
+Borrowed: C 3 1971 Ruth Gordon
+Returned: C 3 1971 Ruth Gordon
+Borrowed: C 3 1971 Ruth Gordon
+Returned: C 3 1971 Ruth Gordon
+Borrowed: C 3 1971 Ruth Gordon
+Returned: C 3 1971 Ruth Gordon
+Borrowed: C 3 1971 Ruth Gordon
+
+History for customer 8000:
+
+Borrowed: F You've Got Mail, 1998
+Returned: F You've Got Mail, 1998
+Borrowed: C 3 1971 Ruth Gordon
+Borrowed: C 3 1971 Ruth Gordon
+Borrowed: F National Lampoon's Animal House, 1978
+
+History for customer 8888:
+
+Borrowed: F Annie Hall, 1977
+Borrowed: F When Harry Met Sally, 1989
+Borrowed: C 3 1971 Ruth Gordon
+End testStoreFinal
+=====================================
+Done.
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+15691 warnings generated.
+31373 warnings generated.
+43986 warnings generated.
+56599 warnings generated.
+72282 warnings generated.
+92203 warnings generated.
+103507 warnings generated.
+119245 warnings generated.
+139108 warnings generated.
+160690 warnings generated.
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:4:18: error: pass by value and use std::move [modernize-pass-by-value,-warnings-as-errors]
+Classic::Classic(const string& release_date, const string& major_actor, const string& title, int stock, const string& director)
+                 ^~~~~~~~~~~~~
+                 string 
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:4:46: error: pass by value and use std::move [modernize-pass-by-value,-warnings-as-errors]
+Classic::Classic(const string& release_date, const string& major_actor, const string& title, int stock, const string& director)
+                                             ^~~~~~~~~~~~~
+                                             string 
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:14:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Classic& classic = static_cast<const Classic&>(other);
+          ^~~~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:18:9: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+        int month_a, year_a, month_b, year_b;
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:32:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Classic& classic = static_cast<const Classic&>(other);
+          ^~~~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:69:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    string director, title, majorActorFirst, majorActorLast;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:69:29: error: invalid case style for variable 'majorActorFirst' [readability-identifier-naming,-warnings-as-errors]
+    string director, title, majorActorFirst, majorActorLast;
+                            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:69:46: error: invalid case style for variable 'majorActorLast' [readability-identifier-naming,-warnings-as-errors]
+    string director, title, majorActorFirst, majorActorLast;
+                                             ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:70:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    int releaseMonth, releaseYear;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:70:9: error: invalid case style for variable 'releaseMonth' [readability-identifier-naming,-warnings-as-errors]
+    int releaseMonth, releaseYear;
+        ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:70:23: error: invalid case style for variable 'releaseYear' [readability-identifier-naming,-warnings-as-errors]
+    int releaseMonth, releaseYear;
+                      ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:80:12: error: invalid case style for variable 'majorActor' [readability-identifier-naming,-warnings-as-errors]
+    string majorActor = majorActorFirst + " " + majorActorLast;
+           ^~~~~~~~~~
+           major_actor
+/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp:81:12: error: invalid case style for variable 'releaseDate' [readability-identifier-naming,-warnings-as-errors]
+    string releaseDate = to_string(releaseMonth) + " " + to_string(releaseYear);
+           ^~~~~~~~~~~
+           release_date
+/home/cssuwbstudent/jeosburn/css343lab4/comedy.cpp:15:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Comedy& comedy = static_cast<const Comedy&>(other);
+          ^~~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/comedy.cpp:23:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Comedy& comedy = static_cast<const Comedy&>(other);
+          ^~~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/comedy.cpp:60:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    string director, title;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/comedy.cpp:61:9: error: invalid case style for variable 'releaseYear' [readability-identifier-naming,-warnings-as-errors]
+    int releaseYear;
+        ^~~~~~~~~~~
+        release_year
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:4:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
+using namespace std;
+^
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:7:11: error: use '= default' to define a trivial default constructor [modernize-use-equals-default,-warnings-as-errors]
+Customer::Customer() {
+          ^          ~
+                     = default;
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:11:28: error: pass by value and use std::move [modernize-pass-by-value,-warnings-as-errors]
+Customer::Customer(int id, string last_name, string first_name) 
+                           ^
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:11:46: error: pass by value and use std::move [modernize-pass-by-value,-warnings-as-errors]
+Customer::Customer(int id, string last_name, string first_name) 
+                                             ^
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:12:23: error: parameter 'last_name' is passed by value and only copied once; consider moving it to avoid unnecessary copies [performance-unnecessary-value-param,-warnings-as-errors]
+: id_(id), last_name_(last_name), first_name_(first_name) { }
+                      ^
+                      std::move( )
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:12:47: error: parameter 'first_name' is passed by value and only copied once; consider moving it to avoid unnecessary copies [performance-unnecessary-value-param,-warnings-as-errors]
+: id_(id), last_name_(last_name), first_name_(first_name) { }
+                                              ^
+                                              std::move()
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:31:18: error: parameter 'last_name' is passed by value and only copied once; consider moving it to avoid unnecessary copies [performance-unnecessary-value-param,-warnings-as-errors]
+    last_name_ = last_name;
+                 ^
+                 std::move( )
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:35:19: error: parameter 'first_name' is passed by value and only copied once; consider moving it to avoid unnecessary copies [performance-unnecessary-value-param,-warnings-as-errors]
+    first_name_ = first_name;
+                  ^
+                  std::move()
+/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp:38:27: error: the parameter 'history' is copied for each invocation but only used as a const reference; consider making it a const reference [performance-unnecessary-value-param,-warnings-as-errors]
+bool Customer::Add(string history) {
+                          ^
+                   const &
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:4:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
+using namespace std;
+^
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:20:24: error: method 'hashFunction' can be made static [readability-convert-member-functions-to-static,-warnings-as-errors]
+int CustomerHashTable::hashFunction(int key) const {
+                       ^                     ~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:28:41: error: the parameter 'customer' is copied for each invocation but only used as a const reference; consider making it a const reference [performance-unnecessary-value-param,-warnings-as-errors]
+bool CustomerHashTable::insert(Customer customer) {
+                                        ^
+                               const   &
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:45:11: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+        } else if (!occupied[idx]) {
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:62:41: error: the parameter 'customer' is copied for each invocation but only used as a const reference; consider making it a const reference [performance-unnecessary-value-param,-warnings-as-errors]
+bool CustomerHashTable::remove(Customer customer) {
+                                        ^
+                               const   &
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:68:11: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+        } else if (!occupied[idx]) {
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp:80:7: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+    } else if (!occupied[idx]) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp:14:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Drama& drama = static_cast<const Drama&>(other);
+          ^~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp:22:11: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+    const Drama& drama = static_cast<const Drama&>(other);
+          ^~~~~
+          auto
+/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp:58:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    string director, title;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp:59:9: error: invalid case style for variable 'releaseYear' [readability-identifier-naming,-warnings-as-errors]
+    int releaseYear;
+        ^~~~~~~~~~~
+        release_year
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:25:19: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+            const Comedy* ca = static_cast<const Comedy*>(a);
+                  ^~~~~~
+                  auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:26:19: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+            const Comedy* cb = static_cast<const Comedy*>(b);
+                  ^~~~~~
+                  auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:50:19: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+            const Drama* da = static_cast<const Drama*>(a);
+                  ^~~~~
+                  auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:51:19: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+            const Drama* db = static_cast<const Drama*>(b);
+                  ^~~~~
+                  auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:73:15: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        const Classic* ca = static_cast<const Classic*>(a);
+              ^~~~~~~
+              auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:74:15: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        const Classic* cb = static_cast<const Classic*>(b);
+              ^~~~~~~
+              auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:77:9: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+        int month_a, year_a, month_b, year_b;
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:103:8: error: invalid case style for variable 'movieType' [readability-identifier-naming,-warnings-as-errors]
+  char movieType;
+       ^~~~~~~~~
+       movie_type
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:116:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Comedy* comedy = static_cast<Comedy*>(movie);
+        ^~~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:121:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+          } else {
+            ^~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:130:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    std::string director, title;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:137:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Drama* drama = static_cast<Drama*>(movie);
+        ^~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:142:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+          } else {
+            ^~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:151:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    int month, year;
+    ^~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:152:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:152:17: error: invalid case style for variable 'actorFirstName' [readability-identifier-naming,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:152:33: error: invalid case style for variable 'actorLastName' [readability-identifier-naming,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+                                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:158:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Classic* classic = static_cast<Classic*>(movie);
+        ^~~~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:163:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
+          } else {
+            ^~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:182:8: error: invalid case style for variable 'movieType' [readability-identifier-naming,-warnings-as-errors]
+  char movieType;
+       ^~~~~~~~~
+       movie_type
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:195:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Comedy* comedy = static_cast<Comedy*>(movie);
+        ^~~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:205:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    std::string director, title;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:212:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Drama* drama = static_cast<Drama*>(movie);
+        ^~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:222:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    int month, year;
+    ^~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:223:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:223:17: error: invalid case style for variable 'actorFirstName' [readability-identifier-naming,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:223:33: error: invalid case style for variable 'actorLastName' [readability-identifier-naming,-warnings-as-errors]
+    std::string actorFirstName, actorLastName;
+                                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:229:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
+        Classic* classic = static_cast<Classic*>(movie);
+        ^~~~~~~
+        auto
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.h:14:10: error: function 'Inventory::BorrowMovie' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
+    bool BorrowMovie(const std::string& title);
+         ^
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:101:17: note: the definition seen here
+bool Inventory::BorrowMovie(const std::string& movieInfo) {
+                ^
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.h:14:10: note: differing parameters are named here: ('title'), in definition: ('movieInfo')
+    bool BorrowMovie(const std::string& title);
+         ^                              ~~~~~
+                                        movieInfo
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.h:15:10: error: function 'Inventory::ReturnMovie' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
+    bool ReturnMovie(const std::string& title);
+         ^
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp:180:17: note: the definition seen here
+bool Inventory::ReturnMovie(const std::string& movieInfo) {
+                ^
+/home/cssuwbstudent/jeosburn/css343lab4/inventory.h:15:10: note: differing parameters are named here: ('title'), in definition: ('movieInfo')
+    bool ReturnMovie(const std::string& title);
+         ^                              ~~~~~
+                                        movieInfo
+/home/cssuwbstudent/jeosburn/css343lab4/main.cpp:7:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
+using namespace std;
+^
+/home/cssuwbstudent/jeosburn/css343lab4/movie.h:81:5: error: function 'Drama::Drama' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
+    Drama(const string& director, const string& title, int stock, int releaseYear);
+    ^
+/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp:4:8: note: the definition seen here
+Drama::Drama(const string& director, const string& title, int stock, int release_year)
+       ^
+/home/cssuwbstudent/jeosburn/css343lab4/movie.h:81:5: note: differing parameters are named here: ('releaseYear'), in definition: ('release_year')
+    Drama(const string& director, const string& title, int stock, int releaseYear);
+    ^                                                                 ~~~~~~~~~~~
+                                                                      release_year
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:4:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
+using namespace std;
+^
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:9:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+    string lastName, firstName;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:9:12: error: invalid case style for variable 'lastName' [readability-identifier-naming,-warnings-as-errors]
+    string lastName, firstName;
+           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:9:22: error: invalid case style for variable 'firstName' [readability-identifier-naming,-warnings-as-errors]
+    string lastName, firstName;
+                     ^
+note: this fix will not be applied because it overlaps with another fix
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:57:13: error: 'auto movie' can be declared as 'auto *movie' [readability-qualified-auto,-warnings-as-errors]
+            auto movie = Movie::Create(type, line.substr(3));
+            ^~~~~
+            auto *
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:85:21: error: invalid case style for variable 'customerID' [readability-identifier-naming,-warnings-as-errors]
+                int customerID;
+                    ^~~~~~~~~~
+                    customer_id
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:100:21: error: invalid case style for variable 'customerID' [readability-identifier-naming,-warnings-as-errors]
+                int customerID;
+                    ^~~~~~~~~~
+                    customer_id
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:101:22: error: invalid case style for variable 'mediaType' [readability-identifier-naming,-warnings-as-errors]
+                char mediaType;
+                     ^~~~~~~~~
+                     media_type
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:104:29: error: invalid case style for variable 'movieType' [readability-identifier-naming,-warnings-as-errors]
+                std::string movieType;
+                            ^~~~~~~~~
+                            movie_type
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:105:29: error: invalid case style for variable 'movieInfo' [readability-identifier-naming,-warnings-as-errors]
+                std::string movieInfo;
+                            ^~~~~~~~~
+                            movie_info
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:119:53: error: string concatenation results in allocation of unnecessary temporary strings; consider using 'operator+=' or 'string::append()' instead [performance-inefficient-string-concatenation,-warnings-as-errors]
+                        customer->Add(action + ": " + movieInfo);
+                                                    ^
+/home/cssuwbstudent/jeosburn/css343lab4/store.h:22:10: error: function 'Store::ReadMovies' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
+    void ReadMovies(ifstream& in);
+         ^
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:40:13: note: the definition seen here
+void Store::ReadMovies(ifstream& file) {
+            ^
+/home/cssuwbstudent/jeosburn/css343lab4/store.h:22:10: note: differing parameters are named here: ('in'), in definition: ('file')
+    void ReadMovies(ifstream& in);
+         ^                    ~~
+                              file
+/home/cssuwbstudent/jeosburn/css343lab4/store.h:23:10: error: function 'Store::ReadCustomers' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
+    void ReadCustomers(ifstream& in);
+         ^
+/home/cssuwbstudent/jeosburn/css343lab4/store.cpp:6:13: note: the definition seen here
+void Store::ReadCustomers(ifstream& file) {
+            ^
+/home/cssuwbstudent/jeosburn/css343lab4/store.h:23:10: note: differing parameters are named here: ('in'), in definition: ('file')
+    void ReadCustomers(ifstream& in);
+         ^                       ~~
+                                 file
+/home/cssuwbstudent/jeosburn/css343lab4/store_test.cpp:21:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
+using namespace std;
+^
+/home/cssuwbstudent/jeosburn/css343lab4/store_test.cpp:31:8: error: invalid case style for variable 'commandType' [readability-identifier-naming,-warnings-as-errors]
+  char commandType;
+       ^~~~~~~~~~~
+       command_type
+/home/cssuwbstudent/jeosburn/css343lab4/store_test.cpp:47:14: error: invalid case style for variable 'movieFile' [readability-identifier-naming,-warnings-as-errors]
+    ifstream movieFile("data4movies.txt");
+             ^~~~~~~~~
+             movie_file
+Suppressed 160605 warnings (160605 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+85 warnings treated as errors
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./classic.cpp
+4c4,5
+< Classic::Classic(const string& release_date, const string& major_actor, const string& title, int stock, const string& director)
+---
+> Classic::Classic(const string &release_date, const string &major_actor,
+>                  const string &title, int stock, const string &director)
+6,26c7,23
+<     this->title_ = title;
+<     this->stock_ = stock;
+<     this->current_stock_ = stock;
+<     this->director_ = director;
+<     this->genre_ = 'C';
+< }
+< 
+< bool Classic::operator<(const Movie& other) const {
+<     const Classic& classic = static_cast<const Classic&>(other);
+<     if (release_date_ != classic.release_date_) {
+<         istringstream ssa(release_date_);
+<         istringstream ssb(classic.release_date_);
+<         int month_a, year_a, month_b, year_b;
+<         ssa >> month_a >> year_a;
+<         ssb >> month_b >> year_b;
+<         if (year_a != year_b) {
+<             return year_a < year_b;
+<         }
+<         if (month_a != month_b) {
+<             return month_a < month_b;
+<         }
+---
+>   this->title_ = title;
+>   this->stock_ = stock;
+>   this->current_stock_ = stock;
+>   this->director_ = director;
+>   this->genre_ = 'C';
+> }
+> 
+> bool Classic::operator<(const Movie &other) const {
+>   const Classic &classic = static_cast<const Classic &>(other);
+>   if (release_date_ != classic.release_date_) {
+>     istringstream ssa(release_date_);
+>     istringstream ssb(classic.release_date_);
+>     int month_a, year_a, month_b, year_b;
+>     ssa >> month_a >> year_a;
+>     ssb >> month_b >> year_b;
+>     if (year_a != year_b) {
+>       return year_a < year_b;
+28,33c25,29
+<     return major_actor_ < classic.major_actor_;
+< }
+< 
+< bool Classic::operator==(const Movie& other) const {
+<     const Classic& classic = static_cast<const Classic&>(other);
+<     return release_date_ == classic.release_date_ && major_actor_ == classic.major_actor_;
+---
+>     if (month_a != month_b) {
+>       return month_a < month_b;
+>     }
+>   }
+>   return major_actor_ < classic.major_actor_;
+36,43c32,45
+< ostream& Classic::Print(ostream& out) const {
+<     out << "Title: " << title_ << '\n';
+<     out << "Director: " <<director_ << '\n';
+<     out << "Major Actor: " << major_actor_<< '\n';
+<     out << "Release Date: " << release_date_<< '\n';
+<     out << "Borrowed: " << current_stock_ - stock_<< '\n';
+<     out << "Available in Stock: " << stock_<< '\n';
+<     return out;
+---
+> bool Classic::operator==(const Movie &other) const {
+>   const Classic &classic = static_cast<const Classic &>(other);
+>   return release_date_ == classic.release_date_ &&
+>          major_actor_ == classic.major_actor_;
+> }
+> 
+> ostream &Classic::Print(ostream &out) const {
+>   out << "Title: " << title_ << '\n';
+>   out << "Director: " << director_ << '\n';
+>   out << "Major Actor: " << major_actor_ << '\n';
+>   out << "Release Date: " << release_date_ << '\n';
+>   out << "Borrowed: " << current_stock_ - stock_ << '\n';
+>   out << "Available in Stock: " << stock_ << '\n';
+>   return out;
+47c49,50
+<     return std::to_string(stock_) + ", " + director_ + ", " + title_ + ", " + major_actor_ + " " + release_date_;
+---
+>   return std::to_string(stock_) + ", " + director_ + ", " + title_ + ", " +
+>          major_actor_ + " " + release_date_;
+50,52c53
+< string Classic::getReleaseDate() const {
+<     return release_date_;
+< }
+---
+> string Classic::getReleaseDate() const { return release_date_; }
+54,56c55
+< void Classic::setReleaseDate(const string& date) {
+<     release_date_ = date;
+< }
+---
+> void Classic::setReleaseDate(const string &date) { release_date_ = date; }
+58,60c57
+< string Classic::getMajorActor() const {
+<     return major_actor_;
+< }
+---
+> string Classic::getMajorActor() const { return major_actor_; }
+62,64c59,65
+< void Classic::setMajorActor(const string& actor) {
+<     major_actor_ = actor;
+< }
+---
+> void Classic::setMajorActor(const string &actor) { major_actor_ = actor; }
+> 
+> Movie *ClassicFactory::Create(const string &line) const {
+>   istringstream ss(line);
+>   int stock;
+>   string director, title, majorActorFirst, majorActorLast;
+>   int releaseMonth, releaseYear;
+66,78c67,73
+< Movie* ClassicFactory::Create(const string& line) const {
+<     istringstream ss(line);
+<     int stock;
+<     string director, title, majorActorFirst, majorActorLast;
+<     int releaseMonth, releaseYear;
+< 
+<     ss >> stock;
+<     ss.ignore(2);
+<     getline(ss, director, ',');
+<     ss.ignore(1); 
+<     getline(ss, title, ',');
+<     ss.ignore(1); 
+<     ss >> majorActorFirst >> majorActorLast >> releaseMonth >> releaseYear;
+---
+>   ss >> stock;
+>   ss.ignore(2);
+>   getline(ss, director, ',');
+>   ss.ignore(1);
+>   getline(ss, title, ',');
+>   ss.ignore(1);
+>   ss >> majorActorFirst >> majorActorLast >> releaseMonth >> releaseYear;
+80,81c75,76
+<     string majorActor = majorActorFirst + " " + majorActorLast;
+<     string releaseDate = to_string(releaseMonth) + " " + to_string(releaseYear);
+---
+>   string majorActor = majorActorFirst + " " + majorActorLast;
+>   string releaseDate = to_string(releaseMonth) + " " + to_string(releaseYear);
+83c78
+<     return new Classic(releaseDate, majorActor, title, stock, director);
+---
+>   return new Classic(releaseDate, majorActor, title, stock, director);
+Running clang-format on ./comedy.cpp
+5c5,6
+< Comedy::Comedy(const string& title, int stock, const string& director, int releaseYear)
+---
+> Comedy::Comedy(const string &title, int stock, const string &director,
+>                int releaseYear)
+7,34c8,37
+<     this->title_ = title;
+<     this->stock_ = stock;
+<     this->current_stock_ = stock;
+<     this->director_ = director;
+<     this->genre_ = 'F';
+< }
+< 
+< bool Comedy::operator<(const Movie& other) const {
+<     const Comedy& comedy = static_cast<const Comedy&>(other);
+<     if (title_ != comedy.title_) {
+<         return title_ < comedy.title_;
+<     }
+<     return release_year_ < comedy.release_year_;
+< }
+< 
+< bool Comedy::operator==(const Movie& other) const {
+<     const Comedy& comedy = static_cast<const Comedy&>(other);
+<     return title_ == comedy.title_ && release_year_ == comedy.release_year_;
+< }
+< 
+< ostream& Comedy::Print(ostream& out) const {
+<     out << "Title: " << title_ << '\n';
+<     out << "Director: " <<director_ << '\n';
+<     out << "Release Year: " << release_year_<< '\n';
+<     out << "Borrowed: " << current_stock_ - stock_<< '\n';
+<     out << "Available in Stock: " << stock_<< '\n';
+<     //out << "Comedy: " << title_ << ", " << release_year_ << ", " << director_ <<  "\n" << "[Overall stock: ]" << current_stock_  << " , avaliable:  "<< stock_ << " ] \n";
+<     return out;
+---
+>   this->title_ = title;
+>   this->stock_ = stock;
+>   this->current_stock_ = stock;
+>   this->director_ = director;
+>   this->genre_ = 'F';
+> }
+> 
+> bool Comedy::operator<(const Movie &other) const {
+>   const Comedy &comedy = static_cast<const Comedy &>(other);
+>   if (title_ != comedy.title_) {
+>     return title_ < comedy.title_;
+>   }
+>   return release_year_ < comedy.release_year_;
+> }
+> 
+> bool Comedy::operator==(const Movie &other) const {
+>   const Comedy &comedy = static_cast<const Comedy &>(other);
+>   return title_ == comedy.title_ && release_year_ == comedy.release_year_;
+> }
+> 
+> ostream &Comedy::Print(ostream &out) const {
+>   out << "Title: " << title_ << '\n';
+>   out << "Director: " << director_ << '\n';
+>   out << "Release Year: " << release_year_ << '\n';
+>   out << "Borrowed: " << current_stock_ - stock_ << '\n';
+>   out << "Available in Stock: " << stock_ << '\n';
+>   // out << "Comedy: " << title_ << ", " << release_year_ << ", " << director_
+>   // <<  "\n" << "[Overall stock: ]" << current_stock_  << " , avaliable:  "<<
+>   // stock_ << " ] \n";
+>   return out;
+38c41,42
+<     return std::to_string(stock_) + ", " + director_ + ", " + title_ + ", " + std::to_string(release_year_);
+---
+>   return std::to_string(stock_) + ", " + director_ + ", " + title_ + ", " +
+>          std::to_string(release_year_);
+41,43c45
+< int Comedy::getReleaseYear() const {
+<     return release_year_;
+< }
+---
+> int Comedy::getReleaseYear() const { return release_year_; }
+45,47c47
+< void Comedy::setReleaseYear(int year) {
+<     release_year_ = year;
+< }
+---
+> void Comedy::setReleaseYear(int year) { release_year_ = year; }
+49,51c49
+< string Comedy::getDirector() const {
+<     return director_;
+< }
+---
+> string Comedy::getDirector() const { return director_; }
+53,55c51,57
+< void Comedy::setDirector(const string& director) {
+<     this->director_ = director;
+< }
+---
+> void Comedy::setDirector(const string &director) { this->director_ = director; }
+> 
+> Movie *ComedyFactory::Create(const string &line) const {
+>   istringstream ss(line);
+>   int stock;
+>   string director, title;
+>   int releaseYear;
+57,69c59,65
+< Movie* ComedyFactory::Create(const string& line) const {
+<     istringstream ss(line);
+<     int stock;
+<     string director, title;
+<     int releaseYear;
+< 
+<     ss >> stock;
+<     ss.ignore(2); 
+<     getline(ss, director, ',');
+<     ss.ignore(1); 
+<     getline(ss, title, ',');
+<     ss.ignore(1);
+<     ss >> releaseYear;
+---
+>   ss >> stock;
+>   ss.ignore(2);
+>   getline(ss, director, ',');
+>   ss.ignore(1);
+>   getline(ss, title, ',');
+>   ss.ignore(1);
+>   ss >> releaseYear;
+71c67
+<     return new Comedy(title, stock, director, releaseYear);
+---
+>   return new Comedy(title, stock, director, releaseYear);
+Running clang-format on ./customer.cpp
+0a1
+> #include "customer.h"
+3d3
+< #include "customer.h"
+5a6
+> Customer::Customer() {}
+7c8,9
+< Customer::Customer() {
+---
+> Customer::Customer(int id, string last_name, string first_name)
+>     : id_(id), last_name_(last_name), first_name_(first_name) {}
+9c11
+< }
+---
+> int Customer::ID() const { return id_; }
+11,12c13
+< Customer::Customer(int id, string last_name, string first_name) 
+< : id_(id), last_name_(last_name), first_name_(first_name) { }
+---
+> string Customer::LastName() const { return last_name_; }
+14,16c15
+< int Customer::ID() const {
+<     return id_;
+< }
+---
+> string Customer::FirstName() const { return first_name_; }
+18,20c17
+< string Customer::LastName() const {
+<     return last_name_;
+< }
+---
+> void Customer::SetID(int id) { id_ = id; }
+22,24c19
+< string Customer::FirstName() const {
+<     return first_name_;
+< }
+---
+> void Customer::SetLastName(string last_name) { last_name_ = last_name; }
+26,36c21
+< void Customer::SetID(int id) {
+<     id_ = id;
+< }
+< 
+< void Customer::SetLastName(string last_name) {
+<     last_name_ = last_name;
+< }
+< 
+< void Customer::SetFirstName(string first_name) {
+<     first_name_ = first_name;
+< }
+---
+> void Customer::SetFirstName(string first_name) { first_name_ = first_name; }
+39,40c24,25
+<     history_.push_back(history);
+<     return true;
+---
+>   history_.push_back(history);
+>   return true;
+44,49c29,33
+<     if (history_.empty()) {
+<         std::cout << "** No transactions found **" << std::endl;
+<     } else {
+<         for (const auto& transaction : history_) {
+<             std::cout << transaction << std::endl;
+<         }
+---
+>   if (history_.empty()) {
+>     std::cout << "** No transactions found **" << std::endl;
+>   } else {
+>     for (const auto &transaction : history_) {
+>       std::cout << transaction << std::endl;
+50a35
+>   }
+54c39,40
+<     return id_ == customer.id_ && last_name_ == customer.last_name_ && first_name_ == customer.first_name_;
+---
+>   return id_ == customer.id_ && last_name_ == customer.last_name_ &&
+>          first_name_ == customer.first_name_;
+57,59c43,45
+< ostream& operator<<(ostream& os, const Customer& customer) {
+<   os << "Customer ID: " << customer.ID()
+<      << ", Name: " << customer.FirstName() << " " << customer.LastName();
+---
+> ostream &operator<<(ostream &os, const Customer &customer) {
+>   os << "Customer ID: " << customer.ID() << ", Name: " << customer.FirstName()
+>      << " " << customer.LastName();
+Running clang-format on ./customerHashTable.cpp
+1d0
+< #include "customer.h"
+2a2
+> #include "customer.h"
+6d5
+< 
+8,12c7,11
+<     table = new Customer[TABLE_SIZE];
+<     occupied = new bool[TABLE_SIZE];
+<     for (int i = 0; i < TABLE_SIZE; i++) {
+<         occupied[i] = false;
+<     }
+---
+>   table = new Customer[TABLE_SIZE];
+>   occupied = new bool[TABLE_SIZE];
+>   for (int i = 0; i < TABLE_SIZE; i++) {
+>     occupied[i] = false;
+>   }
+16,17c15,16
+<     delete[] table;
+<     delete[] occupied;
+---
+>   delete[] table;
+>   delete[] occupied;
+20,22c19
+< int CustomerHashTable::hashFunction(int key) const {
+<     return key % TABLE_SIZE;
+< }
+---
+> int CustomerHashTable::hashFunction(int key) const { return key % TABLE_SIZE; }
+25c22
+<     return (hashFunction(key) + i * i) % TABLE_SIZE;
+---
+>   return (hashFunction(key) + i * i) % TABLE_SIZE;
+29,35c26,31
+<     for (int i = 0; i < TABLE_SIZE; i++) {
+<         int idx = probe(customer.ID(), i);
+<         if (!occupied[idx]) {
+<             table[idx] = customer;
+<             occupied[idx] = true;
+<             return true;
+<         }
+---
+>   for (int i = 0; i < TABLE_SIZE; i++) {
+>     int idx = probe(customer.ID(), i);
+>     if (!occupied[idx]) {
+>       table[idx] = customer;
+>       occupied[idx] = true;
+>       return true;
+37c33,34
+<     return false; // table is full
+---
+>   }
+>   return false; // table is full
+41,47c38,43
+<     for (int i = 0; i < TABLE_SIZE; i++) {
+<         int idx = probe(id, i);
+<         if (occupied[idx] && table[idx].ID() == id) {
+<             return true;
+<         } else if (!occupied[idx]) {
+<             return false; // key not found
+<         }
+---
+>   for (int i = 0; i < TABLE_SIZE; i++) {
+>     int idx = probe(id, i);
+>     if (occupied[idx] && table[idx].ID() == id) {
+>       return true;
+>     } else if (!occupied[idx]) {
+>       return false; // key not found
+49c45,46
+<     return false; // full cycle and not found
+---
+>   }
+>   return false; // full cycle and not found
+52,57c49,53
+< void CustomerHashTable::print() const{
+<     for (int i = 0; i < TABLE_SIZE; i++) {
+<         if (!table[i].FirstName().empty()) {
+<             cout << "at index " << i << ": " << table[i] << endl;;
+<         }
+<         
+---
+> void CustomerHashTable::print() const {
+>   for (int i = 0; i < TABLE_SIZE; i++) {
+>     if (!table[i].FirstName().empty()) {
+>       cout << "at index " << i << ": " << table[i] << endl;
+>       ;
+59c55,56
+<     cout << endl;
+---
+>   }
+>   cout << endl;
+63,70c60,66
+<     for (int i = 0; i < TABLE_SIZE; i++) {
+<         int idx = probe(customer.ID(), i);
+<         if (occupied[idx] && table[idx] == customer) {
+<             occupied[idx] = false;
+<             return true; // key removed
+<         } else if (!occupied[idx]) {
+<             return false; // key not found
+<         }
+---
+>   for (int i = 0; i < TABLE_SIZE; i++) {
+>     int idx = probe(customer.ID(), i);
+>     if (occupied[idx] && table[idx] == customer) {
+>       occupied[idx] = false;
+>       return true; // key removed
+>     } else if (!occupied[idx]) {
+>       return false; // key not found
+72c68,69
+<     return false; // key not found after full probing
+---
+>   }
+>   return false; // key not found after full probing
+75c72
+< Customer* CustomerHashTable::getCustomer(int id) {
+---
+> Customer *CustomerHashTable::getCustomer(int id) {
+79c76
+<       return &table[idx];  // Return a pointer to the found customer
+---
+>       return &table[idx]; // Return a pointer to the found customer
+81c78
+<       return nullptr;  // Customer not found
+---
+>       return nullptr; // Customer not found
+84c81
+<   return nullptr;  // Full cycle and not found
+---
+>   return nullptr; // Full cycle and not found
+Running clang-format on ./drama.cpp
+4c4,5
+< Drama::Drama(const string& director, const string& title, int stock, int release_year)
+---
+> Drama::Drama(const string &director, const string &title, int stock,
+>              int release_year)
+6,32c7,33
+<     this->title_ = title;
+<     this->stock_ = stock;
+<     this->current_stock_ = stock;
+<     this->director_ = director;
+<     this->genre_ = 'D';
+< }
+< 
+< bool Drama::operator<(const Movie& other) const {
+<     const Drama& drama = static_cast<const Drama&>(other);
+<     if (director_ != drama.director_) {
+<         return director_ < drama.director_;
+<     }
+<     return title_ < drama.title_;
+< }
+< 
+< bool Drama::operator==(const Movie& other) const {
+<     const Drama& drama = static_cast<const Drama&>(other);
+<     return director_ == drama.director_ && title_ == drama.title_;
+< }
+< 
+< ostream& Drama::Print(ostream& out) const {
+<     out << "Title: " << title_ << '\n';
+<     out << "Director: " <<director_ << '\n';
+<     out << "Release Year: " << release_year_<< '\n';
+<     out << "Borrowed: " << current_stock_ - stock_<< '\n';
+<     out << "Available in Stock: " << stock_<< '\n';
+<     return out;
+---
+>   this->title_ = title;
+>   this->stock_ = stock;
+>   this->current_stock_ = stock;
+>   this->director_ = director;
+>   this->genre_ = 'D';
+> }
+> 
+> bool Drama::operator<(const Movie &other) const {
+>   const Drama &drama = static_cast<const Drama &>(other);
+>   if (director_ != drama.director_) {
+>     return director_ < drama.director_;
+>   }
+>   return title_ < drama.title_;
+> }
+> 
+> bool Drama::operator==(const Movie &other) const {
+>   const Drama &drama = static_cast<const Drama &>(other);
+>   return director_ == drama.director_ && title_ == drama.title_;
+> }
+> 
+> ostream &Drama::Print(ostream &out) const {
+>   out << "Title: " << title_ << '\n';
+>   out << "Director: " << director_ << '\n';
+>   out << "Release Year: " << release_year_ << '\n';
+>   out << "Borrowed: " << current_stock_ - stock_ << '\n';
+>   out << "Available in Stock: " << stock_ << '\n';
+>   return out;
+36c37,38
+<     return to_string(stock_) + ", " + director_ + ", " + title_ + ", " + to_string(release_year_);
+---
+>   return to_string(stock_) + ", " + director_ + ", " + title_ + ", " +
+>          to_string(release_year_);
+39,41c41
+< int Drama::getReleaseYear() const {
+<     return release_year_;
+< }
+---
+> int Drama::getReleaseYear() const { return release_year_; }
+43,45c43
+< void Drama::setReleaseYear(int year) {
+<     release_year_ = year;
+< }
+---
+> void Drama::setReleaseYear(int year) { release_year_ = year; }
+47,49c45
+< string Drama::getDirector() const {
+<     return director_;
+< }
+---
+> string Drama::getDirector() const { return director_; }
+51,53c47,53
+< void Drama::setDirector(const string& director) {
+<     this->director_ = director;
+< }
+---
+> void Drama::setDirector(const string &director) { this->director_ = director; }
+> 
+> Movie *DramaFactory::Create(const string &line) const {
+>   istringstream ss(line);
+>   int stock;
+>   string director, title;
+>   int releaseYear;
+55,67c55,61
+< Movie* DramaFactory::Create(const string& line) const {
+<     istringstream ss(line);
+<     int stock;
+<     string director, title;
+<     int releaseYear;
+< 
+<     ss >> stock;
+<     ss.ignore(2); 
+<     getline(ss, director, ',');
+<     ss.ignore(1); 
+<     getline(ss, title, ',');
+<     ss.ignore(1); 
+<     ss >> releaseYear;
+---
+>   ss >> stock;
+>   ss.ignore(2);
+>   getline(ss, director, ',');
+>   ss.ignore(1);
+>   getline(ss, title, ',');
+>   ss.ignore(1);
+>   ss >> releaseYear;
+69c63
+<     return new Drama(director, title, stock, releaseYear);
+---
+>   return new Drama(director, title, stock, releaseYear);
+Running clang-format on ./inventory.cpp
+3,8c3,7
+< void Inventory::AddMovieHelper(Movie* movie, int count) {
+<     for (auto& m : movies_) {
+<         if (*m == *movie) {
+<             m->setStock(m->getStock() + count);
+<             return;
+<         }
+---
+> void Inventory::AddMovieHelper(Movie *movie, int count) {
+>   for (auto &m : movies_) {
+>     if (*m == *movie) {
+>       m->setStock(m->getStock() + count);
+>       return;
+10,11c9,11
+<     movie->setStock(count);
+<     movies_.push_back(movie);
+---
+>   }
+>   movie->setStock(count);
+>   movies_.push_back(movie);
+14,16c14,16
+< void Inventory::AddMovie(const Movie& movie, int count) {
+<     Movie* new_movie = Movie::Create(movie.getType(), movie.ToString());
+<     AddMovieHelper(new_movie, count);
+---
+> void Inventory::AddMovie(const Movie &movie, int count) {
+>   Movie *new_movie = Movie::Create(movie.getType(), movie.ToString());
+>   AddMovieHelper(new_movie, count);
+20c20
+<     vector<Movie*> sorted_movies = movies_;
+---
+>   vector<Movie *> sorted_movies = movies_;
+22,43c22,30
+<     // Sort Comedy movies by title, then by release year
+<     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
+<         if (a->getType() == 'F' && b->getType() == 'F') {
+<             const Comedy* ca = static_cast<const Comedy*>(a);
+<             const Comedy* cb = static_cast<const Comedy*>(b);
+<             if (ca->getTitle() != cb->getTitle()) {
+<                 return ca->getTitle() < cb->getTitle();
+<             }
+<             return ca->getReleaseYear() < cb->getReleaseYear();
+<         }
+<         return a->getType() < b->getType();
+<     });
+<     cout << endl;
+<     cout << "=================Prinitng inventory=================="<< endl;
+<     cout << endl;
+<     // Print Comedy movies
+<     std::cout << "===== Comedy Movies =====" << std::endl;
+<     cout << endl;
+<     for (const auto& movie : sorted_movies) {
+<         if (movie->getType() == 'F') {
+<             cout << *movie << std::endl;
+<         }
+---
+>   // Sort Comedy movies by title, then by release year
+>   sort(sorted_movies.begin(), sorted_movies.end(), [](Movie *a, Movie *b) {
+>     if (a->getType() == 'F' && b->getType() == 'F') {
+>       const Comedy *ca = static_cast<const Comedy *>(a);
+>       const Comedy *cb = static_cast<const Comedy *>(b);
+>       if (ca->getTitle() != cb->getTitle()) {
+>         return ca->getTitle() < cb->getTitle();
+>       }
+>       return ca->getReleaseYear() < cb->getReleaseYear();
+45,58c32,58
+<     cout << endl;
+< 
+<     // Sort Drama movies by director, then by title
+<     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
+<         if (a->getType() == 'D' && b->getType() == 'D') {
+<             const Drama* da = static_cast<const Drama*>(a);
+<             const Drama* db = static_cast<const Drama*>(b);
+<             if (da->getDirector() != db->getDirector()) {
+<                 return da->getDirector() < db->getDirector();
+<             }
+<             return da->getTitle() < db->getTitle();
+<         }
+<         return a->getType() < b->getType();
+<     });
+---
+>     return a->getType() < b->getType();
+>   });
+>   cout << endl;
+>   cout << "=================Prinitng inventory==================" << endl;
+>   cout << endl;
+>   // Print Comedy movies
+>   std::cout << "===== Comedy Movies =====" << std::endl;
+>   cout << endl;
+>   for (const auto &movie : sorted_movies) {
+>     if (movie->getType() == 'F') {
+>       cout << *movie << std::endl;
+>     }
+>   }
+>   cout << endl;
+> 
+>   // Sort Drama movies by director, then by title
+>   sort(sorted_movies.begin(), sorted_movies.end(), [](Movie *a, Movie *b) {
+>     if (a->getType() == 'D' && b->getType() == 'D') {
+>       const Drama *da = static_cast<const Drama *>(a);
+>       const Drama *db = static_cast<const Drama *>(b);
+>       if (da->getDirector() != db->getDirector()) {
+>         return da->getDirector() < db->getDirector();
+>       }
+>       return da->getTitle() < db->getTitle();
+>     }
+>     return a->getType() < b->getType();
+>   });
+60,66c60,65
+<     // Print Drama movies
+<     cout << "===== Drama Movies =====" << endl;
+<     cout << endl;
+<     for (const auto& movie : sorted_movies) {
+<         if (movie->getType() == 'D') {
+<             std::cout << *movie << endl;
+<         }
+---
+>   // Print Drama movies
+>   cout << "===== Drama Movies =====" << endl;
+>   cout << endl;
+>   for (const auto &movie : sorted_movies) {
+>     if (movie->getType() == 'D') {
+>       std::cout << *movie << endl;
+68c67,68
+<     cout << endl;
+---
+>   }
+>   cout << endl;
+70,71c70,71
+<     // Sort Classic movies by release date (month and year), then by major actor
+<     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
+---
+>   // Sort Classic movies by release date (month and year), then by major actor
+>   sort(sorted_movies.begin(), sorted_movies.end(), [](Movie *a, Movie *b) {
+73,86c73,86
+<         const Classic* ca = static_cast<const Classic*>(a);
+<         const Classic* cb = static_cast<const Classic*>(b);
+<         istringstream ssa(ca->getReleaseDate());
+<         istringstream ssb(cb->getReleaseDate());
+<         int month_a, year_a, month_b, year_b;
+<         ssa >> month_a >> year_a;
+<         ssb >> month_b >> year_b;
+<         if (year_a != year_b) {
+<             return year_a < year_b;
+<         }
+<         if (month_a != month_b) {
+<             return month_a < month_b;
+<         }
+<         return ca->getMajorActor() < cb->getMajorActor();
+---
+>       const Classic *ca = static_cast<const Classic *>(a);
+>       const Classic *cb = static_cast<const Classic *>(b);
+>       istringstream ssa(ca->getReleaseDate());
+>       istringstream ssb(cb->getReleaseDate());
+>       int month_a, year_a, month_b, year_b;
+>       ssa >> month_a >> year_a;
+>       ssb >> month_b >> year_b;
+>       if (year_a != year_b) {
+>         return year_a < year_b;
+>       }
+>       if (month_a != month_b) {
+>         return month_a < month_b;
+>       }
+>       return ca->getMajorActor() < cb->getMajorActor();
+89c89
+< });
+---
+>   });
+91,97c91,96
+<     // Print Classic movies
+<     std::cout << "===== Classic Movies =====" << std::endl;
+<     cout << endl;
+<     for (const auto& movie : sorted_movies) {
+<         if (movie->getType() == 'C') {
+<             std::cout << *movie << std::endl;
+<         }
+---
+>   // Print Classic movies
+>   std::cout << "===== Classic Movies =====" << std::endl;
+>   cout << endl;
+>   for (const auto &movie : sorted_movies) {
+>     if (movie->getType() == 'C') {
+>       std::cout << *movie << std::endl;
+98a98
+>   }
+101c101
+< bool Inventory::BorrowMovie(const std::string& movieInfo) {
+---
+> bool Inventory::BorrowMovie(const std::string &movieInfo) {
+114c114
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+116c116
+<         Comedy* comedy = static_cast<Comedy*>(movie);
+---
+>         Comedy *comedy = static_cast<Comedy *>(movie);
+135c135
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+137c137
+<         Drama* drama = static_cast<Drama*>(movie);
+---
+>         Drama *drama = static_cast<Drama *>(movie);
+156c156
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+158,159c158,161
+<         Classic* classic = static_cast<Classic*>(movie);
+<         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
+---
+>         Classic *classic = static_cast<Classic *>(movie);
+>         if (classic->getReleaseDate() ==
+>                 std::to_string(month) + " " + std::to_string(year) &&
+>             classic->getMajorActor() == actor) {
+180c182
+< bool Inventory::ReturnMovie(const std::string& movieInfo) {
+---
+> bool Inventory::ReturnMovie(const std::string &movieInfo) {
+193c195
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+195c197
+<         Comedy* comedy = static_cast<Comedy*>(movie);
+---
+>         Comedy *comedy = static_cast<Comedy *>(movie);
+210c212
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+212c214
+<         Drama* drama = static_cast<Drama*>(movie);
+---
+>         Drama *drama = static_cast<Drama *>(movie);
+227c229
+<     for (auto& movie : movies_) {
+---
+>     for (auto &movie : movies_) {
+229,230c231,234
+<         Classic* classic = static_cast<Classic*>(movie);
+<         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
+---
+>         Classic *classic = static_cast<Classic *>(movie);
+>         if (classic->getReleaseDate() ==
+>                 std::to_string(month) + " " + std::to_string(year) &&
+>             classic->getMajorActor() == actor) {
+Running clang-format on ./main.cpp
+Running clang-format on ./movie.cpp
+2d1
+< #include <sstream>
+3a3
+> #include <sstream>
+5,7c5,7
+< map<char, MovieFactory*>& Movie::getFactories() {
+<     static map<char, MovieFactory*> factories;
+<     return factories;
+---
+> map<char, MovieFactory *> &Movie::getFactories() {
+>   static map<char, MovieFactory *> factories;
+>   return factories;
+10,11c10,11
+< void Movie::RegisterType(char type, MovieFactory* factory) {
+<     getFactories()[type] = factory;
+---
+> void Movie::RegisterType(char type, MovieFactory *factory) {
+>   getFactories()[type] = factory;
+14,19c14,19
+< Movie* Movie::Create(char type, const string& line) {
+<     auto it = getFactories().find(type);
+<     if (it != getFactories().end()) {
+<         return it->second->Create(line);
+<     }
+<     throw std::invalid_argument("Invalid movie type");
+---
+> Movie *Movie::Create(char type, const string &line) {
+>   auto it = getFactories().find(type);
+>   if (it != getFactories().end()) {
+>     return it->second->Create(line);
+>   }
+>   throw std::invalid_argument("Invalid movie type");
+22,28c22,23
+< string Movie::getTitle() const { 
+<     return title_;
+< 
+< }
+< void Movie::setTitle(const string& title) {
+<     this->title_ = title;
+< }
+---
+> string Movie::getTitle() const { return title_; }
+> void Movie::setTitle(const string &title) { this->title_ = title; }
+33,35c28
+< char Movie::getType() const {
+<     return genre_;
+< }
+---
+> char Movie::getType() const { return genre_; }
+38,42c31,35
+<     if (current_stock_ > 0) {
+<         current_stock_--;
+<         return true;
+<     }
+<     return false;
+---
+>   if (current_stock_ > 0) {
+>     current_stock_--;
+>     return true;
+>   }
+>   return false;
+46,50c39,43
+<     if (current_stock_ < stock_) {
+<         current_stock_++;
+<         return true;
+<     }
+<     return false;
+---
+>   if (current_stock_ < stock_) {
+>     current_stock_++;
+>     return true;
+>   }
+>   return false;
+Running clang-format on ./store.cpp
+6,13c6,20
+< void Store::ReadCustomers(ifstream& file) {
+<     string line;
+<     int id;
+<     string lastName, firstName;
+< 
+<     if (!file.is_open()) {
+<         cerr << "Error opening file!" << endl;
+<         return;
+---
+> void Store::ReadCustomers(ifstream &file) {
+>   string line;
+>   int id;
+>   string lastName, firstName;
+> 
+>   if (!file.is_open()) {
+>     cerr << "Error opening file!" << endl;
+>     return;
+>   }
+> 
+>   while (getline(file, line)) {
+>     istringstream iss(line);
+>     if (!(iss >> id >> lastName >> firstName)) {
+>       cerr << "Error reading line: " << line << endl;
+>       continue; // Handles lines that do not have exactly three words
+15,30c22,25
+< 
+<     while (getline(file, line)) {
+<         istringstream iss(line);
+<         if (!(iss >> id >> lastName >> firstName)) {
+<             cerr << "Error reading line: " << line << endl;
+<             continue; // Handles lines that do not have exactly three words
+<         }
+<         Customer customer(id, lastName, firstName);
+<         customer_table_.insert(customer);
+<     }
+<     file.close();
+< 
+< }
+< 
+< Inventory& Store::inventory(){
+<   return inventory_;
+---
+>     Customer customer(id, lastName, firstName);
+>     customer_table_.insert(customer);
+>   }
+>   file.close();
+32a28
+> Inventory &Store::inventory() { return inventory_; }
+35,37c31,33
+<     Movie::RegisterType('F', new ComedyFactory());
+<     Movie::RegisterType('D', new DramaFactory());
+<     Movie::RegisterType('C', new ClassicFactory());
+---
+>   Movie::RegisterType('F', new ComedyFactory());
+>   Movie::RegisterType('D', new DramaFactory());
+>   Movie::RegisterType('C', new ClassicFactory());
+40,43c36,50
+< void Store::ReadMovies(ifstream& file) {
+<     if (!file) {
+<         std::cerr << "Could not open the file!" << std::endl;
+<         return;
+---
+> void Store::ReadMovies(ifstream &file) {
+>   if (!file) {
+>     std::cerr << "Could not open the file!" << std::endl;
+>     return;
+>   }
+> 
+>   std::string line;
+>   while (getline(file, line)) {
+>     if (line.empty())
+>       continue;
+> 
+>     char type = line[0];
+>     if (type != 'F' && type != 'D' && type != 'C') {
+>       std::cerr << "Invalid movie type: " << type << std::endl;
+>       continue;
+46,63c53,59
+<     std::string line;
+<     while (getline(file, line)) {
+<         if (line.empty()) continue;
+< 
+<         char type = line[0];
+<         if (type != 'F' && type != 'D' && type != 'C') {
+<             std::cerr << "Invalid movie type: " << type << std::endl;
+<             continue;
+<         }
+< 
+<         try {
+<             auto movie = Movie::Create(type, line.substr(3));
+<             if (movie != nullptr) {
+<                 inventory_.AddMovie(*movie, movie->getStock());
+<             }
+<         } catch (const exception& e) {
+<             cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+<         }
+---
+>     try {
+>       auto movie = Movie::Create(type, line.substr(3));
+>       if (movie != nullptr) {
+>         inventory_.AddMovie(*movie, movie->getStock());
+>       }
+>     } catch (const exception &e) {
+>       cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+65,69c61,62
+<     cout << endl;
+< }
+<  
+< void Store::PrintCustomers() const{
+<   customer_table_.print();
+---
+>   }
+>   cout << endl;
+72,130c65,118
+< void Store::ReadAndExecuteActions(std::ifstream& in) {
+<     std::string line;
+<     while (std::getline(in, line)) {
+<         std::istringstream iss(line);
+<         char command;
+<         iss >> command;
+< 
+<         switch (command) {
+<             case 'I': {
+<                 inventory().PrintInventory();
+<                 break;
+<             }
+<             case 'H': {
+<                 int customerID;
+<                 iss >> customerID;
+<                 if (customer_table_.search(customerID)) {
+<                     Customer* customer = customer_table_.getCustomer(customerID);
+<                     cout << endl;
+<                     std::cout << "History for customer " << customerID << ":" << std::endl;
+<                     cout << endl;
+<                     customer->History();
+<                 } else {
+<                     std::cerr << "Invalid customer ID: " << customerID << std::endl;
+<                 }
+<                 break;
+<                 }
+<             case 'B':
+<             case 'R': {
+<                 int customerID;
+<                 char mediaType;
+<                 iss >> customerID >> mediaType;
+< 
+<                 std::string movieType;
+<                 std::string movieInfo;
+<                 std::getline(iss >> std::ws, movieInfo);
+< 
+<                 if (customer_table_.search(customerID)) {
+<                     Customer* customer = customer_table_.getCustomer(customerID);
+<                     bool success;
+<                     if (command == 'B') {
+<                         success = inventory_.BorrowMovie(movieInfo);
+<                     } else {
+<                         success = inventory_.ReturnMovie(movieInfo);
+<                     }
+< 
+<                     if (success) {
+<                         std::string action = (command == 'B') ? "Borrowed" : "Returned";
+<                         customer->Add(action + ": " + movieInfo);
+<                     } else {
+<                         std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movieInfo << std::endl;
+<                     }
+<                 } else {
+<                     std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+<                 }
+<                 break;
+<             }
+<             default:
+<                 std::cerr << "Invalid command: " << command << std::endl;
+<                 break;
+---
+> void Store::PrintCustomers() const { customer_table_.print(); }
+> 
+> void Store::ReadAndExecuteActions(std::ifstream &in) {
+>   std::string line;
+>   while (std::getline(in, line)) {
+>     std::istringstream iss(line);
+>     char command;
+>     iss >> command;
+> 
+>     switch (command) {
+>     case 'I': {
+>       inventory().PrintInventory();
+>       break;
+>     }
+>     case 'H': {
+>       int customerID;
+>       iss >> customerID;
+>       if (customer_table_.search(customerID)) {
+>         Customer *customer = customer_table_.getCustomer(customerID);
+>         cout << endl;
+>         std::cout << "History for customer " << customerID << ":" << std::endl;
+>         cout << endl;
+>         customer->History();
+>       } else {
+>         std::cerr << "Invalid customer ID: " << customerID << std::endl;
+>       }
+>       break;
+>     }
+>     case 'B':
+>     case 'R': {
+>       int customerID;
+>       char mediaType;
+>       iss >> customerID >> mediaType;
+> 
+>       std::string movieType;
+>       std::string movieInfo;
+>       std::getline(iss >> std::ws, movieInfo);
+> 
+>       if (customer_table_.search(customerID)) {
+>         Customer *customer = customer_table_.getCustomer(customerID);
+>         bool success;
+>         if (command == 'B') {
+>           success = inventory_.BorrowMovie(movieInfo);
+>         } else {
+>           success = inventory_.ReturnMovie(movieInfo);
+>         }
+> 
+>         if (success) {
+>           std::string action = (command == 'B') ? "Borrowed" : "Returned";
+>           customer->Add(action + ": " + movieInfo);
+>         } else {
+>           std::cerr << "Error: Could not "
+>                     << (command == 'B' ? "borrow" : "return")
+>                     << " movie: " << movieInfo << std::endl;
+131a120,128
+>       } else {
+>         std::cerr << "Error: Customer ID " << customerID << " not found."
+>                   << std::endl;
+>       }
+>       break;
+>     }
+>     default:
+>       std::cerr << "Invalid command: " << command << std::endl;
+>       break;
+132a130
+>   }
+Running clang-format on ./store_test.cpp
+8,11c8,10
+< #include <iostream>
+< #include <fstream>
+< #include <string>
+< #include <vector>
+---
+> #include "inventory.h"
+> #include "movie.h"
+> #include "store.h"
+12a12
+> #include <cassert>
+14d13
+< #include <ctime>
+16,19c15,19
+< #include <cassert>
+< #include "store.h"
+< #include "movie.h"
+< #include "inventory.h"
+---
+> #include <ctime>
+> #include <fstream>
+> #include <iostream>
+> #include <string>
+> #include <vector>
+44,49c44,49
+<     // this test function tests movie being
+<     // inserted into inventory and sorted per the requirement.
+<     Store store;
+<     ifstream movieFile("data4movies.txt");
+<     store.ReadMovies(movieFile);
+<     store.inventory().PrintInventory();
+---
+>   // this test function tests movie being
+>   // inserted into inventory and sorted per the requirement.
+>   Store store;
+>   ifstream movieFile("data4movies.txt");
+>   store.ReadMovies(movieFile);
+>   store.inventory().PrintInventory();
+59d58
+< 
+62c61
+<   // this test function tests command are read and executesd. 
+---
+>   // this test function tests command are read and executesd.
+88,90c87,89
+<   //testStore2();
+<   //testStore3();
+<   //testStore4();
+---
+>   // testStore2();
+>   // testStore3();
+>   // testStore4();
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+==631== Memcheck, a memory error detector
+==631== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==631== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==631== Command: ./a.out
+==631== Parent PID: 516
+==631== 
+==631== 
+==631== HEAP SUMMARY:
+==631==     in use at exit: 9,600 bytes in 113 blocks
+==631==   total heap usage: 768 allocs, 655 frees, 145,844 bytes allocated
+==631== 
+==631== LEAK SUMMARY:
+==631==    definitely lost: 8,120 bytes in 63 blocks
+==631==    indirectly lost: 1,480 bytes in 50 blocks
+==631==      possibly lost: 0 bytes in 0 blocks
+==631==    still reachable: 0 bytes in 0 blocks
+==631==         suppressed: 0 bytes in 0 blocks
+==631== Rerun with --leak-check=full to see details of leaked memory
+==631== 
+==631== For lists of detected and suppressed errors, rerun with: -s
+==631== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+7. Tests have full code coverage
+=====================================================
+File '/home/cssuwbstudent/jeosburn/css343lab4/classic.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classic::Classic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)         1       0 100.00%         7       0 100.00%         0       0   0.00%
+Classic::operator<(Movie const&) const                                                                                                                                                                                                                                                                                                                                                    9       9   0.00%        17      17   0.00%         6       6   0.00%
+Classic::operator==(Movie const&) const                                                                                                                                                                                                                                                                                                                                                   3       0 100.00%         4       0 100.00%         4       1  75.00%
+Classic::Print(std::ostream&) const                                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         9       0 100.00%         0       0   0.00%
+Classic::ToString[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         3       0 100.00%         0       0   0.00%
+Classic::getReleaseDate[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                1       0 100.00%         3       0 100.00%         0       0   0.00%
+Classic::setReleaseDate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            1       1   0.00%         3       3   0.00%         0       0   0.00%
+Classic::getMajorActor[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                 1       0 100.00%         3       0 100.00%         0       0   0.00%
+Classic::setMajorActor(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                             1       1   0.00%         3       3   0.00%         0       0   0.00%
+ClassicFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) const                                                                                                                                                                                                                                                                       1       0 100.00%        16       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    20      11  45.00%        68      23  66.18%        10       7  30.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/comedy.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comedy::Comedy(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, int)                                                                                                                                                                                    1       0 100.00%         7       0 100.00%         0       0   0.00%
+Comedy::operator<(Movie const&) const                                                                                                                                                                                                                                                                                                                                                     4       4   0.00%         7       7   0.00%         2       2   0.00%
+Comedy::operator==(Movie const&) const                                                                                                                                                                                                                                                                                                                                                    3       0 100.00%         4       0 100.00%         4       1  75.00%
+Comedy::Print(std::ostream&) const                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         8       0 100.00%         0       0   0.00%
+Comedy::ToString[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         3       0 100.00%         0       0   0.00%
+Comedy::getReleaseYear() const                                                                                                                                                                                                                                                                                                                                                            1       0 100.00%         3       0 100.00%         0       0   0.00%
+Comedy::setReleaseYear(int)                                                                                                                                                                                                                                                                                                                                                               1       1   0.00%         3       3   0.00%         0       0   0.00%
+Comedy::getDirector[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                    1       1   0.00%         3       3   0.00%         0       0   0.00%
+Comedy::setDirector(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                                1       1   0.00%         3       3   0.00%         0       0   0.00%
+ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) const                                                                                                                                                                                                                                                                        1       0 100.00%        14       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    15       7  53.33%        55      16  70.91%         6       3  50.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/customer.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Customer::Customer()                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         2       0 100.00%         0       0   0.00%
+Customer::Customer(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>)                                                                                                                                                                                                   1       0 100.00%         1       0 100.00%         0       0   0.00%
+Customer::ID() const                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         3       0 100.00%         0       0   0.00%
+Customer::LastName[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                     1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::FirstName[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                    1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::SetID(int)                                                                                                                                                                                                                                                                                                                                                                      1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::SetLastName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>)                                                                                                                                                                                                                                                                                     1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::SetFirstName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>)                                                                                                                                                                                                                                                                                    1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::Add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>)                                                                                                                                                                                                                                                                                             1       0 100.00%         4       0 100.00%         0       0   0.00%
+Customer::History() const                                                                                                                                                                                                                                                                                                                                                                 5       0 100.00%         9       0 100.00%         4       0 100.00%
+Customer::operator==(Customer const&) const                                                                                                                                                                                                                                                                                                                                               5       5   0.00%         3       3   0.00%         6       6   0.00%
+operator<<(std::ostream&, Customer const&)                                                                                                                                                                                                                                                                                                                                                1       1   0.00%         5       5   0.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    20      11  45.00%        42      23  45.24%        10       6  40.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/customerHashTable.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CustomerHashTable::CustomerHashTable()                                                                                                                                                                                                                                                                                                                                                    4       0 100.00%         7       0 100.00%         2       0 100.00%
+CustomerHashTable::~CustomerHashTable()                                                                                                                                                                                                                                                                                                                                                   1       0 100.00%         4       0 100.00%         0       0   0.00%
+CustomerHashTable::hashFunction(int) const                                                                                                                                                                                                                                                                                                                                                1       0 100.00%         3       0 100.00%         0       0   0.00%
+CustomerHashTable::probe(int, int) const                                                                                                                                                                                                                                                                                                                                                  1       0 100.00%         3       0 100.00%         0       0   0.00%
+CustomerHashTable::insert(Customer)                                                                                                                                                                                                                                                                                                                                                       7       1  85.71%        11       1  90.91%         4       1  75.00%
+CustomerHashTable::search(int) const                                                                                                                                                                                                                                                                                                                                                     12       1  91.67%        11       1  90.91%         8       1  87.50%
+CustomerHashTable::print() const                                                                                                                                                                                                                                                                                                                                                          6       6   0.00%         8       8   0.00%         4       4   0.00%
+CustomerHashTable::remove(Customer)                                                                                                                                                                                                                                                                                                                                                      12      12   0.00%        12      12   0.00%         8       8   0.00%
+CustomerHashTable::getCustomer(int)                                                                                                                                                                                                                                                                                                                                                      12       2  83.33%        11       3  72.73%         8       3  62.50%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    56      22  60.71%        70      25  64.29%        34      17  50.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/drama.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Drama::Drama(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, int, int)                                                                                                                                                                                      1       0 100.00%         7       0 100.00%         0       0   0.00%
+Drama::operator<(Movie const&) const                                                                                                                                                                                                                                                                                                                                                      4       4   0.00%         7       7   0.00%         2       2   0.00%
+Drama::operator==(Movie const&) const                                                                                                                                                                                                                                                                                                                                                     3       0 100.00%         4       0 100.00%         4       1  75.00%
+Drama::Print(std::ostream&) const                                                                                                                                                                                                                                                                                                                                                         1       0 100.00%         8       0 100.00%         0       0   0.00%
+Drama::ToString[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         3       0 100.00%         0       0   0.00%
+Drama::getReleaseYear() const                                                                                                                                                                                                                                                                                                                                                             1       1   0.00%         3       3   0.00%         0       0   0.00%
+Drama::setReleaseYear(int)                                                                                                                                                                                                                                                                                                                                                                1       1   0.00%         3       3   0.00%         0       0   0.00%
+Drama::getDirector[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         3       0 100.00%         0       0   0.00%
+Drama::setDirector(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                                 1       1   0.00%         3       3   0.00%         0       0   0.00%
+DramaFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) const                                                                                                                                                                                                                                                                         1       0 100.00%        14       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    15       7  53.33%        55      16  70.91%         6       3  50.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/inventory.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventory::AddMovieHelper(Movie*, int)                                                                                                                                                                                                                                                                                                                                                    5       1  80.00%        10       3  70.00%         4       1  75.00%
+Inventory::AddMovie(Movie const&, int)                                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         4       0 100.00%         0       0   0.00%
+Inventory::PrintInventory() const                                                                                                                                                                                                                                                                                                                                                        10       0 100.00%        70       0 100.00%        12       0 100.00%
+Inventory::BorrowMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            39       6  84.62%        73      10  86.30%        44       7  84.09%
+Inventory::ReturnMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            30      13  56.67%        61      23  62.30%        38      16  57.89%
+inventory.cpp:Inventory::PrintInventory() const::$_0::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                    9       0 100.00%        11       0 100.00%         6       0 100.00%
+inventory.cpp:Inventory::PrintInventory() const::$_1::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                    9       0 100.00%        11       0 100.00%         6       0 100.00%
+inventory.cpp:Inventory::PrintInventory() const::$_2::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                   12       0 100.00%        19       0 100.00%         8       0 100.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                   115      20  82.61%       259      36  86.10%       118      24  79.66%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/main.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+main                                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         5       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         5       0 100.00%         0       0   0.00%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/movie.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Movie::getFactories()                                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         4       0 100.00%         0       0   0.00%
+Movie::RegisterType(char, MovieFactory*)                                                                                                                                                                                                                                                                                                                                                  1       0 100.00%         3       0 100.00%         0       0   0.00%
+Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                                4       1  75.00%         7       1  85.71%         2       1  50.00%
+Movie::getTitle[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         3       0 100.00%         0       0   0.00%
+Movie::setTitle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                                    1       1   0.00%         3       3   0.00%         0       0   0.00%
+Movie::getStock() const                                                                                                                                                                                                                                                                                                                                                                   1       0 100.00%         1       0 100.00%         0       0   0.00%
+Movie::setStock(int)                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         1       0 100.00%         0       0   0.00%
+Movie::getType() const                                                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         3       0 100.00%         0       0   0.00%
+Movie::Borrow()                                                                                                                                                                                                                                                                                                                                                                           4       4   0.00%         7       7   0.00%         2       2   0.00%
+Movie::ReturnItem()                                                                                                                                                                                                                                                                                                                                                                       4       4   0.00%         7       7   0.00%         2       2   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    19      10  47.37%        39      18  53.85%         6       5  16.67%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/store.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Store::ReadCustomers(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                                  9       2  77.78%        19       6  68.42%         6       2  66.67%
+Store::inventory()                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         3       0 100.00%         0       0   0.00%
+Store::Store()                                                                                                                                                                                                                                                                                                                                                                            1       0 100.00%         5       0 100.00%         0       0   0.00%
+Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                                    21       3  85.71%        24       5  79.17%        14       3  78.57%
+Store::PrintCustomers() const                                                                                                                                                                                                                                                                                                                                                             1       1   0.00%         3       3   0.00%         0       0   0.00%
+Store::ReadAndExecuteActions(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                         26       2  92.31%        58       4  93.10%        24       2  91.67%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    59       8  86.44%       112      18  83.93%        44       7  84.09%
+
+File '/home/cssuwbstudent/jeosburn/css343lab4/store_test.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+testStore1()                                                                                                                                                                                                                                                                                                                                                                              3       3   0.00%        17      17   0.00%         2       2   0.00%
+testStore2()                                                                                                                                                                                                                                                                                                                                                                              1       1   0.00%         6       6   0.00%         0       0   0.00%
+testStore3()                                                                                                                                                                                                                                                                                                                                                                              1       1   0.00%         6       6   0.00%         0       0   0.00%
+testStore4()                                                                                                                                                                                                                                                                                                                                                                              1       1   0.00%         9       9   0.00%         0       0   0.00%
+testStoreFinal()                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        13       0 100.00%         0       0   0.00%
+testAll()                                                                                                                                                                                                                                                                                                                                                                                 1       0 100.00%         3       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                     8       6  25.00%        54      38  29.63%         2       2   0.00%
+=====================================================
+The lines below were never executed
+=====================================================
+   13|      0|bool Classic::operator<(const Movie& other) const {
+   14|      0|    const Classic& classic = static_cast<const Classic&>(other);
+   15|      0|    if (release_date_ != classic.release_date_) {
+   16|      0|        istringstream ssa(release_date_);
+   17|      0|        istringstream ssb(classic.release_date_);
+   18|      0|        int month_a, year_a, month_b, year_b;
+   19|      0|        ssa >> month_a >> year_a;
+   20|      0|        ssb >> month_b >> year_b;
+   21|      0|        if (year_a != year_b) {
+   22|      0|            return year_a < year_b;
+   23|      0|        }
+   24|      0|        if (month_a != month_b) {
+   25|      0|            return month_a < month_b;
+   26|      0|        }
+   27|      0|    }
+   28|      0|    return major_actor_ < classic.major_actor_;
+   29|      0|}
+   54|      0|void Classic::setReleaseDate(const string& date) {
+   55|      0|    release_date_ = date;
+   56|      0|}
+   62|      0|void Classic::setMajorActor(const string& actor) {
+   63|      0|    major_actor_ = actor;
+   64|      0|}
+   14|      0|bool Comedy::operator<(const Movie& other) const {
+   15|      0|    const Comedy& comedy = static_cast<const Comedy&>(other);
+   16|      0|    if (title_ != comedy.title_) {
+   17|      0|        return title_ < comedy.title_;
+   18|      0|    }
+   19|      0|    return release_year_ < comedy.release_year_;
+   20|      0|}
+   45|      0|void Comedy::setReleaseYear(int year) {
+   46|      0|    release_year_ = year;
+   47|      0|}
+   49|      0|string Comedy::getDirector() const {
+   50|      0|    return director_;
+   51|      0|}
+   53|      0|void Comedy::setDirector(const string& director) {
+   54|      0|    this->director_ = director;
+   55|      0|}
+   18|      0|string Customer::LastName() const {
+   19|      0|    return last_name_;
+   20|      0|}
+   22|      0|string Customer::FirstName() const {
+   23|      0|    return first_name_;
+   24|      0|}
+   26|      0|void Customer::SetID(int id) {
+   27|      0|    id_ = id;
+   28|      0|}
+   30|      0|void Customer::SetLastName(string last_name) {
+   31|      0|    last_name_ = last_name;
+   32|      0|}
+   34|      0|void Customer::SetFirstName(string first_name) {
+   35|      0|    first_name_ = first_name;
+   36|      0|}
+   53|      0|bool Customer::operator==(const Customer &customer) const {
+   54|      0|    return id_ == customer.id_ && last_name_ == customer.last_name_ && first_name_ == customer.first_name_;
+   55|      0|}
+   57|      0|ostream& operator<<(ostream& os, const Customer& customer) {
+   58|      0|  os << "Customer ID: " << customer.ID()
+   59|      0|     << ", Name: " << customer.FirstName() << " " << customer.LastName();
+   60|      0|  return os;
+   61|      0|}
+   37|      0|    return false; // table is full
+   49|      0|    return false; // full cycle and not found
+   52|      0|void CustomerHashTable::print() const{
+   53|      0|    for (int i = 0; i < TABLE_SIZE; i++) {
+   54|      0|        if (!table[i].FirstName().empty()) {
+   55|      0|            cout << "at index " << i << ": " << table[i] << endl;;
+   56|      0|        }
+   58|      0|    }
+   59|      0|    cout << endl;
+   60|      0|}
+   62|      0|bool CustomerHashTable::remove(Customer customer) {
+   63|      0|    for (int i = 0; i < TABLE_SIZE; i++) {
+   64|      0|        int idx = probe(customer.ID(), i);
+   65|      0|        if (occupied[idx] && table[idx] == customer) {
+   66|      0|            occupied[idx] = false;
+   67|      0|            return true; // key removed
+   68|      0|        } else if (!occupied[idx]) {
+   69|      0|            return false; // key not found
+   70|      0|        }
+   71|      0|    }
+   72|      0|    return false; // key not found after full probing
+   73|      0|}
+   81|      0|      return nullptr;  // Customer not found
+   82|      0|    }
+   84|      0|  return nullptr;  // Full cycle and not found
+   13|      0|bool Drama::operator<(const Movie& other) const {
+   14|      0|    const Drama& drama = static_cast<const Drama&>(other);
+   15|      0|    if (director_ != drama.director_) {
+   16|      0|        return director_ < drama.director_;
+   17|      0|    }
+   18|      0|    return title_ < drama.title_;
+   19|      0|}
+   39|      0|int Drama::getReleaseYear() const {
+   40|      0|    return release_year_;
+   41|      0|}
+   43|      0|void Drama::setReleaseYear(int year) {
+   44|      0|    release_year_ = year;
+   45|      0|}
+   51|      0|void Drama::setDirector(const string& director) {
+   52|      0|    this->director_ = director;
+   53|      0|}
+    6|      0|            m->setStock(m->getStock() + count);
+    7|      0|            return;
+    8|      0|        }
+  122|      0|            return false; // No stock available
+  123|      0|          }
+  139|      0|          if (drama->getStock() > 0) {
+  140|      0|            drama->setStock(drama->getStock() - 1);
+  141|      0|            return true; // Successfully borrowed
+  142|      0|          } else {
+  143|      0|            return false; // No stock available
+  144|      0|          }
+  145|      0|        }
+  169|      0|    break;
+  202|      0|    break;
+  204|      0|  case 'D': {
+  205|      0|    std::string director, title;
+  206|      0|    iss.ignore(1, ' '); // Skip the space after type
+  207|      0|    std::getline(iss, director, ',');
+  208|      0|    std::getline(iss, title);
+  210|      0|    for (auto& movie : movies_) {
+  211|      0|      if (movie->getType() == 'D') {
+  212|      0|        Drama* drama = static_cast<Drama*>(movie);
+  213|      0|        if (drama->getDirector() == director && drama->getTitle() == title) {
+  214|      0|          drama->setStock(drama->getStock() + 1);
+  215|      0|          return true; // Successfully returned
+  216|      0|        }
+  217|      0|      }
+  218|      0|    }
+  219|      0|    break;
+  220|      0|  }
+  236|      0|    break;
+  238|      0|  default:
+  239|      0|    std::cerr << "Invalid movie type: " << movieType << std::endl;
+  240|      0|    return false;
+  243|      0|  std::cerr << "Movie not found: " << movieInfo << std::endl;
+  244|      0|  return false;
+   19|      0|    throw std::invalid_argument("Invalid movie type");
+   26|      0|void Movie::setTitle(const string& title) {
+   27|      0|    this->title_ = title;
+   28|      0|}
+   37|      0|bool Movie::Borrow() {
+   38|      0|    if (current_stock_ > 0) {
+   39|      0|        current_stock_--;
+   40|      0|        return true;
+   41|      0|    }
+   42|      0|    return false;
+   43|      0|}
+   45|      0|bool Movie::ReturnItem() {
+   46|      0|    if (current_stock_ < stock_) {
+   47|      0|        current_stock_++;
+   48|      0|        return true;
+   49|      0|    }
+   50|      0|    return false;
+   51|      0|}
+   17|      0|    virtual ~MovieFactory() = default;
+   25|      0|    virtual ~Movie() = default;
+   12|      0|        cerr << "Error opening file!" << endl;
+   13|      0|        return;
+   14|      0|    }
+   19|      0|            cerr << "Error reading line: " << line << endl;
+   20|      0|            continue; // Handles lines that do not have exactly three words
+   21|      0|        }
+   42|      0|        std::cerr << "Could not open the file!" << std::endl;
+   43|      0|        return;
+   44|      0|    }
+   62|      0|            cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
+   63|      0|        }
+   68|      0|void Store::PrintCustomers() const{
+   69|      0|  customer_table_.print();
+   70|      0|}
+   83|      0|            }
+   94|      0|                    std::cerr << "Invalid customer ID: " << customerID << std::endl;
+   95|      0|                }
+   97|      0|                }
+   23|      0|void testStore1() {
+   24|      0|  cout << "Start testStore1" << endl;
+   27|      0|  string cfile = "testcommands-1.txt";
+   28|      0|  stringstream out;
+   29|      0|  ifstream fs(cfile);
+   30|      0|  assert(fs.is_open());
+   31|      0|  char commandType;
+   32|      0|  string discard;
+   33|      0|  while (fs >> commandType) {
+   34|      0|    out << commandType;
+   35|      0|    getline(fs, discard);
+   36|      0|  }
+   37|      0|  fs.close();
+   38|      0|  string result = "IHHBRIBBIH";
+   39|      0|  assert(out.str() == result);
+   40|      0|  cout << "End testStore1" << endl;
+   41|      0|}
+   43|      0|void testStore2() {
+   46|      0|    Store store;
+   47|      0|    ifstream movieFile("data4movies.txt");
+   48|      0|    store.ReadMovies(movieFile);
+   49|      0|    store.inventory().PrintInventory();
+   50|      0|}
+   52|      0|void testStore3() {
+   55|      0|  Store store;
+   56|      0|  ifstream stream("data4customers.txt");
+   57|      0|  store.ReadCustomers(stream);
+   58|      0|  store.PrintCustomers();
+   60|      0|}
+   61|      0|void testStore4() {
+   63|      0|  Store store;
+   64|      0|  ifstream moviefile("data4movies.txt");
+   65|      0|  store.ReadMovies(moviefile);
+   66|      0|  ifstream customerfile("data4customers.txt");
+   67|      0|  store.ReadCustomers(customerfile);
+   68|      0|  ifstream commandfile("testCommandtext.txt");
+   69|      0|  store.ReadAndExecuteActions(commandfile);
+   70|      0|}
+Sat May 25 07:24:59 UTC 2024
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
