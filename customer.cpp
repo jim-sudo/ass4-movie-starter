@@ -44,9 +44,13 @@ void Customer::History() const {
     if (history_.empty()) {
         std::cout << "** No transactions found **" << std::endl;
     } else {
-        for (const auto& transaction : history_) {
-            std::cout << transaction << std::endl;
+        // for (const auto& transaction : history_) {
+        //     std::cout << transaction << std::endl;
+        // }
+        for (auto it = history_.rbegin(); it != history_.rend(); ++it) {
+            std::cout << *it << std::endl;
         }
+
     }
 }
 
