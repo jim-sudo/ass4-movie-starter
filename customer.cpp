@@ -1,14 +1,11 @@
 #include <iostream>
 #include <vector>
 #include "customer.h"
-using namespace std;
 
 
-Customer::Customer() {
+Customer::Customer() = default;
 
-}
-
-Customer::Customer(int id, string last_name, string first_name) 
+Customer::Customer(int &id, string &last_name, string &first_name) 
 : id_(id), last_name_(last_name), first_name_(first_name) { }
 
 int Customer::ID() const {

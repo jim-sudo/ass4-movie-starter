@@ -14,7 +14,7 @@ class Customer {
 
     public:
         Customer();
-        Customer(int id, string last_name, string first_name);
+        Customer(int &id, string &last_name, string &first_name);
         int ID() const;
         string LastName() const;
         string FirstName() const;

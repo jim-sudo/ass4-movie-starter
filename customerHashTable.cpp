@@ -1,8 +1,6 @@
 #include "customer.h"
 #include "customerHashTable.h"
 
-using namespace std;
-
 
 CustomerHashTable::CustomerHashTable() {
     table = new Customer[TABLE_SIZE];
@@ -17,11 +15,11 @@ CustomerHashTable::~CustomerHashTable() {
     delete[] occupied;
 }
 
-int CustomerHashTable::hashFunction(int key) const {
+int CustomerHashTable::hashFunction(int key) {
     return key % TABLE_SIZE;
 }
 
-int CustomerHashTable::probe(int key, int i) const {
+int CustomerHashTable::probe(int key, int i) {
     return (hashFunction(key) + i * i) % TABLE_SIZE;
 }
 
@@ -41,9 +39,7 @@ bool CustomerHashTable::search(int id) const {
     for (int i = 0; i < TABLE_SIZE; i++) {
         int idx = probe(id, i);
         if (occupied[idx] && table[idx].ID() == id) {
-            return true;
-        } else if (!occupied[idx]) {
-            return false; // key not found
+            return true;                //key found
         }
     }
     return false; // full cycle and not found
@@ -65,8 +61,6 @@ bool CustomerHashTable::remove(Customer customer) {
         if (occupied[idx] && table[idx] == customer) {
             occupied[idx] = false;
             return true; // key removed
-        } else if (!occupied[idx]) {
-            return false; // key not found
         }
     }
     return false; // key not found after full probing
@@ -77,8 +71,6 @@ Customer* CustomerHashTable::getCustomer(int id) {
     int idx = probe(id, i);
     if (occupied[idx] && table[idx].ID() == id) {
       return &table[idx];  // Return a pointer to the found customer
-    } else if (!occupied[idx]) {
-      return nullptr;  // Customer not found
     }
   }
   return nullptr;  // Full cycle and not found

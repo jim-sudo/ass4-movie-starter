@@ -22,8 +22,8 @@ void Inventory::PrintInventory() const {
     // Sort Comedy movies by title, then by release year
     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
         if (a->getType() == 'F' && b->getType() == 'F') {
-            const Comedy* ca = static_cast<const Comedy*>(a);
-            const Comedy* cb = static_cast<const Comedy*>(b);
+            const auto *const ca = static_cast<const Comedy*>(a);
+            const auto *const cb = static_cast<const Comedy*>(b);
             if (ca->getTitle() != cb->getTitle()) {
                 return ca->getTitle() < cb->getTitle();
             }
@@ -47,8 +47,8 @@ void Inventory::PrintInventory() const {
     // Sort Drama movies by director, then by title
     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
         if (a->getType() == 'D' && b->getType() == 'D') {
-            const Drama* da = static_cast<const Drama*>(a);
-            const Drama* db = static_cast<const Drama*>(b);
+            const auto *const da = static_cast<const Drama*>(a);
+            const auto *const db = static_cast<const Drama*>(b);
             if (da->getDirector() != db->getDirector()) {
                 return da->getDirector() < db->getDirector();
             }
@@ -70,11 +70,14 @@ void Inventory::PrintInventory() const {
     // Sort Classic movies by release date (month and year), then by major actor
     sort(sorted_movies.begin(), sorted_movies.end(), [](Movie* a, Movie* b) {
     if (a->getType() == 'C' && b->getType() == 'C') {
-        const Classic* ca = static_cast<const Classic*>(a);
-        const Classic* cb = static_cast<const Classic*>(b);
+        const auto *const ca = static_cast<const Classic*>(a);
+        const auto *const cb = static_cast<const Classic*>(b);
         istringstream ssa(ca->getReleaseDate());
         istringstream ssb(cb->getReleaseDate());
-        int month_a, year_a, month_b, year_b;
+        int month_a;
+        int year_a;
+        int month_b;
+        int year_b;
         ssa >> month_a >> year_a;
         ssb >> month_b >> year_b;
         if (year_a != year_b) {
@@ -100,10 +103,10 @@ void Inventory::PrintInventory() const {
 
 bool Inventory::BorrowMovie(const std::string& movieInfo) {
   std::istringstream iss(movieInfo);
-  char movieType;
-  iss >> movieType;
+  char movie_type;
+  iss >> movie_type;
 
-  switch (movieType) {
+  switch (movie_type) {
   case 'F': {
     std::string title;
     int year;
@@ -113,14 +116,14 @@ bool Inventory::BorrowMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'F') {
-        Comedy* comedy = static_cast<Comedy*>(movie);
+        auto comedy = static_cast<Comedy*>(movie);
         if (comedy->getTitle() == title && comedy->getReleaseYear() == year) {
           if (comedy->getStock() > 0) {
             comedy->setStock(comedy->getStock() - 1);
             return true; // Successfully borrowed
-          } else {
-            return false; // No stock available
           }
+            return false; // No stock available
+          
         }
       }
     }
@@ -134,14 +137,14 @@ bool Inventory::BorrowMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'D') {
-        Drama* drama = static_cast<Drama*>(movie);
+        auto drama = static_cast<Drama*>(movie);
         if (drama->getDirector() == director && drama->getTitle() == title) {
           if (drama->getStock() > 0) {
             drama->setStock(drama->getStock() - 1);
             return true; // Successfully borrowed
-          } else {
-            return false; // No stock available
           }
+            return false; // No stock available
+          
         }
       }
     }
@@ -155,21 +158,21 @@ bool Inventory::BorrowMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'C') {
-        Classic* classic = static_cast<Classic*>(movie);
+        auto classic = static_cast<Classic*>(movie);
         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
           if (classic->getStock() > 0) {
             classic->setStock(classic->getStock() - 1);
             return true; // Successfully borrowed
-          } else {
-            return false; // No stock available
           }
+            return false; // No stock available
+          
         }
       }
     }
     break;
   }
   default:
-    std::cerr << "Invalid movie type: " << movieType << std::endl;
+    std::cerr << "Invalid movie type: " << movie_type << std::endl;
     return false;
   }
 
@@ -179,10 +182,10 @@ bool Inventory::BorrowMovie(const std::string& movieInfo) {
 
 bool Inventory::ReturnMovie(const std::string& movieInfo) {
   std::istringstream iss(movieInfo);
-  char movieType;
-  iss >> movieType;
+  char movie_type;
+  iss >> movie_type;
 
-  switch (movieType) {
+  switch (movie_type) {
   case 'F': {
     std::string title;
     int year;
@@ -192,7 +195,7 @@ bool Inventory::ReturnMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'F') {
-        Comedy* comedy = static_cast<Comedy*>(movie);
+        auto comedy = static_cast<Comedy*>(movie);
         if (comedy->getTitle() == title && comedy->getReleaseYear() == year) {
           comedy->setStock(comedy->getStock() + 1);
           return true; // Successfully returned
@@ -209,7 +212,7 @@ bool Inventory::ReturnMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'D') {
-        Drama* drama = static_cast<Drama*>(movie);
+        auto drama = static_cast<Drama*>(movie);
         if (drama->getDirector() == director && drama->getTitle() == title) {
           drama->setStock(drama->getStock() + 1);
           return true; // Successfully returned
@@ -226,7 +229,7 @@ bool Inventory::ReturnMovie(const std::string& movieInfo) {
 
     for (auto& movie : movies_) {
       if (movie->getType() == 'C') {
-        Classic* classic = static_cast<Classic*>(movie);
+        auto classic = static_cast<Classic*>(movie);
         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
           classic->setStock(classic->getStock() + 1);
           return true; // Successfully returned
@@ -236,7 +239,7 @@ bool Inventory::ReturnMovie(const std::string& movieInfo) {
     break;
   }
   default:
-    std::cerr << "Invalid movie type: " << movieType << std::endl;
+    std::cerr << "Invalid movie type: " << movie_type << std::endl;
     return false;
   }
 

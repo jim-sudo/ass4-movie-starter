@@ -11,7 +11,7 @@ Drama::Drama(const string& director, const string& title, int stock, int release
 }
 
 bool Drama::operator<(const Movie& other) const {
-    const Drama& drama = static_cast<const Drama&>(other);
+    const auto drama = static_cast<const Drama&>(other);
     if (director_ != drama.director_) {
         return director_ < drama.director_;
     }
@@ -19,7 +19,7 @@ bool Drama::operator<(const Movie& other) const {
 }
 
 bool Drama::operator==(const Movie& other) const {
-    const Drama& drama = static_cast<const Drama&>(other);
+    const auto drama = static_cast<const Drama&>(other);
     return director_ == drama.director_ && title_ == drama.title_;
 }
 
@@ -55,8 +55,9 @@ void Drama::setDirector(const string& director) {
 Movie* DramaFactory::Create(const string& line) const {
     istringstream ss(line);
     int stock;
-    string director, title;
-    int releaseYear;
+    string director;
+    string title;
+    int release_year;
 
     ss >> stock;
     ss.ignore(2); 
@@ -64,7 +65,7 @@ Movie* DramaFactory::Create(const string& line) const {
     ss.ignore(1); 
     getline(ss, title, ',');
     ss.ignore(1); 
-    ss >> releaseYear;
+    ss >> release_year;
 
-    return new Drama(director, title, stock, releaseYear);
+    return new Drama(director, title, stock, release_year);
 }

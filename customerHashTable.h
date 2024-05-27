@@ -10,8 +10,8 @@ private:
     Customer* table;                        // Array to store keys
     bool* occupied;                    // Array to track occupied slots
 
-    int hashFunction(int key) const;   // Hash function to compute index
-    int probe(int key, int i) const;   // Quadratic probing function
+    static int hashFunction(int key);   // Hash function to compute index
+    static int probe(int key, int i);   // Quadratic probing function
 
 public:
     CustomerHashTable();                       // Constructor

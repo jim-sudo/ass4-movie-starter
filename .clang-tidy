@@ -89,6 +89,7 @@ Checks: >
  -modernize-concat-nested-namespaces,
  -modernize-use-nodiscard,
  -modernize-avoid-c-arrays,
+ -modernize-pass-by-value,
  -performance-move-const-arg,
  -performance-avoid-endl,
  -performance-enum-size,
@@ -105,7 +106,8 @@ Checks: >
  -bugprone-implicit-widening-of-multiplication-result,
  -bugprone-unchecked-optional-access,
  -bugprone-unused-local-non-trivial-variable,
- -bugprone-unused-return-value
+ -bugprone-unused-return-value,
+ -performance-unnecessary-value-param
 
 # Turn all the warnings from the checks above into errors.
 WarningsAsErrors: "*"

@@ -2,8 +2,8 @@
 
 // Comedy class methods
 
-Comedy::Comedy(const string& title, int stock, const string& director, int releaseYear)
-    : release_year_(releaseYear) {
+Comedy::Comedy(const string& title, int stock, const string& director, int release_year)
+    : release_year_(release_year) {
     this->title_ = title;
     this->stock_ = stock;
     this->current_stock_ = stock;
@@ -12,7 +12,7 @@ Comedy::Comedy(const string& title, int stock, const string& director, int relea
 }
 
 bool Comedy::operator<(const Movie& other) const {
-    const Comedy& comedy = static_cast<const Comedy&>(other);
+    const auto comedy = static_cast<const Comedy&>(other);
     if (title_ != comedy.title_) {
         return title_ < comedy.title_;
     }
@@ -20,7 +20,7 @@ bool Comedy::operator<(const Movie& other) const {
 }
 
 bool Comedy::operator==(const Movie& other) const {
-    const Comedy& comedy = static_cast<const Comedy&>(other);
+    const auto comedy = static_cast<const Comedy&>(other);
     return title_ == comedy.title_ && release_year_ == comedy.release_year_;
 }
 
@@ -57,8 +57,9 @@ void Comedy::setDirector(const string& director) {
 Movie* ComedyFactory::Create(const string& line) const {
     istringstream ss(line);
     int stock;
-    string director, title;
-    int releaseYear;
+    string director;
+    string title;
+    int release_year;
 
     ss >> stock;
     ss.ignore(2); 
@@ -66,7 +67,7 @@ Movie* ComedyFactory::Create(const string& line) const {
     ss.ignore(1); 
     getline(ss, title, ',');
     ss.ignore(1);
-    ss >> releaseYear;
+    ss >> release_year;
 
-    return new Comedy(title, stock, director, releaseYear);
+    return new Comedy(title, stock, director, release_year);
 }
