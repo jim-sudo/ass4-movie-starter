@@ -11,8 +11,8 @@
 class Inventory {
 public:
     void AddMovie(const Movie& movie, int count);
-    bool BorrowMovie(const std::string& title);
-    bool ReturnMovie(const std::string& title);
+    bool BorrowMovie(const std::string& movie_info);
+    bool ReturnMovie(const std::string& movie_info);
     void PrintInventory() const;
 
 private:

@@ -4,13 +4,12 @@
 
 #include <iostream>
 
-using namespace std;
 
 // forward declaration, implementation in store_test.cpp
 void testAll();
 
 int main() {
   testAll();
-  cout << "Done." << endl;
+  std::cout << "Done." << std::endl;
   return 0;
 }

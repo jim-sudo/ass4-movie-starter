@@ -1,5 +1,5 @@
-Sun May 26 19:41:45 PDT 2024
-Linux csslab15 4.18.0-513.18.1.el8_9.x86_64 #1 SMP Wed Feb 21 21:34:36 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Mon May 27 01:44:41 PDT 2024
+Linux csslab12 4.18.0-513.18.1.el8_9.x86_64 #1 SMP Wed Feb 21 21:34:36 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 uid=1445303(jeosburn) gid=2121445303(jeosburn) groups=2121445303(jeosburn),605559(lab-access)
 =====================================================
 1. Compiles without warnings with -Wall -Wextra flags
@@ -411,200 +411,17 @@ Done.
 3. clang-tidy warnings are fixed
 =====================================================
 15678 warnings generated.
-31357 warnings generated.
-43961 warnings generated.
-56567 warnings generated.
-72246 warnings generated.
-92158 warnings generated.
-103462 warnings generated.
-119200 warnings generated.
-139063 warnings generated.
-160645 warnings generated.
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:119:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
-        Comedy* comedy = static_cast<Comedy*>(movie);
-        ^~~~~~
-        auto
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:124:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
-          } else {
-            ^~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:133:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    std::string director, title;
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:140:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
-        Drama* drama = static_cast<Drama*>(movie);
-        ^~~~~
-        auto
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:145:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
-          } else {
-            ^~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:154:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    int month, year;
-    ^~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:155:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:155:17: error: invalid case style for variable 'actorFirstName' [readability-identifier-naming,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-                ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:155:33: error: invalid case style for variable 'actorLastName' [readability-identifier-naming,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-                                ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:161:9: error: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto,-warnings-as-errors]
-        Classic* classic = static_cast<Classic*>(movie);
-        ^~~~~~~
-        auto
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:166:13: error: do not use 'else' after 'return' [readability-else-after-return,-warnings-as-errors]
-          } else {
-            ^~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:198:9: error: 'auto comedy' can be declared as 'auto *comedy' [readability-qualified-auto,-warnings-as-errors]
-        auto comedy = static_cast<Comedy*>(movie);
-        ^~~~~
-        auto *
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:208:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    std::string director, title;
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:215:9: error: 'auto drama' can be declared as 'auto *drama' [readability-qualified-auto,-warnings-as-errors]
-        auto drama = static_cast<Drama*>(movie);
-        ^~~~~
-        auto *
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:225:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    int month, year;
-    ^~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:226:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:226:17: error: invalid case style for variable 'actorFirstName' [readability-identifier-naming,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-                ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:226:33: error: invalid case style for variable 'actorLastName' [readability-identifier-naming,-warnings-as-errors]
-    std::string actorFirstName, actorLastName;
-                                ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:232:9: error: 'auto classic' can be declared as 'auto *classic' [readability-qualified-auto,-warnings-as-errors]
-        auto classic = static_cast<Classic*>(movie);
-        ^~~~~
-        auto *
-/home/NETID/jeosburn/css343/lab4/inventory.h:14:10: error: function 'Inventory::BorrowMovie' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    bool BorrowMovie(const std::string& title);
-         ^
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:104:17: note: the definition seen here
-bool Inventory::BorrowMovie(const std::string& movieInfo) {
-                ^
-/home/NETID/jeosburn/css343/lab4/inventory.h:14:10: note: differing parameters are named here: ('title'), in definition: ('movieInfo')
-    bool BorrowMovie(const std::string& title);
-         ^                              ~~~~~
-                                        movieInfo
-/home/NETID/jeosburn/css343/lab4/inventory.h:15:10: error: function 'Inventory::ReturnMovie' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    bool ReturnMovie(const std::string& title);
-         ^
-/home/NETID/jeosburn/css343/lab4/inventory.cpp:183:17: note: the definition seen here
-bool Inventory::ReturnMovie(const std::string& movieInfo) {
-                ^
-/home/NETID/jeosburn/css343/lab4/inventory.h:15:10: note: differing parameters are named here: ('title'), in definition: ('movieInfo')
-    bool ReturnMovie(const std::string& title);
-         ^                              ~~~~~
-                                        movieInfo
-/home/NETID/jeosburn/css343/lab4/main.cpp:7:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
-using namespace std;
-^
-/home/NETID/jeosburn/css343/lab4/movie.h:61:5: error: function 'Comedy::Comedy' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    Comedy(const string& title, int stock, const string& director, int releaseYear);
-    ^
-/home/NETID/jeosburn/css343/lab4/comedy.cpp:5:9: note: the definition seen here
-Comedy::Comedy(const string& title, int stock, const string& director, int release_year)
-        ^
-/home/NETID/jeosburn/css343/lab4/movie.h:61:5: note: differing parameters are named here: ('releaseYear'), in definition: ('release_year')
-    Comedy(const string& title, int stock, const string& director, int releaseYear);
-    ^                                                                  ~~~~~~~~~~~
-                                                                       release_year
-/home/NETID/jeosburn/css343/lab4/movie.h:81:5: error: function 'Drama::Drama' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    Drama(const string& director, const string& title, int stock, int releaseYear);
-    ^
-/home/NETID/jeosburn/css343/lab4/drama.cpp:4:8: note: the definition seen here
-Drama::Drama(const string& director, const string& title, int stock, int release_year)
-       ^
-/home/NETID/jeosburn/css343/lab4/movie.h:81:5: note: differing parameters are named here: ('releaseYear'), in definition: ('release_year')
-    Drama(const string& director, const string& title, int stock, int releaseYear);
-    ^                                                                 ~~~~~~~~~~~
-                                                                      release_year
-/home/NETID/jeosburn/css343/lab4/store.cpp:4:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
-using namespace std;
-^
-/home/NETID/jeosburn/css343/lab4/store.cpp:9:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
-    string lastName, firstName;
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/NETID/jeosburn/css343/lab4/store.cpp:9:12: error: invalid case style for variable 'lastName' [readability-identifier-naming,-warnings-as-errors]
-    string lastName, firstName;
-           ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/store.cpp:9:22: error: invalid case style for variable 'firstName' [readability-identifier-naming,-warnings-as-errors]
-    string lastName, firstName;
-                     ^
-note: this fix will not be applied because it overlaps with another fix
-/home/NETID/jeosburn/css343/lab4/store.cpp:57:13: error: 'auto movie' can be declared as 'auto *movie' [readability-qualified-auto,-warnings-as-errors]
-            auto movie = Movie::Create(type, line.substr(3));
-            ^~~~~
-            auto *
-/home/NETID/jeosburn/css343/lab4/store.cpp:85:21: error: invalid case style for variable 'customerID' [readability-identifier-naming,-warnings-as-errors]
-                int customerID;
-                    ^~~~~~~~~~
-                    customer_id
-/home/NETID/jeosburn/css343/lab4/store.cpp:100:21: error: invalid case style for variable 'customerID' [readability-identifier-naming,-warnings-as-errors]
-                int customerID;
-                    ^~~~~~~~~~
-                    customer_id
-/home/NETID/jeosburn/css343/lab4/store.cpp:101:22: error: invalid case style for variable 'mediaType' [readability-identifier-naming,-warnings-as-errors]
-                char mediaType;
-                     ^~~~~~~~~
-                     media_type
-/home/NETID/jeosburn/css343/lab4/store.cpp:104:29: error: invalid case style for variable 'movieType' [readability-identifier-naming,-warnings-as-errors]
-                std::string movieType;
-                            ^~~~~~~~~
-                            movie_type
-/home/NETID/jeosburn/css343/lab4/store.cpp:105:29: error: invalid case style for variable 'movieInfo' [readability-identifier-naming,-warnings-as-errors]
-                std::string movieInfo;
-                            ^~~~~~~~~
-                            movie_info
-/home/NETID/jeosburn/css343/lab4/store.cpp:119:53: error: string concatenation results in allocation of unnecessary temporary strings; consider using 'operator+=' or 'string::append()' instead [performance-inefficient-string-concatenation,-warnings-as-errors]
-                        customer->Add(action + ": " + movieInfo);
-                                                    ^
-/home/NETID/jeosburn/css343/lab4/store.h:22:10: error: function 'Store::ReadMovies' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    void ReadMovies(ifstream& in);
-         ^
-/home/NETID/jeosburn/css343/lab4/store.cpp:40:13: note: the definition seen here
-void Store::ReadMovies(ifstream& file) {
-            ^
-/home/NETID/jeosburn/css343/lab4/store.h:22:10: note: differing parameters are named here: ('in'), in definition: ('file')
-    void ReadMovies(ifstream& in);
-         ^                    ~~
-                              file
-/home/NETID/jeosburn/css343/lab4/store.h:23:10: error: function 'Store::ReadCustomers' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name,-warnings-as-errors]
-    void ReadCustomers(ifstream& in);
-         ^
-/home/NETID/jeosburn/css343/lab4/store.cpp:6:13: note: the definition seen here
-void Store::ReadCustomers(ifstream& file) {
-            ^
-/home/NETID/jeosburn/css343/lab4/store.h:23:10: note: differing parameters are named here: ('in'), in definition: ('file')
-    void ReadCustomers(ifstream& in);
-         ^                       ~~
-                                 file
-/home/NETID/jeosburn/css343/lab4/store_test.cpp:21:1: error: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace,-warnings-as-errors]
-using namespace std;
-^
-/home/NETID/jeosburn/css343/lab4/store_test.cpp:31:8: error: invalid case style for variable 'commandType' [readability-identifier-naming,-warnings-as-errors]
-  char commandType;
-       ^~~~~~~~~~~
-       command_type
-/home/NETID/jeosburn/css343/lab4/store_test.cpp:47:14: error: invalid case style for variable 'movieFile' [readability-identifier-naming,-warnings-as-errors]
-    ifstream movieFile("data4movies.txt");
-             ^~~~~~~~~
-             movie_file
-Suppressed 160605 warnings (160605 in non-user code).
+31356 warnings generated.
+43960 warnings generated.
+56566 warnings generated.
+72244 warnings generated.
+92135 warnings generated.
+103438 warnings generated.
+119176 warnings generated.
+139027 warnings generated.
+160606 warnings generated.
+Suppressed 160606 warnings (160606 in non-user code).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
-40 warnings treated as errors
 =====================================================
 4. clang-format does not find any formatting issues
 =====================================================
@@ -1428,70 +1245,87 @@ Running clang-format on ./inventory.cpp
 101a101
 >   }
 104c104
-< bool Inventory::BorrowMovie(const std::string& movieInfo) {
+< bool Inventory::BorrowMovie(const std::string& movie_info) {
 ---
-> bool Inventory::BorrowMovie(const std::string &movieInfo) {
+> bool Inventory::BorrowMovie(const std::string &movie_info) {
 117c117
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
 119c119
-<         Comedy* comedy = static_cast<Comedy*>(movie);
+<         auto* comedy = static_cast<Comedy*>(movie);
 ---
->         Comedy *comedy = static_cast<Comedy *>(movie);
-138c138
+>         auto *comedy = static_cast<Comedy *>(movie);
+125,126c125
+<             return false; // No stock available
+<           
+---
+>           return false; // No stock available
+139c138
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
-140c140
-<         Drama* drama = static_cast<Drama*>(movie);
+141c140
+<         auto* drama = static_cast<Drama*>(movie);
 ---
->         Drama *drama = static_cast<Drama *>(movie);
-159c159
+>         auto *drama = static_cast<Drama *>(movie);
+147,148c146
+<             return false; // No stock available
+<           
+---
+>           return false; // No stock available
+162c160
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
-161,162c161,164
-<         Classic* classic = static_cast<Classic*>(movie);
+164,165c162,165
+<         auto*  classic = static_cast<Classic*>(movie);
 <         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
 ---
->         Classic *classic = static_cast<Classic *>(movie);
+>         auto *classic = static_cast<Classic *>(movie);
 >         if (classic->getReleaseDate() ==
 >                 std::to_string(month) + " " + std::to_string(year) &&
 >             classic->getMajorActor() == actor) {
-183c185
-< bool Inventory::ReturnMovie(const std::string& movieInfo) {
+170,171c170
+<             return false; // No stock available
+<           
 ---
-> bool Inventory::ReturnMovie(const std::string &movieInfo) {
-196c198
+>           return false; // No stock available
+186c185
+< bool Inventory::ReturnMovie(const std::string& movie_info) {
+---
+> bool Inventory::ReturnMovie(const std::string &movie_info) {
+199c198
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
-198c200
-<         auto comedy = static_cast<Comedy*>(movie);
+201c200
+<         auto*  comedy = static_cast<Comedy*>(movie);
 ---
->         auto comedy = static_cast<Comedy *>(movie);
-213c215
+>         auto *comedy = static_cast<Comedy *>(movie);
+217c216
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
-215c217
-<         auto drama = static_cast<Drama*>(movie);
+219c218
+<         auto* drama = static_cast<Drama*>(movie);
 ---
->         auto drama = static_cast<Drama *>(movie);
-230c232
+>         auto *drama = static_cast<Drama *>(movie);
+236c235
 <     for (auto& movie : movies_) {
 ---
 >     for (auto &movie : movies_) {
-232,233c234,237
-<         auto classic = static_cast<Classic*>(movie);
+238,239c237,240
+<         auto* classic = static_cast<Classic*>(movie);
 <         if (classic->getReleaseDate() == std::to_string(month) + " " + std::to_string(year) && classic->getMajorActor() == actor) {
 ---
->         auto classic = static_cast<Classic *>(movie);
+>         auto *classic = static_cast<Classic *>(movie);
 >         if (classic->getReleaseDate() ==
 >                 std::to_string(month) + " " + std::to_string(year) &&
 >             classic->getMajorActor() == actor) {
 Running clang-format on ./main.cpp
+7d6
+< 
 Running clang-format on ./movie.cpp
 2d1
 < #include <sstream>
@@ -1567,20 +1401,32 @@ Running clang-format on ./movie.cpp
 >   }
 >   return false;
 Running clang-format on ./store.cpp
-6,13c6,20
+5,23c5,20
 < void Store::ReadCustomers(ifstream& file) {
 <     string line;
 <     int id;
-<     string lastName, firstName;
+<     string last_name;
+<     string first_name;
 < 
 <     if (!file.is_open()) {
 <         cerr << "Error opening file!" << endl;
 <         return;
+<     }
+< 
+<     while (getline(file, line)) {
+<         istringstream iss(line);
+<         if (!(iss >> id >> last_name >> first_name)) {
+<             cerr << "Error reading line: " << line << endl;
+<             continue; // Handles lines that do not have exactly three words
+<         }
+<         Customer customer(id, last_name, first_name);
+<         customer_table_.insert(customer);
 ---
 > void Store::ReadCustomers(ifstream &file) {
 >   string line;
 >   int id;
->   string lastName, firstName;
+>   string last_name;
+>   string first_name;
 > 
 >   if (!file.is_open()) {
 >     cerr << "Error opening file!" << endl;
@@ -1589,20 +1435,10 @@ Running clang-format on ./store.cpp
 > 
 >   while (getline(file, line)) {
 >     istringstream iss(line);
->     if (!(iss >> id >> lastName >> firstName)) {
+>     if (!(iss >> id >> last_name >> first_name)) {
 >       cerr << "Error reading line: " << line << endl;
 >       continue; // Handles lines that do not have exactly three words
-15,30c22,25
-< 
-<     while (getline(file, line)) {
-<         istringstream iss(line);
-<         if (!(iss >> id >> lastName >> firstName)) {
-<             cerr << "Error reading line: " << line << endl;
-<             continue; // Handles lines that do not have exactly three words
-<         }
-<         Customer customer(id, lastName, firstName);
-<         customer_table_.insert(customer);
-<     }
+25,30c22,25
 <     file.close();
 < 
 < }
@@ -1610,7 +1446,7 @@ Running clang-format on ./store.cpp
 < Inventory& Store::inventory(){
 <   return inventory_;
 ---
->     Customer customer(id, lastName, firstName);
+>     Customer customer(id, last_name, first_name);
 >     customer_table_.insert(customer);
 >   }
 >   file.close();
@@ -1657,7 +1493,7 @@ Running clang-format on ./store.cpp
 <         }
 < 
 <         try {
-<             auto movie = Movie::Create(type, line.substr(3));
+<             auto* movie = Movie::Create(type, line.substr(3));
 <             if (movie != nullptr) {
 <                 inventory_.AddMovie(*movie, movie->getStock());
 <             }
@@ -1666,7 +1502,7 @@ Running clang-format on ./store.cpp
 <         }
 ---
 >     try {
->       auto movie = Movie::Create(type, line.substr(3));
+>       auto *movie = Movie::Create(type, line.substr(3));
 >       if (movie != nullptr) {
 >         inventory_.AddMovie(*movie, movie->getStock());
 >       }
@@ -1681,7 +1517,7 @@ Running clang-format on ./store.cpp
 ---
 >   }
 >   cout << endl;
-72,130c65,118
+72,132c65,109
 < void Store::ReadAndExecuteActions(std::ifstream& in) {
 <     std::string line;
 <     while (std::getline(in, line)) {
@@ -1695,46 +1531,48 @@ Running clang-format on ./store.cpp
 <                 break;
 <             }
 <             case 'H': {
-<                 int customerID;
-<                 iss >> customerID;
-<                 if (customer_table_.search(customerID)) {
-<                     Customer* customer = customer_table_.getCustomer(customerID);
+<                 int cusomter_id;
+<                 iss >> cusomter_id;
+<                 if (customer_table_.search(cusomter_id)) {
+<                     Customer* customer = customer_table_.getCustomer(cusomter_id);
 <                     cout << endl;
-<                     std::cout << "History for customer " << customerID << ":" << std::endl;
+<                     std::cout << "History for customer " << cusomter_id << ":" << std::endl;
 <                     cout << endl;
 <                     customer->History();
 <                 } else {
-<                     std::cerr << "Invalid customer ID: " << customerID << std::endl;
+<                     std::cerr << "Invalid customer ID: " << cusomter_id << std::endl;
 <                 }
 <                 break;
 <                 }
 <             case 'B':
 <             case 'R': {
-<                 int customerID;
-<                 char mediaType;
-<                 iss >> customerID >> mediaType;
+<                 int cusomter_id;
+<                 char media_type;
+<                 iss >> cusomter_id >> media_type;
 < 
-<                 std::string movieType;
-<                 std::string movieInfo;
-<                 std::getline(iss >> std::ws, movieInfo);
+<                 std::string movie_type;
+<                 std::string movie_info;
+<                 std::getline(iss >> std::ws, movie_info);
 < 
-<                 if (customer_table_.search(customerID)) {
-<                     Customer* customer = customer_table_.getCustomer(customerID);
+<                 if (customer_table_.search(cusomter_id)) {
+<                     Customer* customer = customer_table_.getCustomer(cusomter_id);
 <                     bool success;
 <                     if (command == 'B') {
-<                         success = inventory_.BorrowMovie(movieInfo);
+<                         success = inventory_.BorrowMovie(movie_info);
 <                     } else {
-<                         success = inventory_.ReturnMovie(movieInfo);
+<                         success = inventory_.ReturnMovie(movie_info);
 <                     }
 < 
 <                     if (success) {
 <                         std::string action = (command == 'B') ? "Borrowed" : "Returned";
-<                         customer->Add(action + ": " + movieInfo);
+<                         std::string combined = action;
+<                         combined.append(": ").append(movie_info);
+<                         customer->Add(combined);
 <                     } else {
-<                         std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movieInfo << std::endl;
+<                         std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movie_info << std::endl;
 <                     }
 <                 } else {
-<                     std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+<                     std::cerr << "Error: Customer ID " << cusomter_id << " not found." << std::endl;
 <                 }
 <                 break;
 <             }
@@ -1757,48 +1595,50 @@ Running clang-format on ./store.cpp
 >       break;
 >     }
 >     case 'H': {
->       int customerID;
->       iss >> customerID;
->       if (customer_table_.search(customerID)) {
->         Customer *customer = customer_table_.getCustomer(customerID);
+>       int cusomter_id;
+>       iss >> cusomter_id;
+>       if (customer_table_.search(cusomter_id)) {
+>         Customer *customer = customer_table_.getCustomer(cusomter_id);
 >         cout << endl;
->         std::cout << "History for customer " << customerID << ":" << std::endl;
+>         std::cout << "History for customer " << cusomter_id << ":" << std::endl;
 >         cout << endl;
 >         customer->History();
 >       } else {
->         std::cerr << "Invalid customer ID: " << customerID << std::endl;
+>         std::cerr << "Invalid customer ID: " << cusomter_id << std::endl;
 >       }
 >       break;
 >     }
 >     case 'B':
 >     case 'R': {
->       int customerID;
->       char mediaType;
->       iss >> customerID >> mediaType;
+>       int cusomter_id;
+>       char media_type;
+>       iss >> cusomter_id >> media_type;
 > 
->       std::string movieType;
->       std::string movieInfo;
->       std::getline(iss >> std::ws, movieInfo);
+>       std::string movie_type;
+>       std::string movie_info;
+>       std::getline(iss >> std::ws, movie_info);
 > 
->       if (customer_table_.search(customerID)) {
->         Customer *customer = customer_table_.getCustomer(customerID);
+>       if (customer_table_.search(cusomter_id)) {
+>         Customer *customer = customer_table_.getCustomer(cusomter_id);
 >         bool success;
 >         if (command == 'B') {
->           success = inventory_.BorrowMovie(movieInfo);
+>           success = inventory_.BorrowMovie(movie_info);
 >         } else {
->           success = inventory_.ReturnMovie(movieInfo);
->         }
+>           success = inventory_.ReturnMovie(movie_info);
+133a111,130
 > 
 >         if (success) {
 >           std::string action = (command == 'B') ? "Borrowed" : "Returned";
->           customer->Add(action + ": " + movieInfo);
+>           std::string combined = action;
+>           combined.append(": ").append(movie_info);
+>           customer->Add(combined);
 >         } else {
 >           std::cerr << "Error: Could not "
 >                     << (command == 'B' ? "borrow" : "return")
->                     << " movie: " << movieInfo << std::endl;
-131a120,128
+>                     << " movie: " << movie_info << std::endl;
+>         }
 >       } else {
->         std::cerr << "Error: Customer ID " << customerID << " not found."
+>         std::cerr << "Error: Customer ID " << cusomter_id << " not found."
 >                   << std::endl;
 >       }
 >       break;
@@ -1806,7 +1646,7 @@ Running clang-format on ./store.cpp
 >     default:
 >       std::cerr << "Invalid command: " << command << std::endl;
 >       break;
-132a130
+134a132
 >   }
 Running clang-format on ./store_test.cpp
 8,11c8,10
@@ -1822,38 +1662,39 @@ Running clang-format on ./store_test.cpp
 > #include <cassert>
 14d13
 < #include <ctime>
-16,19c15,19
+16,20c15,19
 < #include <cassert>
 < #include "store.h"
 < #include "movie.h"
 < #include "inventory.h"
+< 
 ---
 > #include <ctime>
 > #include <fstream>
 > #include <iostream>
 > #include <string>
 > #include <vector>
-44,49c44,49
+43,48c42,47
 <     // this test function tests movie being
 <     // inserted into inventory and sorted per the requirement.
 <     Store store;
-<     ifstream movieFile("data4movies.txt");
-<     store.ReadMovies(movieFile);
+<     ifstream movie_file("data4movies.txt");
+<     store.ReadMovies(movie_file);
 <     store.inventory().PrintInventory();
 ---
 >   // this test function tests movie being
 >   // inserted into inventory and sorted per the requirement.
 >   Store store;
->   ifstream movieFile("data4movies.txt");
->   store.ReadMovies(movieFile);
+>   ifstream movie_file("data4movies.txt");
+>   store.ReadMovies(movie_file);
 >   store.inventory().PrintInventory();
-59d58
+58d56
 < 
-62c61
+61c59
 <   // this test function tests command are read and executesd. 
 ---
 >   // this test function tests command are read and executesd.
-88,90c87,89
+87,89c85,87
 <   //testStore2();
 <   //testStore3();
 <   //testStore4();
@@ -1867,67 +1708,67 @@ Running clang-format on ./store_test.cpp
 =====================================================
 6. No memory leaks using valgrind, look for "definitely lost" 
 =====================================================
-==2763737== Memcheck, a memory error detector
-==2763737== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==2763737== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
-==2763737== Command: ./a.out
-==2763737== Parent PID: 2763553
-==2763737== 
-==2763737== Invalid read of size 8
-==2763737==    at 0x4F78D6B: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
-==2763737==    by 0x403CE1: Classic::Classic(Classic const&) (movie.h:99)
-==2763737==    by 0x4031CC: Classic::operator==(Movie const&) const (classic.cpp:35)
-==2763737==    by 0x407C4C: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
-==2763737==    by 0x407D2A: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
-==2763737==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
-==2763737==    by 0x410A72: testStoreFinal() (store_test.cpp:77)
-==2763737==    by 0x410BAC: testAll() (store_test.cpp:91)
-==2763737==    by 0x40D9D1: main (main.cpp:13)
-==2763737==  Address 0x5b55db8 is 0 bytes after a block of size 120 alloc'd
-==2763737==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2763737==    by 0x404B4F: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2763737==    by 0x40DB4C: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2763737==    by 0x407D04: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2763737==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
-==2763737==    by 0x410A72: testStoreFinal() (store_test.cpp:77)
-==2763737==    by 0x410BAC: testAll() (store_test.cpp:91)
-==2763737==    by 0x40D9D1: main (main.cpp:13)
-==2763737== 
-==2763737== Invalid read of size 8
-==2763737==    at 0x4F78D6E: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
-==2763737==    by 0x403CE1: Classic::Classic(Classic const&) (movie.h:99)
-==2763737==    by 0x4031CC: Classic::operator==(Movie const&) const (classic.cpp:35)
-==2763737==    by 0x407C4C: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
-==2763737==    by 0x407D2A: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
-==2763737==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
-==2763737==    by 0x410A72: testStoreFinal() (store_test.cpp:77)
-==2763737==    by 0x410BAC: testAll() (store_test.cpp:91)
-==2763737==    by 0x40D9D1: main (main.cpp:13)
-==2763737==  Address 0x5b55dc0 is 8 bytes after a block of size 120 alloc'd
-==2763737==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2763737==    by 0x404B4F: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2763737==    by 0x40DB4C: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2763737==    by 0x407D04: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2763737==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
-==2763737==    by 0x410A72: testStoreFinal() (store_test.cpp:77)
-==2763737==    by 0x410BAC: testAll() (store_test.cpp:91)
-==2763737==    by 0x40D9D1: main (main.cpp:13)
-==2763737== 
-==2763737== 
-==2763737== HEAP SUMMARY:
-==2763737==     in use at exit: 9,600 bytes in 113 blocks
-==2763737==   total heap usage: 1,110 allocs, 997 frees, 153,168 bytes allocated
-==2763737== 
-==2763737== LEAK SUMMARY:
-==2763737==    definitely lost: 8,120 bytes in 63 blocks
-==2763737==    indirectly lost: 1,480 bytes in 50 blocks
-==2763737==      possibly lost: 0 bytes in 0 blocks
-==2763737==    still reachable: 0 bytes in 0 blocks
-==2763737==         suppressed: 0 bytes in 0 blocks
-==2763737== Rerun with --leak-check=full to see details of leaked memory
-==2763737== 
-==2763737== For lists of detected and suppressed errors, rerun with: -s
-==2763737== ERROR SUMMARY: 162 errors from 2 contexts (suppressed: 0 from 0)
+==3803680== Memcheck, a memory error detector
+==3803680== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==3803680== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==3803680== Command: ./a.out
+==3803680== Parent PID: 3803527
+==3803680== 
+==3803680== Invalid read of size 8
+==3803680==    at 0x4F78D6B: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
+==3803680==    by 0x403CE1: Classic::Classic(Classic const&) (movie.h:99)
+==3803680==    by 0x4031CC: Classic::operator==(Movie const&) const (classic.cpp:35)
+==3803680==    by 0x407C4C: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
+==3803680==    by 0x407D2A: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
+==3803680==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
+==3803680==    by 0x410A8C: testStoreFinal() (store_test.cpp:76)
+==3803680==    by 0x410BC6: testAll() (store_test.cpp:90)
+==3803680==    by 0x40D9D1: main (main.cpp:12)
+==3803680==  Address 0x5b55db8 is 0 bytes after a block of size 120 alloc'd
+==3803680==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==3803680==    by 0x404B4F: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
+==3803680==    by 0x40DB4C: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==3803680==    by 0x407D04: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==3803680==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
+==3803680==    by 0x410A8C: testStoreFinal() (store_test.cpp:76)
+==3803680==    by 0x410BC6: testAll() (store_test.cpp:90)
+==3803680==    by 0x40D9D1: main (main.cpp:12)
+==3803680== 
+==3803680== Invalid read of size 8
+==3803680==    at 0x4F78D6E: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
+==3803680==    by 0x403CE1: Classic::Classic(Classic const&) (movie.h:99)
+==3803680==    by 0x4031CC: Classic::operator==(Movie const&) const (classic.cpp:35)
+==3803680==    by 0x407C4C: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
+==3803680==    by 0x407D2A: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
+==3803680==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
+==3803680==    by 0x410A8C: testStoreFinal() (store_test.cpp:76)
+==3803680==    by 0x410BC6: testAll() (store_test.cpp:90)
+==3803680==    by 0x40D9D1: main (main.cpp:12)
+==3803680==  Address 0x5b55dc0 is 8 bytes after a block of size 120 alloc'd
+==3803680==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==3803680==    by 0x404B4F: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
+==3803680==    by 0x40DB4C: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==3803680==    by 0x407D04: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==3803680==    by 0x40F92F: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:59)
+==3803680==    by 0x410A8C: testStoreFinal() (store_test.cpp:76)
+==3803680==    by 0x410BC6: testAll() (store_test.cpp:90)
+==3803680==    by 0x40D9D1: main (main.cpp:12)
+==3803680== 
+==3803680== 
+==3803680== HEAP SUMMARY:
+==3803680==     in use at exit: 9,600 bytes in 113 blocks
+==3803680==   total heap usage: 1,142 allocs, 1,029 frees, 154,212 bytes allocated
+==3803680== 
+==3803680== LEAK SUMMARY:
+==3803680==    definitely lost: 8,120 bytes in 63 blocks
+==3803680==    indirectly lost: 1,480 bytes in 50 blocks
+==3803680==      possibly lost: 0 bytes in 0 blocks
+==3803680==    still reachable: 0 bytes in 0 blocks
+==3803680==         suppressed: 0 bytes in 0 blocks
+==3803680== Rerun with --leak-check=full to see details of leaked memory
+==3803680== 
+==3803680== For lists of detected and suppressed errors, rerun with: -s
+==3803680== ERROR SUMMARY: 162 errors from 2 contexts (suppressed: 0 from 0)
 =====================================================
 7. Tests have full code coverage
 =====================================================
@@ -2018,13 +1859,13 @@ Name                                                                            
 Inventory::AddMovieHelper(Movie*, int)                                                                                                                                                                                                                                                                                                                                                    5       1  80.00%        10       3  70.00%         4       1  75.00%
 Inventory::AddMovie(Movie const&, int)                                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         4       0 100.00%         0       0   0.00%
 Inventory::PrintInventory() const                                                                                                                                                                                                                                                                                                                                                        10       0 100.00%        73       0 100.00%        12       0 100.00%
-Inventory::BorrowMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            39       6  84.62%        73      10  86.30%        44       7  84.09%
-Inventory::ReturnMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            30      13  56.67%        61      23  62.30%        38      16  57.89%
+Inventory::BorrowMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            39       6  84.62%        73       8  89.04%        44       7  84.09%
+Inventory::ReturnMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&)                                                                                                                                                                                                                                                                            30      13  56.67%        64      24  62.50%        38      16  57.89%
 inventory.cpp:Inventory::PrintInventory() const::$_0::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                    9       1  88.89%        11       1  90.91%         6       1  83.33%
 inventory.cpp:Inventory::PrintInventory() const::$_1::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                    9       1  88.89%        11       1  90.91%         6       1  83.33%
 inventory.cpp:Inventory::PrintInventory() const::$_2::operator()(Movie*, Movie*) const                                                                                                                                                                                                                                                                                                   12       0 100.00%        22       0 100.00%         8       0 100.00%
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                                                                                                                                                                                                                                                   115      22  80.87%       265      38  85.66%       118      26  77.97%
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                   115      22  80.87%       268      37  86.19%       118      26  77.97%
 
 File '/home/NETID/jeosburn/css343/lab4/main.cpp':
 Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
@@ -2052,14 +1893,14 @@ TOTAL                                                                           
 File '/home/NETID/jeosburn/css343/lab4/store.cpp':
 Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Store::ReadCustomers(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                                  9       2  77.78%        19       6  68.42%         6       2  66.67%
+Store::ReadCustomers(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                                  9       2  77.78%        20       6  70.00%         6       2  66.67%
 Store::inventory()                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         3       0 100.00%         0       0   0.00%
 Store::Store()                                                                                                                                                                                                                                                                                                                                                                            1       0 100.00%         5       0 100.00%         0       0   0.00%
 Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                                    21       2  90.48%        24       3  87.50%        14       3  78.57%
 Store::PrintCustomers() const                                                                                                                                                                                                                                                                                                                                                             1       1   0.00%         3       3   0.00%         0       0   0.00%
-Store::ReadAndExecuteActions(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                         26       2  92.31%        58       4  93.10%        24       2  91.67%
+Store::ReadAndExecuteActions(std::basic_ifstream<char, std::char_traits<char>>&)                                                                                                                                                                                                                                                                                                         26       2  92.31%        60       4  93.33%        24       2  91.67%
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                                                                                                                                                                                                                                                    59       7  88.14%       112      16  85.71%        44       7  84.09%
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                    59       7  88.14%       115      16  86.09%        44       7  84.09%
 
 File '/home/NETID/jeosburn/css343/lab4/store_test.cpp':
 Name                                                                                                                                                                                                                                                                                                                                                                                Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
@@ -2182,38 +2023,37 @@ The lines below were never executed
    30|      0|            return ca->getReleaseYear() < cb->getReleaseYear();
    55|      0|            return da->getTitle() < db->getTitle();
   125|      0|            return false; // No stock available
-  126|      0|          }
-  142|      0|          if (drama->getStock() > 0) {
-  143|      0|            drama->setStock(drama->getStock() - 1);
-  144|      0|            return true; // Successfully borrowed
-  145|      0|          } else {
-  146|      0|            return false; // No stock available
-  147|      0|          }
-  148|      0|        }
-  172|      0|    break;
-  205|      0|    break;
-  207|      0|  case 'D': {
-  208|      0|    std::string director, title;
-  209|      0|    iss.ignore(1, ' '); // Skip the space after type
-  210|      0|    std::getline(iss, director, ',');
-  211|      0|    std::getline(iss, title);
-  213|      0|    for (auto& movie : movies_) {
-  214|      0|      if (movie->getType() == 'D') {
-  215|      0|        auto drama = static_cast<Drama*>(movie);
-  216|      0|        if (drama->getDirector() == director && drama->getTitle() == title) {
-  217|      0|          drama->setStock(drama->getStock() + 1);
-  218|      0|          return true; // Successfully returned
-  219|      0|        }
-  220|      0|      }
-  221|      0|    }
-  222|      0|    break;
-  223|      0|  }
-  239|      0|    break;
-  241|      0|  default:
-  242|      0|    std::cerr << "Invalid movie type: " << movie_type << std::endl;
-  243|      0|    return false;
-  246|      0|  std::cerr << "Movie not found: " << movieInfo << std::endl;
-  247|      0|  return false;
+  143|      0|          if (drama->getStock() > 0) {
+  144|      0|            drama->setStock(drama->getStock() - 1);
+  145|      0|            return true; // Successfully borrowed
+  146|      0|          }
+  147|      0|            return false; // No stock available
+  149|      0|        }
+  175|      0|    break;
+  208|      0|    break;
+  210|      0|  case 'D': {
+  211|      0|    std::string director;
+  212|      0|    std::string title;
+  213|      0|    iss.ignore(1, ' '); // Skip the space after type
+  214|      0|    std::getline(iss, director, ',');
+  215|      0|    std::getline(iss, title);
+  217|      0|    for (auto& movie : movies_) {
+  218|      0|      if (movie->getType() == 'D') {
+  219|      0|        auto* drama = static_cast<Drama*>(movie);
+  220|      0|        if (drama->getDirector() == director && drama->getTitle() == title) {
+  221|      0|          drama->setStock(drama->getStock() + 1);
+  222|      0|          return true; // Successfully returned
+  223|      0|        }
+  224|      0|      }
+  225|      0|    }
+  226|      0|    break;
+  227|      0|  }
+  245|      0|    break;
+  247|      0|  default:
+  248|      0|    std::cerr << "Invalid movie type: " << movie_type << std::endl;
+  249|      0|    return false;
+  252|      0|  std::cerr << "Movie not found: " << movie_info << std::endl;
+  253|      0|  return false;
    19|      0|    throw std::invalid_argument("Invalid movie type");
    26|      0|void Movie::setTitle(const string& title) {
    27|      0|    this->title_ = title;
@@ -2246,48 +2086,48 @@ The lines below were never executed
    69|      0|  customer_table_.print();
    70|      0|}
    83|      0|            }
-   94|      0|                    std::cerr << "Invalid customer ID: " << customerID << std::endl;
+   94|      0|                    std::cerr << "Invalid customer ID: " << cusomter_id << std::endl;
    95|      0|                }
    97|      0|                }
-   23|      0|void testStore1() {
-   24|      0|  cout << "Start testStore1" << endl;
-   27|      0|  string cfile = "testcommands-1.txt";
-   28|      0|  stringstream out;
-   29|      0|  ifstream fs(cfile);
-   30|      0|  assert(fs.is_open());
-   31|      0|  char commandType;
-   32|      0|  string discard;
-   33|      0|  while (fs >> commandType) {
-   34|      0|    out << commandType;
-   35|      0|    getline(fs, discard);
-   36|      0|  }
-   37|      0|  fs.close();
-   38|      0|  string result = "IHHBRIBBIH";
-   39|      0|  assert(out.str() == result);
-   40|      0|  cout << "End testStore1" << endl;
-   41|      0|}
-   43|      0|void testStore2() {
-   46|      0|    Store store;
-   47|      0|    ifstream movieFile("data4movies.txt");
-   48|      0|    store.ReadMovies(movieFile);
-   49|      0|    store.inventory().PrintInventory();
-   50|      0|}
-   52|      0|void testStore3() {
-   55|      0|  Store store;
-   56|      0|  ifstream stream("data4customers.txt");
-   57|      0|  store.ReadCustomers(stream);
-   58|      0|  store.PrintCustomers();
-   60|      0|}
-   61|      0|void testStore4() {
-   63|      0|  Store store;
-   64|      0|  ifstream moviefile("data4movies.txt");
-   65|      0|  store.ReadMovies(moviefile);
-   66|      0|  ifstream customerfile("data4customers.txt");
-   67|      0|  store.ReadCustomers(customerfile);
-   68|      0|  ifstream commandfile("testCommandtext.txt");
-   69|      0|  store.ReadAndExecuteActions(commandfile);
-   70|      0|}
-Sun May 26 19:42:26 PDT 2024
+   22|      0|void testStore1() {
+   23|      0|  cout << "Start testStore1" << endl;
+   26|      0|  string cfile = "testcommands-1.txt";
+   27|      0|  stringstream out;
+   28|      0|  ifstream fs(cfile);
+   29|      0|  assert(fs.is_open());
+   30|      0|  char command_type;
+   31|      0|  string discard;
+   32|      0|  while (fs >> command_type) {
+   33|      0|    out << command_type;
+   34|      0|    getline(fs, discard);
+   35|      0|  }
+   36|      0|  fs.close();
+   37|      0|  string result = "IHHBRIBBIH";
+   38|      0|  assert(out.str() == result);
+   39|      0|  cout << "End testStore1" << endl;
+   40|      0|}
+   42|      0|void testStore2() {
+   45|      0|    Store store;
+   46|      0|    ifstream movie_file("data4movies.txt");
+   47|      0|    store.ReadMovies(movie_file);
+   48|      0|    store.inventory().PrintInventory();
+   49|      0|}
+   51|      0|void testStore3() {
+   54|      0|  Store store;
+   55|      0|  ifstream stream("data4customers.txt");
+   56|      0|  store.ReadCustomers(stream);
+   57|      0|  store.PrintCustomers();
+   59|      0|}
+   60|      0|void testStore4() {
+   62|      0|  Store store;
+   63|      0|  ifstream movie_file("data4movies.txt");
+   64|      0|  store.ReadMovies(movie_file);
+   65|      0|  ifstream customerfile("data4customers.txt");
+   66|      0|  store.ReadCustomers(customerfile);
+   67|      0|  ifstream commandfile("testCommandtext.txt");
+   68|      0|  store.ReadAndExecuteActions(commandfile);
+   69|      0|}
+Mon May 27 01:45:22 PDT 2024
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command

@@ -19,8 +19,8 @@ private:
    
 public: 
     Store();    
-    void ReadMovies(ifstream& in);
-    void ReadCustomers(ifstream& in);
+    void ReadMovies(ifstream& file);
+    void ReadCustomers(ifstream& file);
     void ReadAndExecuteActions(ifstream& in);
     Inventory& inventory();
     void PrintCustomers() const;

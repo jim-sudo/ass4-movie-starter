@@ -18,7 +18,6 @@
 #include "movie.h"
 #include "inventory.h"
 
-using namespace std;
 
 void testStore1() {
   cout << "Start testStore1" << endl;
@@ -28,10 +27,10 @@ void testStore1() {
   stringstream out;
   ifstream fs(cfile);
   assert(fs.is_open());
-  char commandType;
+  char command_type;
   string discard;
-  while (fs >> commandType) {
-    out << commandType;
+  while (fs >> command_type) {
+    out << command_type;
     getline(fs, discard);
   }
   fs.close();
@@ -44,8 +43,8 @@ void testStore2() {
     // this test function tests movie being
     // inserted into inventory and sorted per the requirement.
     Store store;
-    ifstream movieFile("data4movies.txt");
-    store.ReadMovies(movieFile);
+    ifstream movie_file("data4movies.txt");
+    store.ReadMovies(movie_file);
     store.inventory().PrintInventory();
 }
 
@@ -61,8 +60,8 @@ void testStore3() {
 void testStore4() {
   // this test function tests command are read and executesd. 
   Store store;
-  ifstream moviefile("data4movies.txt");
-  store.ReadMovies(moviefile);
+  ifstream movie_file("data4movies.txt");
+  store.ReadMovies(movie_file);
   ifstream customerfile("data4customers.txt");
   store.ReadCustomers(customerfile);
   ifstream commandfile("testCommandtext.txt");
@@ -73,8 +72,8 @@ void testStoreFinal() {
   cout << "=====================================" << endl;
   cout << "Start testStoreFinal" << endl;
   Store store;
-  ifstream moviefile("data4movies.txt");
-  store.ReadMovies(moviefile);
+  ifstream movie_file("data4movies.txt");
+  store.ReadMovies(movie_file);
   ifstream customerfile("data4customers.txt");
   store.ReadCustomers(customerfile);
   ifstream commandfile("data4commands.txt");

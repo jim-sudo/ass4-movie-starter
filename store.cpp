@@ -1,12 +1,12 @@
 #include "store.h"
 #include <iostream>
 #include <sstream>
-using namespace std;
 
 void Store::ReadCustomers(ifstream& file) {
     string line;
     int id;
-    string lastName, firstName;
+    string last_name;
+    string first_name;
 
     if (!file.is_open()) {
         cerr << "Error opening file!" << endl;
@@ -15,11 +15,11 @@ void Store::ReadCustomers(ifstream& file) {
 
     while (getline(file, line)) {
         istringstream iss(line);
-        if (!(iss >> id >> lastName >> firstName)) {
+        if (!(iss >> id >> last_name >> first_name)) {
             cerr << "Error reading line: " << line << endl;
             continue; // Handles lines that do not have exactly three words
         }
-        Customer customer(id, lastName, firstName);
+        Customer customer(id, last_name, first_name);
         customer_table_.insert(customer);
     }
     file.close();
@@ -54,7 +54,7 @@ void Store::ReadMovies(ifstream& file) {
         }
 
         try {
-            auto movie = Movie::Create(type, line.substr(3));
+            auto* movie = Movie::Create(type, line.substr(3));
             if (movie != nullptr) {
                 inventory_.AddMovie(*movie, movie->getStock());
             }
@@ -82,46 +82,48 @@ void Store::ReadAndExecuteActions(std::ifstream& in) {
                 break;
             }
             case 'H': {
-                int customerID;
-                iss >> customerID;
-                if (customer_table_.search(customerID)) {
-                    Customer* customer = customer_table_.getCustomer(customerID);
+                int cusomter_id;
+                iss >> cusomter_id;
+                if (customer_table_.search(cusomter_id)) {
+                    Customer* customer = customer_table_.getCustomer(cusomter_id);
                     cout << endl;
-                    std::cout << "History for customer " << customerID << ":" << std::endl;
+                    std::cout << "History for customer " << cusomter_id << ":" << std::endl;
                     cout << endl;
                     customer->History();
                 } else {
-                    std::cerr << "Invalid customer ID: " << customerID << std::endl;
+                    std::cerr << "Invalid customer ID: " << cusomter_id << std::endl;
                 }
                 break;
                 }
             case 'B':
             case 'R': {
-                int customerID;
-                char mediaType;
-                iss >> customerID >> mediaType;
+                int cusomter_id;
+                char media_type;
+                iss >> cusomter_id >> media_type;
 
-                std::string movieType;
-                std::string movieInfo;
-                std::getline(iss >> std::ws, movieInfo);
+                std::string movie_type;
+                std::string movie_info;
+                std::getline(iss >> std::ws, movie_info);
 
-                if (customer_table_.search(customerID)) {
-                    Customer* customer = customer_table_.getCustomer(customerID);
+                if (customer_table_.search(cusomter_id)) {
+                    Customer* customer = customer_table_.getCustomer(cusomter_id);
                     bool success;
                     if (command == 'B') {
-                        success = inventory_.BorrowMovie(movieInfo);
+                        success = inventory_.BorrowMovie(movie_info);
                     } else {
-                        success = inventory_.ReturnMovie(movieInfo);
+                        success = inventory_.ReturnMovie(movie_info);
                     }
 
                     if (success) {
                         std::string action = (command == 'B') ? "Borrowed" : "Returned";
-                        customer->Add(action + ": " + movieInfo);
+                        std::string combined = action;
+                        combined.append(": ").append(movie_info);
+                        customer->Add(combined);
                     } else {
-                        std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movieInfo << std::endl;
+                        std::cerr << "Error: Could not " << (command == 'B' ? "borrow" : "return") << " movie: " << movie_info << std::endl;
                     }
                 } else {
-                    std::cerr << "Error: Customer ID " << customerID << " not found." << std::endl;
+                    std::cerr << "Error: Customer ID " << cusomter_id << " not found." << std::endl;
                 }
                 break;
             }

@@ -58,7 +58,7 @@ inline ostream& operator<<(ostream& out, const Movie& movie) {
 
 class Comedy : public Movie {
 public:
-    Comedy(const string& title, int stock, const string& director, int releaseYear);
+    Comedy(const string& title, int stock, const string& director, int release_year);
 
     int getReleaseYear() const;
     void setReleaseYear(int year);
@@ -78,7 +78,7 @@ private:
 
 class Drama : public Movie {
 public:
-    Drama(const string& director, const string& title, int stock, int releaseYear);
+    Drama(const string& director, const string& title, int stock, int release_year);
 
     int getReleaseYear() const;
     void setReleaseYear(int year);
