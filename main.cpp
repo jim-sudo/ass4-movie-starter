@@ -4,7 +4,6 @@
 
 #include <iostream>
 
-
 // forward declaration, implementation in store_test.cpp
 void testAll();
 

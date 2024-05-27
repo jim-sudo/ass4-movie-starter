@@ -5,19 +5,18 @@
  * @date 19 Jan 2019
  */
 
-#include <iostream>
+#include "inventory.h"
+#include "movie.h"
+#include "store.h"
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <cmath>
-#include <ctime>
-#include <cstdlib>
-#include <cassert>
-#include "store.h"
-#include "movie.h"
-#include "inventory.h"
-
 
 void testStore1() {
   cout << "Start testStore1" << endl;
@@ -40,12 +39,12 @@ void testStore1() {
 }
 
 void testStore2() {
-    // this test function tests movie being
-    // inserted into inventory and sorted per the requirement.
-    Store store;
-    ifstream movie_file("data4movies.txt");
-    store.ReadMovies(movie_file);
-    store.inventory().PrintInventory();
+  // this test function tests movie being
+  // inserted into inventory and sorted per the requirement.
+  Store store;
+  ifstream movie_file("data4movies.txt");
+  store.ReadMovies(movie_file);
+  store.inventory().PrintInventory();
 }
 
 void testStore3() {
@@ -55,10 +54,10 @@ void testStore3() {
   ifstream stream("data4customers.txt");
   store.ReadCustomers(stream);
   store.PrintCustomers();
-
 }
+
 void testStore4() {
-  // this test function tests command are read and executesd. 
+  // this test function tests command are read and executesd.
   Store store;
   ifstream movie_file("data4movies.txt");
   store.ReadMovies(movie_file);
@@ -84,8 +83,8 @@ void testStoreFinal() {
 
 void testAll() {
   // testStore1();
-  //testStore2();
-  //testStore3();
-  //testStore4();
+  // testStore2();
+  // testStore3();
+  // testStore4();
   testStoreFinal();
 }
