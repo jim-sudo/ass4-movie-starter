@@ -1,50 +1,50 @@
-==2927041== Memcheck, a memory error detector
-==2927041== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==2927041== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
-==2927041== Command: ./a.out
-==2927041== 
+==2927951== Memcheck, a memory error detector
+==2927951== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2927951== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==2927951== Command: ./a.out
+==2927951== 
 =====================================
 Start testStoreFinal
-==2927041== Invalid read of size 8
-==2927041==    at 0x4F78D6B: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
-==2927041==    by 0x403D9B: Classic::Classic(Classic const&) (movie.h:99)
-==2927041==    by 0x40327C: Classic::operator==(Movie const&) const (classic.cpp:35)
-==2927041==    by 0x407D5E: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
-==2927041==    by 0x407E3C: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041==  Address 0x5b56db8 is 0 bytes after a block of size 120 alloc'd
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== Invalid read of size 8
-==2927041==    at 0x4F78D6E: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
-==2927041==    by 0x403D9B: Classic::Classic(Classic const&) (movie.h:99)
-==2927041==    by 0x40327C: Classic::operator==(Movie const&) const (classic.cpp:35)
-==2927041==    by 0x407D5E: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
-==2927041==    by 0x407E3C: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041==  Address 0x5b56dc0 is 8 bytes after a block of size 120 alloc'd
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
+==2927951== Invalid read of size 8
+==2927951==    at 0x4F78D6B: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
+==2927951==    by 0x403D9B: Classic::Classic(Classic const&) (movie.h:99)
+==2927951==    by 0x40327C: Classic::operator==(Movie const&) const (classic.cpp:35)
+==2927951==    by 0x407D5E: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
+==2927951==    by 0x407E3C: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951==  Address 0x5b56db8 is 0 bytes after a block of size 120 alloc'd
+==2927951==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==2927951==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
+==2927951==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==2927951==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951== 
+==2927951== Invalid read of size 8
+==2927951==    at 0x4F78D6E: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
+==2927951==    by 0x403D9B: Classic::Classic(Classic const&) (movie.h:99)
+==2927951==    by 0x40327C: Classic::operator==(Movie const&) const (classic.cpp:35)
+==2927951==    by 0x407D5E: Inventory::AddMovieHelper(Movie*, int) (inventory.cpp:5)
+==2927951==    by 0x407E3C: Inventory::AddMovie(Movie const&, int) (inventory.cpp:16)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951==  Address 0x5b56dc0 is 8 bytes after a block of size 120 alloc'd
+==2927951==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==2927951==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
+==2927951==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==2927951==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951== 
 Invalid movie type: Z
 Invalid movie type: Z
 
@@ -539,74 +539,47 @@ Borrowed: F Annie Hall, 1977
 End testStoreFinal
 =====================================
 Done.
-==2927041== 
-==2927041== HEAP SUMMARY:
-==2927041==     in use at exit: 9,576 bytes in 110 blocks
-==2927041==   total heap usage: 1,142 allocs, 1,032 frees, 158,308 bytes allocated
-==2927041== 
-==2927041== 1,116 (960 direct, 156 indirect) bytes in 8 blocks are definitely lost in loss record 11 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x40FAD5: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:77)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== 1,116 (960 direct, 156 indirect) bytes in 8 blocks are definitely lost in loss record 12 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== 1,181 (960 direct, 221 indirect) bytes in 8 blocks are definitely lost in loss record 13 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x407A97: DramaFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (drama.cpp:70)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x40FAD5: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:77)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== 1,181 (960 direct, 221 indirect) bytes in 8 blocks are definitely lost in loss record 14 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x407A97: DramaFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (drama.cpp:70)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== 2,491 (2,128 direct, 363 indirect) bytes in 14 blocks are definitely lost in loss record 15 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x403991: ClassicFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (classic.cpp:90)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x40FAD5: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:77)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== 2,491 (2,128 direct, 363 indirect) bytes in 14 blocks are definitely lost in loss record 16 of 16
-==2927041==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
-==2927041==    by 0x403991: ClassicFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (classic.cpp:90)
-==2927041==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
-==2927041==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
-==2927041==    by 0x40FB11: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
-==2927041==    by 0x410C6E: testStoreFinal() (store_test.cpp:76)
-==2927041==    by 0x410DA8: testAll() (store_test.cpp:90)
-==2927041==    by 0x40DAE3: main (main.cpp:12)
-==2927041== 
-==2927041== LEAK SUMMARY:
-==2927041==    definitely lost: 8,096 bytes in 60 blocks
-==2927041==    indirectly lost: 1,480 bytes in 50 blocks
-==2927041==      possibly lost: 0 bytes in 0 blocks
-==2927041==    still reachable: 0 bytes in 0 blocks
-==2927041==         suppressed: 0 bytes in 0 blocks
-==2927041== 
-==2927041== For lists of detected and suppressed errors, rerun with: -s
-==2927041== ERROR SUMMARY: 168 errors from 8 contexts (suppressed: 0 from 0)
+==2927951== 
+==2927951== HEAP SUMMARY:
+==2927951==     in use at exit: 4,788 bytes in 55 blocks
+==2927951==   total heap usage: 1,142 allocs, 1,087 frees, 158,308 bytes allocated
+==2927951== 
+==2927951== 1,116 (960 direct, 156 indirect) bytes in 8 blocks are definitely lost in loss record 6 of 8
+==2927951==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==2927951==    by 0x404C1B: ComedyFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (comedy.cpp:72)
+==2927951==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==2927951==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951== 
+==2927951== 1,181 (960 direct, 221 indirect) bytes in 8 blocks are definitely lost in loss record 7 of 8
+==2927951==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==2927951==    by 0x407A97: DramaFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (drama.cpp:70)
+==2927951==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==2927951==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951== 
+==2927951== 2,491 (2,128 direct, 363 indirect) bytes in 14 blocks are definitely lost in loss record 8 of 8
+==2927951==    at 0x4C38913: operator new(unsigned long) (vg_replace_malloc.c:472)
+==2927951==    by 0x403991: ClassicFactory::Create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const (classic.cpp:90)
+==2927951==    by 0x40DC5E: Movie::Create(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (movie.cpp:17)
+==2927951==    by 0x407E16: Inventory::AddMovie(Movie const&, int) (inventory.cpp:15)
+==2927951==    by 0x40FB10: Store::ReadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (store.cpp:79)
+==2927951==    by 0x410C90: testStoreFinal() (store_test.cpp:76)
+==2927951==    by 0x410DCA: testAll() (store_test.cpp:90)
+==2927951==    by 0x40DAE3: main (main.cpp:12)
+==2927951== 
+==2927951== LEAK SUMMARY:
+==2927951==    definitely lost: 4,048 bytes in 30 blocks
+==2927951==    indirectly lost: 740 bytes in 25 blocks
+==2927951==      possibly lost: 0 bytes in 0 blocks
+==2927951==    still reachable: 0 bytes in 0 blocks
+==2927951==         suppressed: 0 bytes in 0 blocks
+==2927951== 
+==2927951== For lists of detected and suppressed errors, rerun with: -s
+==2927951== ERROR SUMMARY: 165 errors from 5 contexts (suppressed: 0 from 0)

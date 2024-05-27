@@ -78,6 +78,7 @@ void Store::ReadMovies(ifstream& file) {
             if (movie != nullptr) {
                 inventory_.AddMovie(*movie, movie->getStock());
             }
+            delete movie;
         } catch (const exception& e) {
             cerr << "Error parsing line: " << line << "\n" << e.what() << std::endl;
         }
