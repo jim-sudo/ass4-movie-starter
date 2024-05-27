@@ -2,6 +2,11 @@
 #include <iostream>
 #include <sstream>
 
+
+ComedyFactory* com = nullptr;
+DramaFactory* dram = nullptr;
+ClassicFactory* classic = nullptr;
+
 void Store::ReadCustomers(ifstream& file) {
     string line;
     int id;
@@ -31,10 +36,25 @@ Inventory& Store::inventory(){
 }
 
 
+// Store::Store() {
+//     Movie::RegisterType('F', new ComedyFactory());
+//     Movie::RegisterType('D', new DramaFactory());
+//     Movie::RegisterType('C', new ClassicFactory());
+// // }
+
 Store::Store() {
-    Movie::RegisterType('F', new ComedyFactory());
-    Movie::RegisterType('D', new DramaFactory());
-    Movie::RegisterType('C', new ClassicFactory());
+    com = new ComedyFactory();
+    dram = new DramaFactory();
+    classic = new ClassicFactory();
+    Movie::RegisterType('F', com);
+    Movie::RegisterType('D', dram);
+    Movie::RegisterType('C', classic);
+}
+
+Store::~Store() {
+    delete com;
+    delete dram;
+    delete classic;
 }
 
 void Store::ReadMovies(ifstream& file) {

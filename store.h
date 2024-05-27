@@ -24,6 +24,7 @@ public:
     void ReadAndExecuteActions(ifstream& in);
     Inventory& inventory();
     void PrintCustomers() const;
+    ~Store();
 };
 #endif
 
