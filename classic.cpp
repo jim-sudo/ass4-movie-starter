@@ -11,7 +11,7 @@ Classic::Classic(const string& release_date, const string& major_actor, const st
 }
 
 bool Classic::operator<(const Movie& other) const {
-    const auto classic = static_cast<const Classic&>(other);
+    const Classic& classic = static_cast<const Classic&>(other);
     if (release_date_ != classic.release_date_) {
         istringstream ssa(release_date_);
         istringstream ssb(classic.release_date_);
@@ -32,7 +32,7 @@ bool Classic::operator<(const Movie& other) const {
 }
 
 bool Classic::operator==(const Movie& other) const {
-    const auto classic = static_cast<const Classic&>(other);
+    const Classic& classic = static_cast<const Classic&>(other);
     return release_date_ == classic.release_date_ && major_actor_ == classic.major_actor_;
 }
 

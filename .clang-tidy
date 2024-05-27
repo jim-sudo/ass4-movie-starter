@@ -107,7 +107,8 @@ Checks: >
  -bugprone-unchecked-optional-access,
  -bugprone-unused-local-non-trivial-variable,
  -bugprone-unused-return-value,
- -performance-unnecessary-value-param
+ -performance-unnecessary-value-param,
+ -modernize-use-auto
 
 # Turn all the warnings from the checks above into errors.
 WarningsAsErrors: "*"
