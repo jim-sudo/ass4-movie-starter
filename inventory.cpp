@@ -1,7 +1,7 @@
 #include "inventory.h"
 
 Inventory::~Inventory() {
-  for (Movie* movie : movies_) {
+  for (Movie *movie : movies_) {
     delete movie;
   }
 }
