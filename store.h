@@ -16,6 +16,9 @@ private:
     
     CustomerHashTable customer_table_;
     
+    ComedyFactory *com = nullptr;
+    DramaFactory *dram = nullptr;
+    ClassicFactory *classic = nullptr;
    
 public: 
     Store();    
@@ -24,8 +27,9 @@ public:
     void ReadAndExecuteActions(ifstream& in);
     Inventory& inventory();
     void PrintCustomers() const;
-    ~Store();
+    ~Store(); 
 };
+
 #endif
 
 

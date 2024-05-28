@@ -10,6 +10,7 @@
 
 class Inventory {
 public:
+    ~Inventory();
     void AddMovie(const Movie& movie, int count);
     bool BorrowMovie(const std::string& movie_info);
     bool ReturnMovie(const std::string& movie_info);

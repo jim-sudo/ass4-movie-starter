@@ -1,5 +1,11 @@
 #include "inventory.h"
 
+Inventory::~Inventory() {
+  for (Movie* movie : movies_) {
+    delete movie;
+  }
+}
+
 void Inventory::AddMovieHelper(Movie *movie, int count) {
   for (auto &m : movies_) {
     if (*m == *movie) {

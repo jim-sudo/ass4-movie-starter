@@ -1,9 +1,5 @@
 #include "store.h"
 
-ComedyFactory *com = nullptr;
-DramaFactory *dram = nullptr;
-ClassicFactory *classic = nullptr;
-
 void Store::ReadCustomers(ifstream &file) {
   string line;
   int id;
