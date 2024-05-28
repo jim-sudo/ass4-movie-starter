@@ -13,9 +13,7 @@ using namespace std;
 class Store {
 private:
     Inventory inventory_;
-    
     CustomerHashTable customer_table_;
-    
     ComedyFactory *com = nullptr;
     DramaFactory *dram = nullptr;
     ClassicFactory *classic = nullptr;
@@ -31,6 +29,3 @@ public:
 };
 
 #endif
-
-
-

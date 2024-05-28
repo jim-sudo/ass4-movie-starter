@@ -9,90 +9,84 @@ Complete all questions with "Q:"
 
 Q: Does the program compile and run to completion: Yes/No
 
-- If the program does not compile or gives a segmentation error when run, 
-the maximum possible grade is 50%. No need to continue with the rest of self-evaluation
+- Yes
 
 Q: All public functions have been implemented: ENTER_NUMBER
 
-- -2 for each functionality not implemented
+- 0
 
 For each command, state Full, Partial or None to indicate 
 if it has been fully, partially or not implemented at all.
 Explain any partial implementations.
 
-Inventory: TODO(student)
-History: TODO(student)
-Borrow: TODO(student)
-Return: TODO(student)
+Inventory: Full
+History: Full
+Borrow: Full
+Return: Full
 
 
 Q: -1 for each compilation warning, min -3: ENTER_NUMBER
 
-- Check under *1. Compiles without warnings*
-- If the warning message is addressed in README.md, including how the programmer tried to address it, no deductions
+- 0
 
 Q: -1 for each clang-tidy warning, min -3: ENTER_NUMBER
 
-- Check under *3. clang-tidy warnings*
-- If the warning message is addressed in README.md, including how the programmer tried to address it, no deductions
+- 0
 
 Q: -1 for each clang-format warning, min -3: ENTER_NUMBER
 
-- Check under *4. clang-format does not find any formatting issues*
-
+- 0
 
 Q: -2 for any detected memory leak: ENTER_NUMBER
 
-- Check under *5. No memory leaks using g++*
-- Check under *6. No memory leaks using valgrind*
+-0
+
 
 Q: Do the tests sufficiently test the code: ENTER_NUMBER
 
-- -1 for each large block of code not executed
-- -2 for each function that is never called when testing
-- Check under *7. Tests have full code coverage* paying attention to *The lines below were never executed*
+- -1
 
 Q: Are all functions in .h and .cpp file documents (min -3): ENTER_NUMBER
 
-- -1 for each function not documented
+- 0
 
 ## Location of error message or functionality
 
 State the file and function where the information can be found
 
-invalid command code: TODO(student)
+invalid command code: ReadAndExecuteActions function in store.cpp
 
-invalid movie type: TODO(student)
+invalid movie type: ReadMovies function in store.cpp
 
-invalid customer ID: TODO(student)
+invalid customer ID: eadAndExecuteActions function in store.cpp
  
-invalid movie: TODO(student)
+invalid movie: Create function in movie.cpp
 
-factory classes: TODO(student)
+factory classes: movie class
 
-hashtable: TODO(student) (explain what the hashtable is used for)
+hashtable: customerHastable.cpp file. for storing customers
 
-container used for comedy movies: TODO(student)
+container used for comedy movies: PrintInventory function
 
-function for sorting comedy movies: TODO(student)
+function for sorting comedy movies: Inventory
 
-function where comedy movies are sorted: TODO(student)
+function where comedy movies are sorted: AddMovieHelper function
 
-functions called when retrieving a comedy movie based on title and year: TODO(student)
+functions called when retrieving a comedy movie based on title and year: PrintInventory function
 
-functions called for retrieving and printing customer history: TODO(student)
+functions called for retrieving and printing customer history: 
 
-container used for customer history: TODO(student)
+container used for customer history: History function in customer.cpp file
 
-functions called when borrowing a movie: TODO(student)
+functions called when borrowing a movie: BorrowMovie function in inventory called by ReadandExecutive function in store.cpp.
 
-explain borrowing a movie that does not exist: TODO(student)
+explain borrowing a movie that does not exist: Get an error message
 
-explain borrowing a movie that has 0 stock: TODO(student)
+explain borrowing a movie that has 0 stock: Get an error message
 
-explain returning a movie that customer has not checked out: TODO(student)
+explain returning a movie that customer has not checked out: Get an error message "" Could not return"
 
-any static_cast or dynamic_cast used: TODO(student)
+any static_cast or dynamic_cast used: Used in movie.h and PrintInventory function in inventory.cpp
 
 
-Q: Total points: ADD_ALL_POINTS (max 25)
+Q: Total points: ADD_ALL_POINTS 24
